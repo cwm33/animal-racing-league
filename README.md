@@ -132,13 +132,12 @@ Vite’s base path is already `/animal-racing-league/`. The app uses in-page nav
 
 The workflow validates pull requests. Pushes to **main** (or a manual workflow run) perform type checks, lint, unit tests, desktop/mobile browser tests, and a production build, then upload `dist/` and deploy it using GitHub’s official Pages actions. Deployment uses narrowly scoped `pages: write` and `id-token: write` permissions and the `github-pages` environment.
 
-**One-time repository setting:** this session’s GitHub integration received `403 Resource not accessible by integration` when attempting to enable Pages. The owner must enable the Pages source:
+**One-time repository setting:** Pages must use **GitHub Actions** as its source. “Deploy from a branch” serves repository files without running the Vite build. If an integration receives `403 Resource not accessible by integration` when changing this setting, the owner must select the source in the web interface:
 
 1. Open [Settings → Pages](https://github.com/cwm33/animal-racing-league/settings/pages).
 2. Under **Build and deployment → Source**, choose **GitHub Actions**.
-3. Merge the implementation PR into `main` if it is still open.
-4. Open [Actions](https://github.com/cwm33/animal-racing-league/actions), select **Validate and deploy to GitHub Pages**, and choose **Run workflow** on `main` (or rerun the failed deployment).
-5. If GitHub requests approval for the `github-pages` environment, approve that deployment.
-6. Wait for the deployment job to succeed, then open **https://cwm33.github.io/animal-racing-league/**.
+3. Open [Actions](https://github.com/cwm33/animal-racing-league/actions), select **Validate and deploy to GitHub Pages**, and choose **Run workflow** on `main` (or rerun the failed deployment).
+4. If GitHub requests approval for the `github-pages` environment, approve that deployment.
+5. Wait for the deployment job to succeed, then open **https://cwm33.github.io/animal-racing-league/**.
 
 If organization policy blocks Actions or Pages, the owner must allow them in repository/organization settings. If Pages later fails, inspect the deployment job rather than assuming a successful build means the site is live. The configured URL above is a target until a deployment is verified.
