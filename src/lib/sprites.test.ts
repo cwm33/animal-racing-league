@@ -6,7 +6,7 @@ import { spriteMotion, spriteSources } from './sprites'
 describe('illustration presentation', () => {
   it('keeps a complete one-to-one artwork catalog for the existing roster', () => {
     expect(catalog.map((a) => a.id)).toEqual(ANIMALS.map((a) => a.id))
-    expect(new Set(catalog.map((a) => a.id)).size).toBe(36)
+    expect(new Set(catalog.map((a) => a.id)).size).toBe(ANIMALS.length)
   })
   it('serves responsive WebP files under the GitHub Pages project path', () => {
     const urls = spriteSources('platypus', '/animal-racing-league/')
