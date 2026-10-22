@@ -89,6 +89,14 @@ export default function App() {
       ].slice(0, 100),
     )
   }
+  function selectRoster(entrants: Entrant[]) {
+    update({
+      entrants,
+      mode: entrants.some((a) => validateStats(a.stats, settings.mode))
+        ? 'experimental'
+        : settings.mode,
+    })
+  }
   function toggleMode() {
     if (settings.mode === 'experimental') {
       const invalid = settings.entrants.find((a) =>
@@ -380,7 +388,19 @@ export default function App() {
         >
           <Roster
             entrants={settings.entrants}
-            onChange={(entrants) => update({ entrants })}
+            library={library}
+            distance={settings.distance}
+            massEffects={settings.massEffects}
+            onDistance={(distance) => update({ distance })}
+            onMatch={(entrants) => {
+              selectRoster(entrants)
+              setRosterOpen(false)
+              navigate('race')
+              notify(
+                `${entrants.length} rivals matched by predicted finish. May the best paws win.`,
+              )
+            }}
+            onChange={selectRoster}
             onClose={() => setRosterOpen(false)}
           />
         </Modal>

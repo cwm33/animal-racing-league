@@ -42,7 +42,7 @@ export function loadSettings(): RaceSettings {
       !data ||
       !Array.isArray(data.entrants) ||
       data.entrants.length === 0 ||
-      data.entrants.length > 36 ||
+      data.entrants.length > ANIMALS.length ||
       !data.entrants.every(isEntrant) ||
       new Set(data.entrants.map((a) => a.id)).size !== data.entrants.length ||
       !Number.isFinite(data.distance) ||

@@ -38,7 +38,7 @@ On Linux, `npx playwright install --with-deps chromium` also installs system dep
 PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e
 ```
 
-Browser tests cover desktop and mobile race controls, finishing results, roster search, comparisons, monster creation, saving/loading, reload persistence, custom distance entry, keyboard focus, reduced motion, DNF experiments, and automated WCAG A/AA checks with axe. Automated accessibility checks complement manual review; they do not certify complete conformance.
+Browser tests cover biological/division filters, distance and edited-stat reclassification, matched and mixed lineups, legacy stable pagination, and desktop and mobile race controls, finishing results, roster search, comparisons, monster creation, saving/loading, reload persistence, custom distance entry, keyboard focus, reduced motion, DNF experiments, and automated WCAG A/AA checks with axe. Automated accessibility checks complement manual review; they do not certify complete conformance.
 
 `npm run format` formats source; `npm run format:check` checks formatting.
 
@@ -54,6 +54,41 @@ Browser tests cover desktop and mobile race controls, finishing results, roster 
 8. Reveal predicted results, run the race to reveal final results, inspect speed/distance curves, or download results as CSV.
 
 Settings and saved configurations use local storage. There is no backend, account, API key, telemetry, or tracking. Clearing browser storage removes saved creations. The footer’s **Reset settings** restores the default lineup and preferences while keeping the stable. A separate **Species defaults** control resets an editor draft; apply it to update the lineup.
+
+## Find your racing crowd
+
+Open **Add competitors** from Race day (or **Add an animal** from the lab). The roster now combines biological browsing with predicted racing divisions:
+
+- Search common/scientific names, descriptions, biological groups, orders, or families. For example, `Canidae` finds the three canines, and `Vulpes Carnivora` finds the fox.
+- Filter **Biological group** and **Competitive division** together. Mammals has both an umbrella filter and narrower groups, including big cats, canines, hoofed mammals, marsupials, rodents, and primates. Birds, reptiles, amphibians, and invertebrates are supported; the current roster has no amphibians.
+- Change **Race distance** in the roster to see predictions update immediately. This changes the actual race distance too. Cards show predicted finishing time and division; the race sidebar shows the same division. Current lineup edits, gait, launch delay, reference mass, and the mass-effects toggle all affect predictions.
+- Open **Build a matched race**, choose an anchor under **Match pace with**, then **Race matched …** to replace the lineup with up to six unique species nearest its predicted finishing time, within its division and your active filters. At least two finishers are needed. Matching uses proportional time differences, so it works for seconds or days. The default anchor is the first finisher in a division with at least two different species (falling back to the first finisher); it can always be changed.
+- Switch to **Saved stable** to search/filter saved variants and load their original statistics. Loading a variant replaces that species in the current lineup; out-of-range plausible stats automatically activate Unrestricted nonsense. Current edits appear in the species roster with their edited names; original species names remain searchable.
+- Individual selection is always free to mix groups and divisions. Existing quick lineups, lab editing, and saving still work. **Clear filters** returns to the full species roster.
+
+### How divisions are calculated
+
+The benchmark is the fastest **unedited default species in the full league** at the selected distance, calculated with the existing simulation engine. Each competitor’s predicted finish time is divided by that benchmark. Filtering, selecting a different crowd, or creating a monster never changes the benchmark. When new species are intentionally added to the canonical roster, they become part of the default benchmark too.
+
+| Division            | Predicted finish time / benchmark |
+| ------------------- | --------------------------------- |
+| Elite pace          | ≤ 1.5×                            |
+| Contenders          | > 1.5× through 3×                 |
+| Club racers         | > 3× through 8×                   |
+| Leisure league      | > 8× through 30×                  |
+| Scenic route        | > 30× through 300×                |
+| Geological time     | > 300×                            |
+| No predicted finish | DNF under the simulation model    |
+
+Upper bounds are inclusive. A tiny ratio from an experimental monster still counts as Elite pace. These are playful game divisions, not measurements of biological fitness. They change with distance: the default cheetah is Elite pace at 25 m and Club racers at 10 km. A snail can take days and still have a real predicted finish; DNF is a separate case.
+
+Taxonomy-inspired browsing groups use explicit species-ID metadata in `src/data/taxonomy.ts`, including order and family, separately from racing statistics. They intentionally mix taxonomic ranks: “big cats” is informal and includes the cheetah; “hoofed mammals” combines odd- and even-toed ungulates; “invertebrates” is an umbrella. A renamed turbo hippo stays a hoofed mammal. This is browsing metadata, not a complete taxonomic tree. Existing species identities and biological context remain in the canonical animal database and its linked references.
+
+### Scaling and saved-data compatibility
+
+`src/lib/divisions.ts` calls the unchanged analytical engine and keeps bounded LRU caches (4,096 numerical forecasts and 64 distance benchmarks). Keys include every physics input, distance, and mass-effects setting; changing names or artwork reuses the calculation, while stat edits recalculate it. `src/lib/roster.ts` builds search text once per roster/configuration update, then filters without running physics. The interface paginates at 36 cards and lazy-loads small responsive WebPs, so a 1,000-species roster never mounts 1,000 illustrations. Tests exercise 1,000 forecasts, cache reuse, and filtering; desktop/phone browser tests exercise paging with 100 legacy saved variants. Very large datasets may benefit from a search worker in a future version, but do not need a new rendering dependency for this scale.
+
+No storage migration is required. Existing `arl:settings:v1` and `arl:library:v1` records, custom names/stats, species IDs, and quick presets remain compatible. Biological metadata and division membership are derived rather than copied into saved configurations. The old `category` value is retained for compatibility, but no longer controls roster filters or division labels.
 
 ## The physics, without the lab coat
 
@@ -108,6 +143,9 @@ They do not substantiate the full set of racing numbers. Each of the 36 species 
 
 ```text
 src/data/animals.ts               36 presets and biological context
+src/data/taxonomy.ts              explicit ID-based biological browsing metadata
+src/lib/divisions.ts              cached distance-relative predicted divisions
+src/lib/roster.ts                 search/filter index, saved variants, matched lineups
 src/lib/types.ts                 typed models and locomotion profiles
 src/lib/simulation.ts             pure analytical racing engine
 src/lib/playback.ts               smart-clock mapping
