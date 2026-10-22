@@ -1,10 +1,11 @@
 import type { CSSProperties } from 'react'
 import type { Animal } from '../lib/types'
+import { AnimalSprite } from './AnimalSprite'
 export function AnimalAvatar({
   animal,
   small = false,
 }: {
-  animal: Pick<Animal, 'emoji' | 'color' | 'name'>
+  animal: Pick<Animal, 'id' | 'emoji' | 'color' | 'name'>
   small?: boolean
 }) {
   return (
@@ -13,7 +14,7 @@ export function AnimalAvatar({
       style={{ '--animal-color': animal.color } as CSSProperties}
       aria-hidden="true"
     >
-      {animal.emoji}
+      <AnimalSprite animal={animal} size={small ? 35 : 56} />
     </span>
   )
 }

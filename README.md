@@ -4,7 +4,7 @@
 
 A complete browser-based racing playground built with React, TypeScript, and Vite. Race 36 species across 25 metres to 10 kilometres, tune their characteristics, and give a hippopotamus the turbo it never asked for.
 
-Target GitHub Pages URL: **https://cwm33.github.io/animal-racing-league/**
+Play Animal Racing League: **https://cwm33.github.io/animal-racing-league/**
 
 ## Run locally
 
@@ -92,7 +92,7 @@ References in Field notes and the editor provide biological context:
 - [Wilson et al. (2013)](https://doi.org/10.1038/nature12295) — wild cheetah locomotion.
 - [Bramble & Lieberman (2004)](https://doi.org/10.1038/nature03052) — human endurance running.
 
-They do not substantiate the full set of racing numbers. The species icons are symbolic Unicode illustrations; several species have no dedicated emoji.
+They do not substantiate the full set of racing numbers. Each of the 36 species has its own generated full-body illustration. Unicode emoji are retained only as a fallback when an image fails to load.
 
 ### Boundaries and unusual experiments
 
@@ -122,7 +122,7 @@ e2e/league.spec.ts                desktop/mobile browser and axe checks
 .github/workflows/deploy.yml      validation and Pages deployment
 ```
 
-Production dependencies are React, React DOM, and Lucide icons. Native CSS, SVG, browser animation frames, and local storage handle the rest. External Google Fonts enhance typography; system sans-serif fallbacks keep the app functional if they cannot load. Emoji rendering varies by platform.
+Production dependencies are React, React DOM, and Lucide icons. Native CSS, SVG, browser animation frames, and local storage handle the rest. External Google Fonts enhance typography; system sans-serif fallbacks keep the app functional if they cannot load. Illustrations are served as responsive transparent WebP files; optional error fallback emoji may vary by platform.
 
 The interface includes semantic controls, labelled inputs, keyboard-operable dialogs with focus restoration, focus indicators, screen-reader descriptions, scrollable table regions, and reduced-motion support. Races never autoplay. Reduced motion disables bouncing and confetti; position changes still follow the explicit playback controls.
 
@@ -140,4 +140,28 @@ The workflow validates pull requests. Pushes to **main** (or a manual workflow r
 4. If GitHub requests approval for the `github-pages` environment, approve that deployment.
 5. Wait for the deployment job to succeed, then open **https://cwm33.github.io/animal-racing-league/**.
 
-If organization policy blocks Actions or Pages, the owner must allow them in repository/organization settings. If Pages later fails, inspect the deployment job rather than assuming a successful build means the site is live. The configured URL above is a target until a deployment is verified.
+If organization policy blocks Actions or Pages, the owner must allow them in repository/organization settings. If Pages later fails, inspect the deployment job rather than assuming a successful build means the site is live. After deployment, verify the application at the public URL rather than relying on the build result alone.
+
+## Illustrated competitors
+
+![All 36 illustrated competitors at 64 px and 32 px](assets/animals/collection-preview.webp)
+
+The complete 36-species collection uses a shared premium, softly shaded 3D cartoon style. Every character faces right. The cheetah was generated first, inspected, and used as the visual reference for the remaining species. Prompts explicitly describe species-specific anatomy (including the platypus, elephant seal, pronghorn, and Hermann’s tortoise).
+
+- Original transparent PNG artwork: `assets/animals/originals/{animal-id}.png`. Originals are retained unchanged and excluded from the production site's public directory.
+- Runtime files: `public/animals/{animal-id}-{96,192,384}.webp`. Transparent padding is normalized onto a shared square frame and ground baseline. Original anatomy is not altered.
+- [Collection review and original downloads](assets/animals/README.md).
+- Art direction and species briefs: `assets/animals/art-direction.json`.
+- Integrity and framing manifest: `assets/animals/manifest.json`.
+
+```bash
+npm run assets:build    # rebuild responsive WebP derivatives from the original PNGs
+npm run assets:check    # verify all 36 originals and 108 runtime files, alpha and dimensions
+npm run assets:review   # create full-detail, 64px and 32px review sheets in test-results/animal-art/
+```
+
+`AnimalSprite` is the shared presentation component; `AnimalAvatar` wraps it for roster/editor cards. Sprites also appear in the hero, racetrack, finishing results, comparison cards/tables, and recovery screen. It derives asset URLs from the stable animal ID and Vite's base path, preserving existing local-storage configurations. Fixed image frames prevent layout shifts, `srcSet` selects the appropriate WebP size, and an emoji is shown only after a failed image request.
+
+Animations transform only an inner visual layer. The outer competitor position continues to use the unchanged racing engine. Running uses rhythmic bounce; bounding uses hop/compression; waddling uses gentle rocking; crawling uses small body movement; elephant seals have slow undulation. Cadence follows current simulated speed with conservative visual bounds, never feeds back into physics, and stops on pause or finish. Reduced-motion preferences disable these animations.
+
+Browser tests additionally cover all 36 loaded illustrations, failed-image fallback sizing, every gait, and paused/reduced-motion behavior. CI checks asset integrity before the existing application checks and deployment.

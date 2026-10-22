@@ -152,7 +152,7 @@ test('all-DNF experiments and reduced motion stay usable', async ({ page }) => {
   await expect(page.locator('.confetti')).toHaveCount(0)
   expect(
     await page
-      .locator('.runner-emoji')
+      .locator('.race-sprite .animal-sprite-motion')
       .evaluate((el) => getComputedStyle(el).animationName),
   ).toBe('none')
 })
@@ -194,4 +194,126 @@ test('core screens and modal pass automated accessibility checks', async ({
       targets: v.nodes.map((n) => n.target),
     })),
   ).toEqual([])
+})
+
+test('the complete roster loads real responsive illustrations without emoji fallbacks', async ({
+  page,
+}) => {
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  const dialog = page.getByRole('dialog')
+  await expect(dialog.locator('.animal-sprite img')).toHaveCount(36)
+  const images = await dialog
+    .locator('.animal-sprite img')
+    .evaluateAll(async (elements) => {
+      return Promise.all(
+        elements.map(async (element) => {
+          const image = element as HTMLImageElement
+          image.loading = 'eager'
+          try {
+            await image.decode()
+          } catch {
+            /* Return a useful assertion below. */
+          }
+          return {
+            loaded: image.naturalWidth > 0,
+            source: image.currentSrc,
+            width: image.naturalWidth,
+          }
+        }),
+      )
+    })
+  expect(
+    images.every(
+      (image) =>
+        image.loaded &&
+        image.source.includes('/animal-racing-league/animals/') &&
+        image.source.endsWith('.webp'),
+    ),
+  ).toBe(true)
+  await expect(dialog.locator('[data-fallback]')).toHaveCount(0)
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true)
+})
+
+test('a failed illustration uses its emoji fallback inside the same reserved frame', async ({
+  page,
+}) => {
+  await page.route('**/animals/cheetah-*.webp', (route) => route.abort())
+  await page.reload()
+  const cheetah = page.locator('.race-sprite[data-animal="cheetah"]')
+  await expect(cheetah).toHaveAttribute('data-fallback', 'true')
+  await expect(cheetah.locator('.animal-sprite-fallback')).toHaveText('🐆')
+  const bounds = await cheetah.boundingBox()
+  expect(bounds?.width).toBe(64)
+  expect(bounds?.height).toBe(64)
+  await expect(
+    page.getByRole('button', { name: 'Play race', exact: true }),
+  ).toBeEnabled()
+})
+
+test('gait animations follow moving species and stop on pause', async ({
+  page,
+}) => {
+  await page.getByRole('button', { name: 'Play race', exact: true }).click()
+  const cat = page.locator(
+    '.race-sprite[data-animal="cheetah"] .animal-sprite-motion',
+  )
+  await expect
+    .poll(() =>
+      cat.evaluate((element) => getComputedStyle(element).animationName),
+    )
+    .toBe('sprite-run')
+  const rabbit = page.locator(
+    '.race-sprite[data-animal="rabbit"] .animal-sprite-motion',
+  )
+  await expect
+    .poll(() =>
+      rabbit.evaluate((element) => getComputedStyle(element).animationName),
+    )
+    .toBe('sprite-bound')
+  const tortoise = page.locator(
+    '.race-sprite[data-animal="tortoise"] .animal-sprite-motion',
+  )
+  await expect
+    .poll(() =>
+      tortoise.evaluate((element) => getComputedStyle(element).animationName),
+    )
+    .toBe('sprite-crawl')
+  await page.getByRole('button', { name: 'Pause race', exact: true }).click()
+  expect(
+    await cat.evaluate((element) => getComputedStyle(element).animationName),
+  ).toBe('none')
+  await page.getByLabel('Choose a preset lineup').selectOption('chaos')
+  await page.getByRole('button', { name: 'Play race', exact: true }).click()
+  const penguin = page.locator(
+    '.race-sprite[data-animal="penguin"] .animal-sprite-motion',
+  )
+  const seal = page.locator(
+    '.race-sprite[data-animal="seal"] .animal-sprite-motion',
+  )
+  await expect
+    .poll(() =>
+      penguin.evaluate((element) => getComputedStyle(element).animationName),
+    )
+    .toBe('sprite-waddle')
+  await expect
+    .poll(() =>
+      seal.evaluate((element) => getComputedStyle(element).animationName),
+    )
+    .toBe('sprite-undulate')
+  await page.emulateMedia({ reducedMotion: 'reduce' })
+  await expect
+    .poll(() =>
+      seal.evaluate((element) => getComputedStyle(element).animationName),
+    )
+    .toBe('none')
+  await expect(page.locator('.race-sprite[data-animal="seal"]')).toHaveClass(
+    /is-moving/,
+  )
+  await expect(
+    page.getByRole('button', { name: 'Pause race', exact: true }),
+  ).toBeVisible()
 })

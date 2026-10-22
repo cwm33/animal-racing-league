@@ -1,0 +1,546 @@
+{
+  "styleReference": "cheetah",
+  "framing": "384px square, 350px foot baseline; transparent padding normalized without changing original artwork",
+  "assets": [
+    {
+      "id": "cheetah",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1043145,
+      "webpBytes": 45620,
+      "sha256": "e929e4eb921f64087e56216189c92074a81d30949f055cac6f69e705adc2de1c",
+      "bounds": {
+        "left": 24,
+        "top": 184,
+        "width": 1212,
+        "height": 869
+      },
+      "transparentPercent": 72
+    },
+    {
+      "id": "horse",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 742460,
+      "webpBytes": 38912,
+      "sha256": "7cc4f1a35c7a7a433db2a90cc6efb5df2d9f09b72ae0022af5c47328f52798c4",
+      "bounds": {
+        "left": 133,
+        "top": 241,
+        "width": 981,
+        "height": 763
+      },
+      "transparentPercent": 80
+    },
+    {
+      "id": "greyhound",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1015905,
+      "webpBytes": 37704,
+      "sha256": "9afaf9e7cbe0f9a77263f00a5930300b1f704ee1eac1a899a5a790ce76235496",
+      "bounds": {
+        "left": 30,
+        "top": 224,
+        "width": 1214,
+        "height": 865
+      },
+      "transparentPercent": 73
+    },
+    {
+      "id": "wolf",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1230291,
+      "webpBytes": 40930,
+      "sha256": "1f805ba34dc8b38f6188ad7d48e3b550ea43d8c9ce9b1d41fb60361bd8661ee8",
+      "bounds": {
+        "left": 24,
+        "top": 205,
+        "width": 1225,
+        "height": 857
+      },
+      "transparentPercent": 67
+    },
+    {
+      "id": "hippo",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1296161,
+      "webpBytes": 32484,
+      "sha256": "b50b959d09752dc1d347947effcad22f954ddf4cafed081f8cd4b8bad22df7e4",
+      "bounds": {
+        "left": 36,
+        "top": 244,
+        "width": 1201,
+        "height": 776
+      },
+      "transparentPercent": 62
+    },
+    {
+      "id": "squirrel",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1884736,
+      "webpBytes": 51524,
+      "sha256": "66436beaa153d533f6af6e4303ec1ebc595dbf39e944a8fb8f2e086b1e2eb532",
+      "bounds": {
+        "left": 14,
+        "top": 68,
+        "width": 1230,
+        "height": 1077
+      },
+      "transparentPercent": 53
+    },
+    {
+      "id": "elephant",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 948276,
+      "webpBytes": 36176,
+      "sha256": "b7825c7c378e51ceca98b476d3a41e28e2d5caf87556e5800d0a7043ed7a0bc9",
+      "bounds": {
+        "left": 144,
+        "top": 278,
+        "width": 1033,
+        "height": 719
+      },
+      "transparentPercent": 74
+    },
+    {
+      "id": "rhino",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1225828,
+      "webpBytes": 34424,
+      "sha256": "35220d66c3c714782094354e75a0aa017996ab989e1404b59b2ca991bbffe422",
+      "bounds": {
+        "left": 38,
+        "top": 268,
+        "width": 1182,
+        "height": 739
+      },
+      "transparentPercent": 69
+    },
+    {
+      "id": "ostrich",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 952835,
+      "webpBytes": 41850,
+      "sha256": "19e131e97621a59c5545764e6835cad2ea143cfb55ec70c5ee11599d71615c17",
+      "bounds": {
+        "left": 114,
+        "top": 182,
+        "width": 1068,
+        "height": 943
+      },
+      "transparentPercent": 76
+    },
+    {
+      "id": "kangaroo",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 914450,
+      "webpBytes": 35598,
+      "sha256": "57d795f6ab2a655ace685b662038f3be53bfa88fc60ba465d934e1b29d26dc75",
+      "bounds": {
+        "left": 51,
+        "top": 177,
+        "width": 1172,
+        "height": 877
+      },
+      "transparentPercent": 76
+    },
+    {
+      "id": "lion",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1153164,
+      "webpBytes": 40576,
+      "sha256": "b377fd53a00fc71504805bdd5b11fe0c0fd4ea0958aee5a8a152fcad2e5cf826",
+      "bounds": {
+        "left": 37,
+        "top": 207,
+        "width": 1197,
+        "height": 813
+      },
+      "transparentPercent": 68
+    },
+    {
+      "id": "tiger",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1153653,
+      "webpBytes": 44962,
+      "sha256": "a932fdae0c0c52f67227a49b233eb74865130975d46d57f3132a55afa0d212ec",
+      "bounds": {
+        "left": 67,
+        "top": 250,
+        "width": 1175,
+        "height": 781
+      },
+      "transparentPercent": 70
+    },
+    {
+      "id": "bear",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1214865,
+      "webpBytes": 43982,
+      "sha256": "b6dd4a36952b4a0392a67be61e0b56513ce1b4947dbc6f55a5c9db1329dcf07e",
+      "bounds": {
+        "left": 103,
+        "top": 283,
+        "width": 1084,
+        "height": 742
+      },
+      "transparentPercent": 66
+    },
+    {
+      "id": "human",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 686245,
+      "webpBytes": 32516,
+      "sha256": "dc35135864d456cf96b44f8f5dc2b42fd6bc2dd5609d1d94680fa6a4f9028558",
+      "bounds": {
+        "left": 262,
+        "top": 54,
+        "width": 774,
+        "height": 1116
+      },
+      "transparentPercent": 81
+    },
+    {
+      "id": "rabbit",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1180001,
+      "webpBytes": 50256,
+      "sha256": "7d4f704c886899819ab6b415d037d9cf4d48236201d703fe7476c67f9edb54c0",
+      "bounds": {
+        "left": 176,
+        "top": 131,
+        "width": 1008,
+        "height": 930
+      },
+      "transparentPercent": 71
+    },
+    {
+      "id": "tortoise",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1084110,
+      "webpBytes": 45794,
+      "sha256": "3d5c158dad26337a9492b1c1a2f1390dd8eb670613d8a5f65502fc2bee573dbb",
+      "bounds": {
+        "left": 110,
+        "top": 307,
+        "width": 1044,
+        "height": 651
+      },
+      "transparentPercent": 73
+    },
+    {
+      "id": "sloth",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1241643,
+      "webpBytes": 43132,
+      "sha256": "d3d92c95b14a47a25eb043f15db24f353bf42d485fe8d1052cfbe2281c531408",
+      "bounds": {
+        "left": 101,
+        "top": 312,
+        "width": 1084,
+        "height": 693
+      },
+      "transparentPercent": 71
+    },
+    {
+      "id": "platypus",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 873794,
+      "webpBytes": 26110,
+      "sha256": "60f54b27608b6390a22e0c748c76e59ed6ba9b2556a4a589e8957e7ee10de063",
+      "bounds": {
+        "left": 28,
+        "top": 420,
+        "width": 1202,
+        "height": 512
+      },
+      "transparentPercent": 78
+    },
+    {
+      "id": "seal",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 982955,
+      "webpBytes": 27556,
+      "sha256": "a543fa025ac91bacb484fb8eb84c332a1f43a3a153726bf78b90258c2b8fd315",
+      "bounds": {
+        "left": 32,
+        "top": 290,
+        "width": 1208,
+        "height": 697
+      },
+      "transparentPercent": 73
+    },
+    {
+      "id": "penguin",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 845390,
+      "webpBytes": 36146,
+      "sha256": "7ad5764f768767a9530c9e31a0f4107c770983ca91ccc7edb7ba8379037cfc17",
+      "bounds": {
+        "left": 316,
+        "top": 166,
+        "width": 804,
+        "height": 911
+      },
+      "transparentPercent": 75
+    },
+    {
+      "id": "crocodile",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1021029,
+      "webpBytes": 36640,
+      "sha256": "85f7696149148e532e4088fdd9e52efc00ddf0f5ad986039ea223d40ce422b19",
+      "bounds": {
+        "left": 43,
+        "top": 350,
+        "width": 1194,
+        "height": 606
+      },
+      "transparentPercent": 77
+    },
+    {
+      "id": "gorilla",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1564485,
+      "webpBytes": 44404,
+      "sha256": "32acf7e781453811a38c95a4b3af33d2b69e7b16eca06594cff8498743b9f2e0",
+      "bounds": {
+        "left": 118,
+        "top": 159,
+        "width": 1111,
+        "height": 967
+      },
+      "transparentPercent": 58
+    },
+    {
+      "id": "pronghorn",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1036712,
+      "webpBytes": 47336,
+      "sha256": "79091b0432fe1078435b53afe5fcdafae5fe7568471c6e98a4bca4b0baa850eb",
+      "bounds": {
+        "left": 131,
+        "top": 72,
+        "width": 1076,
+        "height": 1033
+      },
+      "transparentPercent": 73
+    },
+    {
+      "id": "zebra",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1019344,
+      "webpBytes": 44552,
+      "sha256": "eb4c0fc4f862efa9b28e7f409d08d5e6e2b980aa328bbac28f87f117aa8329ab",
+      "bounds": {
+        "left": 83,
+        "top": 185,
+        "width": 1118,
+        "height": 900
+      },
+      "transparentPercent": 74
+    },
+    {
+      "id": "giraffe",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 705639,
+      "webpBytes": 38100,
+      "sha256": "dc99bd94a7dea03ace5a1af36701a7a77d9575b3fa51321a9ba17d724f161af9",
+      "bounds": {
+        "left": 229,
+        "top": 83,
+        "width": 837,
+        "height": 1086
+      },
+      "transparentPercent": 82
+    },
+    {
+      "id": "fox",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 914545,
+      "webpBytes": 35700,
+      "sha256": "7f939e8560a6a3fac21f6c26b0142ce15c042f0964dd53d71a07f4dd67abf21c",
+      "bounds": {
+        "left": 58,
+        "top": 260,
+        "width": 1139,
+        "height": 736
+      },
+      "transparentPercent": 75
+    },
+    {
+      "id": "hyena",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1137874,
+      "webpBytes": 44404,
+      "sha256": "6d8a44937982d29e58780542c9cb2cbd9861f9692e492ed0539d33c7d67c73e2",
+      "bounds": {
+        "left": 72,
+        "top": 235,
+        "width": 1140,
+        "height": 821
+      },
+      "transparentPercent": 71
+    },
+    {
+      "id": "warthog",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1464143,
+      "webpBytes": 48532,
+      "sha256": "8382d47f7a62ba02f00490d7c25f84dffa7e99c6aed915f1657616345ed71d3a",
+      "bounds": {
+        "left": 88,
+        "top": 143,
+        "width": 1134,
+        "height": 955
+      },
+      "transparentPercent": 66
+    },
+    {
+      "id": "moose",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1316407,
+      "webpBytes": 52448,
+      "sha256": "e7f757c6c05e8ceaa7f7911df654061eb47348898f8833850d39d4c132a3a892",
+      "bounds": {
+        "left": 100,
+        "top": 79,
+        "width": 1136,
+        "height": 1065
+      },
+      "transparentPercent": 65
+    },
+    {
+      "id": "goat",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 920496,
+      "webpBytes": 49130,
+      "sha256": "76c6c9901f54dcf8d3d1f00cf9c8edd461f84652de394e47955b326604ac2458",
+      "bounds": {
+        "left": 218,
+        "top": 173,
+        "width": 949,
+        "height": 905
+      },
+      "transparentPercent": 73
+    },
+    {
+      "id": "capybara",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1242464,
+      "webpBytes": 39366,
+      "sha256": "08bca918ae6341fef3b9b450e9e7bc1d641eef6e32577c22a52e1170f405dd7b",
+      "bounds": {
+        "left": 112,
+        "top": 240,
+        "width": 1086,
+        "height": 790
+      },
+      "transparentPercent": 69
+    },
+    {
+      "id": "duck",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 935204,
+      "webpBytes": 39438,
+      "sha256": "ead18f4e6f75e14db69905259ead7b2f212c966dc86fc06ca5817cdbe841dcf9",
+      "bounds": {
+        "left": 152,
+        "top": 210,
+        "width": 1016,
+        "height": 860
+      },
+      "transparentPercent": 74
+    },
+    {
+      "id": "chicken",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1047034,
+      "webpBytes": 47554,
+      "sha256": "b26352579f0e1f254178dc4001e29a05088c6ee58cd07a304bc59dcf646ffb0a",
+      "bounds": {
+        "left": 178,
+        "top": 136,
+        "width": 943,
+        "height": 966
+      },
+      "transparentPercent": 71
+    },
+    {
+      "id": "snail",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1094423,
+      "webpBytes": 38030,
+      "sha256": "d6d737ba63b9e5bb47ddfd4b4384073e0b802b880cfa475695ea406c8a37bc65",
+      "bounds": {
+        "left": 56,
+        "top": 297,
+        "width": 1154,
+        "height": 668
+      },
+      "transparentPercent": 71
+    },
+    {
+      "id": "bison",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1308714,
+      "webpBytes": 44494,
+      "sha256": "4eef12def24f34297a239a6e7bd66e8833949263b909f1143715de90c9f2afa9",
+      "bounds": {
+        "left": 69,
+        "top": 207,
+        "width": 1135,
+        "height": 823
+      },
+      "transparentPercent": 63
+    },
+    {
+      "id": "camel",
+      "width": 1254,
+      "height": 1254,
+      "originalBytes": 1011148,
+      "webpBytes": 40576,
+      "sha256": "9f116869b0095c153ea71ed663e1445d8e95edf886b6365e92937329c304c909",
+      "bounds": {
+        "left": 50,
+        "top": 195,
+        "width": 1158,
+        "height": 887
+      },
+      "transparentPercent": 72
+    }
+  ]
+}

@@ -27,6 +27,7 @@ import {
 import { clockPlan, smartTime } from '../lib/playback'
 import type { RaceSettings } from '../lib/types'
 import { AnimalAvatar } from './AnimalAvatar'
+import { AnimalSprite } from './AnimalSprite'
 import { PerformanceChart } from './PerformanceChart'
 
 export function RaceDay({
@@ -380,14 +381,15 @@ export function RaceDay({
                       className={`runner ${playing && !complete && !done && clock > result.effective.delay ? 'running' : ''} ${done ? 'arrived' : ''}`}
                       style={{ left: `${progress * 100}%` }}
                     >
-                      <span
-                        className="runner-emoji"
-                        role="img"
-                        aria-label={animal.name}
-                      >
-                        {animal.emoji}
-                      </span>
-                      <span className="runner-shadow" />
+                      <AnimalSprite
+                        animal={animal}
+                        size={64}
+                        className="race-sprite"
+                        decorative={false}
+                        moving={playing && !complete && !done}
+                        speed={state.speed}
+                        priority
+                      />
                       {done && (
                         <span
                           className={`finish-rank ${rank === 1 ? 'gold' : ''}`}
@@ -589,9 +591,11 @@ export function RaceDay({
                               ? '—'
                               : String(i + 1).padStart(2, '0')}
                           </span>
-                          <span className="result-emoji" aria-hidden="true">
-                            {r.animal.emoji}
-                          </span>
+                          <AnimalSprite
+                            animal={r.animal}
+                            size={34}
+                            className="result-sprite"
+                          />
                           <strong>{r.animal.name}</strong>
                         </td>
                         <td>{formatTime(r.finish)}</td>

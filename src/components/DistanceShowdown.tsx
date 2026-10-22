@@ -3,6 +3,7 @@ import { ArrowRight, Medal, Route, Trophy } from 'lucide-react'
 import { formatDistance, formatTime, simulate } from '../lib/simulation'
 import type { RaceSettings } from '../lib/types'
 import { AnimalAvatar } from './AnimalAvatar'
+import { AnimalSprite } from './AnimalSprite'
 const DISTANCES = [25, 100, 400, 1000, 5000, 10000]
 export function DistanceShowdown({
   settings,
@@ -65,7 +66,13 @@ export function DistanceShowdown({
                 {race.results.slice(0, 3).map((r, i) => (
                   <div key={r.animal.id}>
                     <span>
-                      {i + 1}. {r.animal.emoji} {r.animal.name}
+                      {i + 1}.{' '}
+                      <AnimalSprite
+                        animal={r.animal}
+                        size={26}
+                        className="podium-sprite"
+                      />{' '}
+                      {r.animal.name}
                     </span>
                     <b>{formatTime(r.finish)}</b>
                   </div>
@@ -112,7 +119,11 @@ export function DistanceShowdown({
               {wins.map(({ animal, wins }) => (
                 <tr key={animal.id}>
                   <td>
-                    <span className="result-emoji">{animal.emoji}</span>
+                    <AnimalSprite
+                      animal={animal}
+                      size={34}
+                      className="result-sprite"
+                    />
                     <strong>{animal.name}</strong>
                   </td>
                   {races.map((race) => {

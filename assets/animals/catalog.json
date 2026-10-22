@@ -1,0 +1,182 @@
+[
+  {
+    "id": "cheetah",
+    "name": "Cheetah",
+    "scientific": "Acinonyx jubatus"
+  },
+  {
+    "id": "horse",
+    "name": "Horse",
+    "scientific": "Equus caballus"
+  },
+  {
+    "id": "greyhound",
+    "name": "Greyhound",
+    "scientific": "Canis lupus familiaris"
+  },
+  {
+    "id": "wolf",
+    "name": "Wolf",
+    "scientific": "Canis lupus"
+  },
+  {
+    "id": "hippo",
+    "name": "Hippopotamus",
+    "scientific": "Hippopotamus amphibius"
+  },
+  {
+    "id": "squirrel",
+    "name": "Squirrel",
+    "scientific": "Sciurus carolinensis"
+  },
+  {
+    "id": "elephant",
+    "name": "African elephant",
+    "scientific": "Loxodonta africana"
+  },
+  {
+    "id": "rhino",
+    "name": "White rhinoceros",
+    "scientific": "Ceratotherium simum"
+  },
+  {
+    "id": "ostrich",
+    "name": "Ostrich",
+    "scientific": "Struthio camelus"
+  },
+  {
+    "id": "kangaroo",
+    "name": "Red kangaroo",
+    "scientific": "Osphranter rufus"
+  },
+  {
+    "id": "lion",
+    "name": "Lion",
+    "scientific": "Panthera leo"
+  },
+  {
+    "id": "tiger",
+    "name": "Tiger",
+    "scientific": "Panthera tigris"
+  },
+  {
+    "id": "bear",
+    "name": "Brown bear",
+    "scientific": "Ursus arctos"
+  },
+  {
+    "id": "human",
+    "name": "Human",
+    "scientific": "Homo sapiens"
+  },
+  {
+    "id": "rabbit",
+    "name": "European rabbit",
+    "scientific": "Oryctolagus cuniculus"
+  },
+  {
+    "id": "tortoise",
+    "name": "Hermann’s tortoise",
+    "scientific": "Testudo hermanni"
+  },
+  {
+    "id": "sloth",
+    "name": "Three-toed sloth",
+    "scientific": "Bradypus variegatus"
+  },
+  {
+    "id": "platypus",
+    "name": "Platypus",
+    "scientific": "Ornithorhynchus anatinus"
+  },
+  {
+    "id": "seal",
+    "name": "Southern elephant seal",
+    "scientific": "Mirounga leonina"
+  },
+  {
+    "id": "penguin",
+    "name": "Emperor penguin",
+    "scientific": "Aptenodytes forsteri"
+  },
+  {
+    "id": "crocodile",
+    "name": "Nile crocodile",
+    "scientific": "Crocodylus niloticus"
+  },
+  {
+    "id": "gorilla",
+    "name": "Western gorilla",
+    "scientific": "Gorilla gorilla"
+  },
+  {
+    "id": "pronghorn",
+    "name": "Pronghorn",
+    "scientific": "Antilocapra americana"
+  },
+  {
+    "id": "zebra",
+    "name": "Plains zebra",
+    "scientific": "Equus quagga"
+  },
+  {
+    "id": "giraffe",
+    "name": "Giraffe",
+    "scientific": "Giraffa camelopardalis"
+  },
+  {
+    "id": "fox",
+    "name": "Red fox",
+    "scientific": "Vulpes vulpes"
+  },
+  {
+    "id": "hyena",
+    "name": "Spotted hyena",
+    "scientific": "Crocuta crocuta"
+  },
+  {
+    "id": "warthog",
+    "name": "Warthog",
+    "scientific": "Phacochoerus africanus"
+  },
+  {
+    "id": "moose",
+    "name": "Moose",
+    "scientific": "Alces alces"
+  },
+  {
+    "id": "goat",
+    "name": "Domestic goat",
+    "scientific": "Capra hircus"
+  },
+  {
+    "id": "capybara",
+    "name": "Capybara",
+    "scientific": "Hydrochoerus hydrochaeris"
+  },
+  {
+    "id": "duck",
+    "name": "Mallard",
+    "scientific": "Anas platyrhynchos"
+  },
+  {
+    "id": "chicken",
+    "name": "Domestic chicken",
+    "scientific": "Gallus gallus domesticus"
+  },
+  {
+    "id": "snail",
+    "name": "Garden snail",
+    "scientific": "Cornu aspersum"
+  },
+  {
+    "id": "bison",
+    "name": "American bison",
+    "scientific": "Bison bison"
+  },
+  {
+    "id": "camel",
+    "name": "Dromedary camel",
+    "scientific": "Camelus dromedarius"
+  }
+]
