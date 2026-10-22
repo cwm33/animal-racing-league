@@ -1,0 +1,959 @@
+{
+  "quokka": {
+    "url": "https://animaldiversity.org/accounts/Setonix_brachyurus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Setonix_brachyurus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Setonix brachyurus (quokka) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          1.6,
+          4.2
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "wombat": {
+    "url": "https://animaldiversity.org/accounts/Vombatus_ursinus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Vombatus_ursinus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Vombatus ursinus (coarse-haired wombat) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          20.0,
+          35.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "pangolin": {
+    "url": "https://animaldiversity.org/accounts/Smutsia_temminckii/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Smutsia_temminckii/",
+    "status": "not_found",
+    "accessed": "2026-10-22",
+    "title": "404 - Page not found | Animal Diversity Web",
+    "identityPresent": false,
+    "reportedMass": [],
+    "accountScope": "unavailable"
+  },
+  "aardvark": {
+    "url": "https://animaldiversity.org/accounts/Orycteropus_afer/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Orycteropus_afer/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Orycteropus afer (aardvark) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          40.0,
+          82.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "echidna": {
+    "url": "https://animaldiversity.org/accounts/Tachyglossus_aculeatus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Tachyglossus_aculeatus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Tachyglossus aculeatus (short-beaked echidna) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          2.0,
+          7.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "armadillo": {
+    "url": "https://animaldiversity.org/accounts/Dasypus_novemcinctus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Dasypus_novemcinctus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Dasypus novemcinctus (nine-banded armadillo) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          3.6,
+          7.7
+        ]
+      },
+      {
+        "kind": "average",
+        "kg": 5.5
+      }
+    ],
+    "accountScope": "information"
+  },
+  "giant-anteater": {
+    "url": "https://animaldiversity.org/accounts/Myrmecophaga_tridactyla/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Myrmecophaga_tridactyla/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Myrmecophaga tridactyla (giant anteater) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          18.0,
+          39.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "meerkat": {
+    "url": "https://animaldiversity.org/accounts/Suricata_suricatta/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Suricata_suricatta/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Suricata suricatta (meerkat) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "average",
+        "kg": 0.725
+      },
+      {
+        "kind": "average",
+        "kg": 0.776
+      }
+    ],
+    "accountScope": "information"
+  },
+  "badger": {
+    "url": "https://animaldiversity.org/accounts/Meles_meles/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Meles_meles/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Meles meles (Eurasian badger) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          6.6,
+          16.7
+        ]
+      },
+      {
+        "kind": "average",
+        "kg": 11.7
+      }
+    ],
+    "accountScope": "information"
+  },
+  "wolverine": {
+    "url": "https://animaldiversity.org/accounts/Gulo_gulo/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Gulo_gulo/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Gulo gulo (wolverine) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          9.0,
+          30.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "raccoon": {
+    "url": "https://animaldiversity.org/accounts/Procyon_lotor/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Procyon_lotor/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Procyon lotor (Guadeloupe raccoon) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          1.8,
+          10.4
+        ]
+      },
+      {
+        "kind": "average",
+        "kg": 6.0
+      }
+    ],
+    "accountScope": "information"
+  },
+  "red-panda": {
+    "url": "https://animaldiversity.org/accounts/Ailurus_fulgens/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Ailurus_fulgens/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Ailurus fulgens (red panda) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          3.7,
+          6.2
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "fossa": {
+    "url": "https://animaldiversity.org/accounts/Cryptoprocta_ferox/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Cryptoprocta_ferox/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Cryptoprocta ferox (fossa) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          7.0,
+          12.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "ring-tailed-lemur": {
+    "url": "https://animaldiversity.org/accounts/Lemur_catta/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Lemur_catta/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Lemur catta (ring-tailed lemur) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "average",
+        "kg": 2.2
+      },
+      {
+        "kind": "average",
+        "kg": 2.555
+      }
+    ],
+    "accountScope": "information"
+  },
+  "olive-baboon": {
+    "url": "https://animaldiversity.org/accounts/Papio_anubis/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Papio_anubis/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Papio anubis (anubis baboon) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          14.0,
+          25.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "crested-porcupine": {
+    "url": "https://animaldiversity.org/accounts/Hystrix_cristata/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Hystrix_cristata/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Hystrix cristata (North African crested porcupine) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          10.0,
+          30.0
+        ]
+      },
+      {
+        "kind": "average",
+        "kg": 0.02
+      }
+    ],
+    "accountScope": "information"
+  },
+  "hedgehog": {
+    "url": "https://animaldiversity.org/accounts/Erinaceus_europaeus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Erinaceus_europaeus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Erinaceus europaeus (western European hedgehog) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          0.8,
+          1.2
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "tenrec": {
+    "url": "https://animaldiversity.org/accounts/Tenrec_ecaudatus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Tenrec_ecaudatus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Tenrec ecaudatus (tailless tenrec) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          1.6,
+          2.4
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "shrew": {
+    "url": "https://animaldiversity.org/accounts/Sorex_araneus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Sorex_araneus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Sorex araneus (Eurasian shrew) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          0.005,
+          0.014
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "elephant-shrew": {
+    "url": "https://animaldiversity.org/accounts/Rhynchocyon_petersi/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Rhynchocyon_petersi/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Rhynchocyon petersi (black and rufous elephant-shrew) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          0.35000000000000003,
+          0.7000000000000001
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "springhare": {
+    "url": "https://animaldiversity.org/accounts/Pedetes_capensis/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Pedetes_capensis/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Pedetes capensis (South African spring hare) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          3.0,
+          4.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "okapi": {
+    "url": "https://animaldiversity.org/accounts/Okapia_johnstoni/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Okapia_johnstoni/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Okapia johnstoni (okapi) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          210.0,
+          350.0
+        ]
+      },
+      {
+        "kind": "average",
+        "kg": 290.0
+      }
+    ],
+    "accountScope": "information"
+  },
+  "cassowary": {
+    "url": "https://animaldiversity.org/accounts/Casuarius_casuarius/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Casuarius_casuarius/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Casuarius casuarius (southern cassowary) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          29.0,
+          59.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "emu": {
+    "url": "https://animaldiversity.org/accounts/Dromaius_novaehollandiae/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Dromaius_novaehollandiae/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Dromaius novaehollandiae (emu) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          36.0,
+          40.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "secretary-bird": {
+    "url": "https://animaldiversity.org/accounts/Sagittarius_serpentarius/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Sagittarius_serpentarius/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Sagittarius serpentarius (secretary bird) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          2.3000000000000003,
+          4.2700000000000005
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "roadrunner": {
+    "url": "https://animaldiversity.org/accounts/Geococcyx_californianus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Geococcyx_californianus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Geococcyx californianus (greater roadrunner) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          0.227,
+          0.341
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "kiwi": {
+    "url": "https://animaldiversity.org/accounts/Apteryx_mantelli/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Apteryx_mantelli/",
+    "status": "not_found",
+    "accessed": "2026-10-22",
+    "title": "404 - Page not found | Animal Diversity Web",
+    "identityPresent": false,
+    "reportedMass": [],
+    "accountScope": "unavailable"
+  },
+  "wild-turkey": {
+    "url": "https://animaldiversity.org/accounts/Meleagris_gallopavo/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Meleagris_gallopavo/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Meleagris gallopavo (wild turkey) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          3.6,
+          11.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "guineafowl": {
+    "url": "https://animaldiversity.org/accounts/Numida_meleagris/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Numida_meleagris/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Numida meleagris (helmeted guineafowl) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          1.1340000000000001,
+          1.842
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "peafowl": {
+    "url": "https://animaldiversity.org/accounts/Pavo_cristatus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Pavo_cristatus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Pavo cristatus (Indian peafowl) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          2.7,
+          6.0
+        ]
+      },
+      {
+        "kind": "average",
+        "kg": 4.0
+      }
+    ],
+    "accountScope": "information"
+  },
+  "seriema": {
+    "url": "https://animaldiversity.org/accounts/Cariama_cristata/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Cariama_cristata/classification/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Cariama cristata (red-legged seriema) | CLASSIFICATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "classification"
+  },
+  "kori-bustard": {
+    "url": "https://animaldiversity.org/accounts/Ardeotis_kori/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Ardeotis_kori/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Ardeotis kori (Kori bustard) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          5.5,
+          19.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "tinamou": {
+    "url": "https://animaldiversity.org/accounts/Tinamus_major/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Tinamus_major/classification/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Tinamus major (great tinamou) | CLASSIFICATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "classification"
+  },
+  "lyrebird": {
+    "url": "https://animaldiversity.org/accounts/Menura_novaehollandiae/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Menura_novaehollandiae/classification/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Menura novaehollandiae (superb lyrebird) | CLASSIFICATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "classification"
+  },
+  "komodo-dragon": {
+    "url": "https://animaldiversity.org/accounts/Varanus_komodoensis/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Varanus_komodoensis/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Varanus komodoensis (Komodo Dragon) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "upper_bound",
+        "kg": 165.0
+      }
+    ],
+    "accountScope": "information"
+  },
+  "gila-monster": {
+    "url": "https://animaldiversity.org/accounts/Heloderma_suspectum/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Heloderma_suspectum/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Heloderma suspectum (Gila Monster) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "information"
+  },
+  "bearded-dragon": {
+    "url": "https://animaldiversity.org/accounts/Pogona_vitticeps/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Pogona_vitticeps/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Pogona vitticeps (Central Bearded Dragon) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "information"
+  },
+  "frilled-lizard": {
+    "url": "https://animaldiversity.org/accounts/Chlamydosaurus_kingii/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Chlamydosaurus_kingii/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Chlamydosaurus kingii (Frilled Lizard) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "information"
+  },
+  "horned-lizard": {
+    "url": "https://animaldiversity.org/accounts/Phrynosoma_cornutum/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Phrynosoma_cornutum/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Phrynosoma cornutum (Texas Horned Lizard) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          0.025,
+          0.09
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "thorny-devil": {
+    "url": "https://animaldiversity.org/accounts/Moloch_horridus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Moloch_horridus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Moloch horridus (Thorny Devil, Mountain Devil) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          0.0285,
+          0.057
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "blue-tongued-skink": {
+    "url": "https://animaldiversity.org/accounts/Tiliqua_scincoides/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Tiliqua_scincoides/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Tiliqua scincoides (Common Bluetongue, Eastern Bluetongue, Northern Bluetongue, Eastern Blue-Tongued Lizard) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "average",
+        "kg": 0.493
+      }
+    ],
+    "accountScope": "information"
+  },
+  "leopard-gecko": {
+    "url": "https://animaldiversity.org/accounts/Eublepharis_macularius/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Eublepharis_macularius/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Eublepharis macularius (Common Leopard Gecko) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "information"
+  },
+  "tuatara": {
+    "url": "https://animaldiversity.org/accounts/Sphenodon_punctatus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Sphenodon_punctatus/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Sphenodon punctatus (Tuatara) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "range",
+        "kg": [
+          0.4,
+          1.0
+        ]
+      }
+    ],
+    "accountScope": "information"
+  },
+  "rosy-boa": {
+    "url": "https://animaldiversity.org/accounts/Lichanura_trivirgata/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Lichanura_trivirgata/",
+    "status": "not_found",
+    "accessed": "2026-10-22",
+    "title": "404 - Page not found | Animal Diversity Web",
+    "identityPresent": false,
+    "reportedMass": [],
+    "accountScope": "unavailable"
+  },
+  "common-toad": {
+    "url": "https://animaldiversity.org/accounts/Bufo_bufo/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Bufo_bufo/classification/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Bufo bufo | CLASSIFICATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "classification"
+  },
+  "fire-salamander": {
+    "url": "https://animaldiversity.org/accounts/Salamandra_salamandra/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Salamandra_salamandra/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Salamandra salamandra | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "average",
+        "kg": 0.019100000000000002
+      }
+    ],
+    "accountScope": "information"
+  },
+  "tiger-salamander": {
+    "url": "https://animaldiversity.org/accounts/Ambystoma_tigrinum/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Ambystoma_tigrinum/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Ambystoma tigrinum (Eastern Tiger Salamander) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "average",
+        "kg": 0.009401999999999999
+      }
+    ],
+    "accountScope": "information"
+  },
+  "tomato-frog": {
+    "url": "https://animaldiversity.org/accounts/Dyscophus_antongilii/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Dyscophus_antongilii/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Dyscophus antongilii | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "average",
+        "kg": 0.026000000000000002
+      }
+    ],
+    "accountScope": "information"
+  },
+  "ornate-horned-frog": {
+    "url": "https://animaldiversity.org/accounts/Ceratophrys_ornata/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Ceratophrys_ornata/classification/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Ceratophrys ornata | CLASSIFICATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "classification"
+  },
+  "golden-mantella": {
+    "url": "https://animaldiversity.org/accounts/Mantella_aurantiaca/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Mantella_aurantiaca/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Mantella aurantiaca | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "information"
+  },
+  "tarantula": {
+    "url": "https://animaldiversity.org/accounts/Grammostola_rosea/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Grammostola_rosea/classification/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Grammostola rosea | CLASSIFICATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "classification"
+  },
+  "scorpion": {
+    "url": "https://animaldiversity.org/accounts/Pandinus_imperator/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Pandinus_imperator/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Pandinus imperator | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "upper_bound",
+        "kg": 0.028
+      }
+    ],
+    "accountScope": "information"
+  },
+  "coconut-crab": {
+    "url": "https://animaldiversity.org/accounts/Birgus_latro/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Birgus_latro/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Birgus latro | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [
+      {
+        "kind": "upper_bound",
+        "kg": 4.0
+      }
+    ],
+    "accountScope": "information"
+  },
+  "tiger-beetle": {
+    "url": "https://animaldiversity.org/accounts/Cicindela_sexguttata/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Cicindela_sexguttata/classification/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Cicindela sexguttata | CLASSIFICATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "classification"
+  },
+  "silver-ant": {
+    "url": "https://animaldiversity.org/accounts/Cataglyphis_bombycina/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Cataglyphis_bombycina/",
+    "status": "not_found",
+    "accessed": "2026-10-22",
+    "title": "404 - Page not found | Animal Diversity Web",
+    "identityPresent": false,
+    "reportedMass": [],
+    "accountScope": "unavailable"
+  },
+  "cockroach": {
+    "url": "https://animaldiversity.org/accounts/Gromphadorhina_portentosa/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Gromphadorhina_portentosa/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Gromphadorhina portentosa (Madagascan hissing cockroach) | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "information"
+  },
+  "mantis": {
+    "url": "https://animaldiversity.org/accounts/Mantis_religiosa/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Mantis_religiosa/classification/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Mantis religiosa | CLASSIFICATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "classification"
+  },
+  "stick-insect": {
+    "url": "https://animaldiversity.org/accounts/Carausius_morosus/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Carausius_morosus/classification/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Carausius morosus (Indian Stick Insect) | CLASSIFICATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "classification"
+  },
+  "giant-millipede": {
+    "url": "https://animaldiversity.org/accounts/Archispirostreptus_gigas/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Archispirostreptus_gigas/",
+    "status": "not_found",
+    "accessed": "2026-10-22",
+    "title": "404 - Page not found | Animal Diversity Web",
+    "identityPresent": false,
+    "reportedMass": [],
+    "accountScope": "unavailable"
+  },
+  "centipede": {
+    "url": "https://animaldiversity.org/accounts/Scolopendra_heros/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Scolopendra_heros/classification/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Scolopendra heros | CLASSIFICATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "classification"
+  },
+  "earthworm": {
+    "url": "https://animaldiversity.org/accounts/Lumbricus_terrestris/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Lumbricus_terrestris/",
+    "status": "not_found",
+    "accessed": "2026-10-22",
+    "title": "404 - Page not found | Animal Diversity Web",
+    "identityPresent": false,
+    "reportedMass": [],
+    "accountScope": "unavailable"
+  },
+  "slug": {
+    "url": "https://animaldiversity.org/accounts/Arion_ater/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Arion_ater/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Arion ater | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "information"
+  },
+  "velvet-worm": {
+    "url": "https://animaldiversity.org/accounts/Peripatus_solorzanoi/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Peripatus_solorzanoi/",
+    "status": "not_found",
+    "accessed": "2026-10-22",
+    "title": "404 - Page not found | Animal Diversity Web",
+    "identityPresent": false,
+    "reportedMass": [],
+    "accountScope": "unavailable"
+  },
+  "woodlouse": {
+    "url": "https://animaldiversity.org/accounts/Porcellio_scaber/",
+    "resolvedUrl": "https://animaldiversity.org/accounts/Porcellio_scaber/",
+    "status": "retrieved",
+    "accessed": "2026-10-22",
+    "title": "Porcellio scaber | INFORMATION | Animal Diversity Web",
+    "identityPresent": true,
+    "reportedMass": [],
+    "accountScope": "information"
+  }
+}
