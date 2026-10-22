@@ -15,6 +15,13 @@ const expansion = JSON.parse(
     'utf8',
   ),
 )
+const repairReport = JSON.parse(
+  await fs.readFile(
+    path.join(root, 'expansion/review/border-repair.json'),
+    'utf8',
+  ),
+)
+const repairs = new Map(repairReport.species.map((item) => [item.id, item]))
 const hash = (data) => crypto.createHash('sha256').update(data).digest('hex')
 const checkOnly = process.argv.includes('--check')
 const recorded = checkOnly
@@ -88,9 +95,39 @@ for (let start = 0; start < catalog.length; start += 4) {
             }
           }
         const pixels = info.width * info.height
+        const isExpansion = Object.hasOwn(expansion, animal.id)
+        const repair = repairs.get(animal.id)
+        if (isExpansion) {
+          if (
+            !repair ||
+            hash(original) !== repair.outputSha256 ||
+            info.width !== repair.width ||
+            info.height !== repair.height
+          )
+            throw new Error('Missing or stale source border-repair record')
+          const xMargin = Math.ceil(info.width / 10),
+            yMargin = Math.ceil(info.height / 10)
+          for (let y = 0; y < info.height; y++)
+            for (let x = 0; x < info.width; x++)
+              if (
+                (x < xMargin ||
+                  x >= info.width - xMargin ||
+                  y < yMargin ||
+                  y >= info.height - yMargin) &&
+                data[(y * info.width + x) * 4 + 3] !== 0
+              )
+                throw new Error(
+                  'Source PNG must have a completely transparent 10% border',
+                )
+        }
+        // Occupancy is measured against the delivered authoring canvas; adding
+        // empty padding must not make a valid thin animal fail the density check.
+        const occupancyPixels = isExpansion
+          ? repair.contentRect.width * repair.contentRect.height
+          : pixels
         // A slender wingless stick insect legitimately occupies less canvas than a mammal.
         const minimumSolid = animal.id === 'stick-insect' ? 0.03 : 0.08
-        if (clear / pixels < 0.2 || solid / pixels < minimumSolid)
+        if (clear / pixels < 0.2 || solid / occupancyPixels < minimumSolid)
           throw new Error(
             'Expected substantial transparent background and solid character',
           )
@@ -109,7 +146,6 @@ for (let start = 0; start < catalog.length; start += 4) {
           width: maxX - minX + 1,
           height: maxY - minY + 1,
         }
-        const isExpansion = Object.hasOwn(expansion, animal.id)
         if (!checkOnly) {
           // Only trim transparent padding; retain the generated original unchanged.
           // Use a shared 384px frame and foot baseline for stable cross-species layout.
@@ -248,6 +284,7 @@ for (let start = 0; start < catalog.length; start += 4) {
           width: info.width,
           height: info.height,
           originalBytes: original.byteLength,
+          strictTenPercentSourceBorder: isExpansion ? true : null,
           webpBytes,
           derivatives,
           sha256,

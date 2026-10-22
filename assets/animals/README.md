@@ -2,8 +2,9 @@
 
 100 individual full-body illustrations: the original 36 and the 64-species menagerie
 pack. The cheetah remains the shared style reference. All 100 source PNGs live in
-`originals/` and stay outside the public site. Original files are retained byte for byte;
-no missing image has been substituted or fabricated during integration.
+`originals/` and stay outside the public site. The original 36 files are retained byte for byte. The 64 expansion PNGs retain
+every delivered RGBA pixel inside a new transparent frame; no missing illustration
+has been substituted or fabricated.
 
 The runtime serves three transparent WebP variants per species at 96, 192 and 384 px.
 The original 36 retain their previous framing. The 64 additions fit a 300 px silhouette
@@ -12,12 +13,17 @@ inside a 384 px square with a 342 px baseline; every derivative is checked for a
 The validator checks exact roster coverage, extra files, decoding and transparency.
 It does not certify species anatomy.
 
-**Strict source-art acceptance is blocked.** All 64 supplied source PNGs contain low
-alpha noise in the requested border, and most have tight visible framing. The original
-36 are preserved under their prior acceptance. The normalization of runtime padding
-does not repair source PNGs or settle fine toe, hidden-limb or segment counts. See the
+**Source-border repair complete:** all 64 expansion PNGs are now 1568×1568 with a
+fully transparent 157 px frame on every side (at least 10%, rounded up). The entire
+1254×1254 delivered canvas is preserved inside it, including faint alpha noise;
+no pixel is cropped, resampled or repainted. The idempotent `npm run assets:pad`
+command records input/output hashes and exact retained RGBA hashes in
+`expansion/review/border-repair.json`. `npm run assets:check` now rejects an
+expansion source PNG without a completely clear 10% border.
+
+Fine toe, hidden-limb and segment counts still require anatomical review. See the
 [integration audit](../../docs/integration-audit.md) and the
-[per-image preparation review](../../expansion/review/artwork-review.json).
+[per-image review](../../expansion/review/artwork-review.json).
 
 ![All 100 competitors at 64 and 32 pixels](collection-preview.webp)
 
@@ -26,6 +32,7 @@ Run from the repository root:
 ```bash
 npm run roster:sync
 npm run roster:check
+npm run assets:pad
 npm run assets:build
 npm run assets:check
 npm run assets:review

@@ -50,20 +50,21 @@ The catalog synchronizer's regular expression skipped names containing apostroph
 (e.g. Temminck's pangolin and Solórzano's velvet worm). It now parses literal tuples
 with TypeScript, checks schema shape and rejects duplicate scientific names.
 
-All 64 PNGs were **moved unchanged** from `expansion/originals/` to
+All 64 PNGs were initially **moved unchanged** from `expansion/originals/` to
 `assets/animals/originals/`. Pack paths, the viewer and validation scripts follow
-the move. The cheetah style-reference hash and all original 36 PNGs remain intact.
+the move. A subsequent user-requested border repair adds transparent canvas
+while retaining every original RGBA pixel, as recorded below. The cheetah style-reference hash and all original 36 PNGs remain intact.
 The canonical art-direction dataset now contains 100 briefs. Derivatives and catalog
 are generated through the normal commands. The asset validator now also detects
 orphan files, manifest roster mismatch, altered derivatives and missing transparent
 borders on the expansion WebPs. Source and derivative hashes are recorded. Thin-bodied stick-insect occupancy
 uses an explicit 3% solid-pixel minimum (observed 4.36%) rather than the general
-8% threshold; real transparency and all framing checks still apply. Compositing
+8% threshold, measured against the delivered authoring canvas so added padding does not change occupancy; real transparency and all framing checks still apply. Compositing
 after resizing prevents alpha ringing from contaminating empty delivery borders.
 
 The original 36 retain their previous derivative framing; new derivatives use a
 maximum 300 px silhouette on a 384 px frame with a 342 px baseline. Only padding is
-normalized. Source artwork and anatomy are not altered. A clear 10% border is checked
+normalized. Source illustration pixels and anatomy are not altered. A clear 10% border is checked
 on decoded pixels at all three delivery sizes, rounded up to a whole pixel.
 
 ## Biology and artwork review
@@ -102,23 +103,27 @@ historical armadillo/red-panda scope and rosy-boa complex mass context remain
 qualified. The on-demand panel exposes these assumptions. Long races do not imply
 biologically sustainable endurance.
 
-### Open acceptance blockers
+### Source-border repair and remaining acceptance blocker
 
-1. **All 64 source PNGs fail the literal completely transparent 10% source border.**
-   Alpha noise extends outside the visible silhouettes; most source silhouettes
-   also have tighter margins than requested. No visible silhouette touches a canvas
-   edge at the pack's alpha threshold. Runtime normalization addresses delivery
-   framing but cannot certify source compliance. Retaining the supplied originals
-   and claiming they satisfy that requirement would be contradictory.
-2. **Fine anatomy remains unverified in stylized/occluded areas**, especially toes,
-   arthropod leg attachments, crab hidden appendages and many-legged segment counts.
-   The ant retains its silver hairs and segmented body, but its complex joints
-   and the other high-risk species still need anatomical art approval. No visibly dubious
-   detail is treated as certified merely because PNG/manifest checks pass.
+The source-border blocker is resolved for all 64 expansion PNGs. An idempotent
+`npm run assets:pad` step extends each delivered 1254×1254 canvas by 157 clear pixels
+on every side to 1568×1568. Since ceil(1568 × 0.1) = 157, the entire required border
+is exactly zero alpha. All original RGBA pixels—including faint interior alpha
+noise—remain byte-for-byte identical within the inset canvas. There is no cropping,
+resizing, alpha thresholding, anatomical editing or image regeneration.
 
-The integration PR must stay a draft until reviewed replacement/cleaned source
-artwork and anatomical acceptance are supplied, or a maintainer explicitly accepts
-these documented art exceptions. Technical checks alone do not resolve them.
+`expansion/review/pre-border-image-checks.json` retains the delivered source hashes
+and failed framing measurements. `expansion/review/border-repair.json` records the
+input/output PNG hashes, inset rectangle and retained RGBA hash for each repair.
+The repair command verifies pixel equality before saving and validates every saved
+result on repeat runs. `npm run assets:pad -- --check`, asset validation and an
+artifact regression test enforce both strict borders and pixel preservation.
+
+**Fine anatomy remains unverified in stylized/occluded areas**, especially toes,
+arthropod leg attachments, crab hidden appendages and many-legged segment counts.
+Padding does not resolve that separate art-review limitation. The PR remains a
+draft pending anatomical approval or explicit acceptance of those documented
+limitations. The original 36 PNGs remain unchanged.
 
 ## Usability, accessibility, compatibility and performance
 
@@ -153,28 +158,31 @@ these documented art exceptions. Technical checks alone do not resolve them.
 
 Verified locally on 2026-10-22 with Node 24.19.0:
 
-| Command                 | Result                                                    |
-| ----------------------- | --------------------------------------------------------- |
-| `npm run roster:sync`   | Pass; 100 identities                                      |
-| `npm run roster:check`  | Pass; canonical/catalog agreement                         |
-| `npm run assets:build`  | Pass; 100 PNGs and 300 WebP variants                      |
-| `npm run assets:check`  | Pass; coverage, hashes, transparency and delivery borders |
-| `npm run assets:review` | Pass; 18 review sheets and refreshed 100-entry preview    |
-| `npm run typecheck`     | Pass                                                      |
-| `npm run lint`          | Pass                                                      |
-| `npm test`              | Pass; 66 unit tests                                       |
-| `npm run test:e2e`      | Pass; 28 tests, 14 each on desktop and mobile             |
-| `npm run build`         | Pass                                                      |
+| Command                         | Result                                                        |
+| ------------------------------- | ------------------------------------------------------------- |
+| `npm run roster:sync`           | Pass; 100 identities                                          |
+| `npm run roster:check`          | Pass; canonical/catalog agreement                             |
+| `npm run assets:pad -- --check` | Pass; 64 strict source borders and exact retained RGBA hashes |
+| `npm run assets:build`          | Pass; 100 PNGs and 300 WebP variants                          |
+| `npm run assets:check`          | Pass; coverage, hashes, transparency and delivery borders     |
+| `npm run assets:review`         | Pass; 18 review sheets and refreshed 100-entry preview        |
+| `npm run typecheck`             | Pass                                                          |
+| `npm run lint`                  | Pass                                                          |
+| `npm test`                      | Pass; 67 unit tests                                           |
+| `npm run test:e2e`              | Pass; 28 tests, 14 each on desktop and mobile                 |
+| `npm run build`                 | Pass                                                          |
 
 Additional checks: `python expansion/validate.py`,
 `node expansion/validate-simulation.mjs` (600 numerical races), and `git diff --check`.
-The source validator explicitly reports **64 source-framing exceptions**; that is
-not an artwork-acceptance pass. All required technical commands pass after correcting
+After border repair, the source validator reports **zero source-framing exceptions**;
+fine-anatomy acceptance remains a separate review. All required technical commands pass after correcting
 the integration failures described above.
 
-Measured source PNG total: 104,377,140 bytes. Runtime WebP total: 3,659,192 bytes
+Measured source PNG total after border repair: 114,398,313 bytes. Runtime WebP total: 3,659,192 bytes
 (96 px: 363,354; 192 px: 899,342; 384 px: 2,396,496). All 100 source hashes are distinct.
-All original 36 records, 36 PNGs and 108 WebPs match the main baseline.
+All original 36 records, 36 PNGs and 108 WebPs match the main baseline. The 64
+expansion PNG file hashes change because their canvases grow; their delivered
+illustration pixels are retained exactly.
 
 Production initial JavaScript: 354.91 kB / 109.08 kB gzip. CSS: 55.41 kB / 12.05 kB
 gzip. The optional evidence chunk is 174.41 kB / 12.92 kB gzip. These are build totals;
@@ -185,3 +193,14 @@ After regeneration, visually inspected the combined 64/32 px collection preview 
 representative production detail sheets (including the new mammals, frogs/arthropods,
 and worm/slug/woodlouse page). Delivery padding is clear, all species are represented,
 and the retained fine-anatomy exceptions remain visible for review.
+
+The border follow-up refreshes source measurements and review sheets, adds source
+border enforcement to `assets:check`, and verifies the lossless repair with
+`npm run assets:pad -- --check`. Current source byte totals are in the regenerated manifest. Production rendering
+normalizes visible bounds, so the added source padding does not change runtime
+image sizes or illustration pixels.
+
+The follow-up rebuild confirms all 300 runtime WebPs and the production collection
+preview are byte-for-byte unchanged. The repaired source canvases therefore satisfy
+the border requirement without changing any application rendering. All 67 unit
+tests and 28 desktop/mobile browser tests pass.

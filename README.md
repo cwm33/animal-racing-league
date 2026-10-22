@@ -187,14 +187,15 @@ If organization policy blocks Actions or Pages, the owner must allow them in rep
 
 The complete 100-species collection uses a shared premium, softly shaded 3D cartoon style. Every character faces right. The cheetah was generated first, inspected, and used as the visual reference for the remaining species. Prompts explicitly describe species-specific anatomy (including the platypus, elephant seal, pronghorn, and Hermann’s tortoise).
 
-- Original transparent PNG artwork: `assets/animals/originals/{animal-id}.png`. Originals are retained unchanged and excluded from the production site's public directory.
-- **Art acceptance remains conditional:** the 64 delivered PNGs have stray low alpha and fail the strict clear 10% source-border requirement. Production derivatives have a validated clear 10% border, while source PNGs remain unchanged. Fine toe and occluded multi-legged anatomy still needs specialist review; see [integration audit](docs/integration-audit.md).
+- Original transparent PNG artwork: `assets/animals/originals/{animal-id}.png`. The original 36 files are unchanged; the 64 expansion images retain every delivered pixel inside a losslessly added transparent frame. All source PNGs are excluded from the production site's public directory.
+- **Source-border repair complete:** all 64 expansion PNGs now pass the strict clear 10% source-border requirement after lossless canvas extension. Both source and production borders are validated; before/after hashes and pixel preservation are recorded in `expansion/review/border-repair.json`. Fine toe and occluded multi-legged anatomy still needs specialist review; see [integration audit](docs/integration-audit.md).
 - Runtime files: `public/animals/{animal-id}-{96,192,384}.webp`. Transparent padding is normalized onto a square frame; the original 36 retain their existing baseline and the 64 additions use a smaller silhouette with a clear border. Original anatomy is not altered.
 - [Collection review and original downloads](assets/animals/README.md).
 - Art direction and species briefs: `assets/animals/art-direction.json`.
 - Integrity and framing manifest: `assets/animals/manifest.json`.
 
 ```bash
+npm run assets:pad      # idempotent lossless border repair for the 64 expansion PNGs
 npm run assets:build    # rebuild responsive WebP derivatives from the original PNGs
 npm run assets:check    # verify all 100 originals and 300 runtime files, alpha and dimensions
 npm run assets:review   # create full-detail, 64px and 32px review sheets in test-results/animal-art/

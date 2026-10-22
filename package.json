@@ -18,7 +18,8 @@
     "assets:check": "node scripts/animal-assets.mjs --check",
     "assets:review": "node scripts/animal-contact-sheets.mjs",
     "roster:sync": "node scripts/sync-animal-catalog.mjs",
-    "roster:check": "node scripts/sync-animal-catalog.mjs --check"
+    "roster:check": "node scripts/sync-animal-catalog.mjs --check",
+    "assets:pad": "node scripts/pad-expansion-originals.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",

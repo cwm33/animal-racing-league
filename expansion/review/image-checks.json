@@ -21,2122 +21,2057 @@
     "velvet-worm",
     "woodlouse"
   ],
-  "framingStatus": "exceptions",
-  "framingExceptionIds": [
-    "quokka",
-    "wombat",
-    "pangolin",
-    "aardvark",
-    "echidna",
-    "armadillo",
-    "giant-anteater",
-    "meerkat",
-    "badger",
-    "wolverine",
-    "raccoon",
-    "red-panda",
-    "fossa",
-    "ring-tailed-lemur",
-    "olive-baboon",
-    "crested-porcupine",
-    "hedgehog",
-    "tenrec",
-    "shrew",
-    "elephant-shrew",
-    "springhare",
-    "okapi",
-    "cassowary",
-    "emu",
-    "secretary-bird",
-    "roadrunner",
-    "kiwi",
-    "wild-turkey",
-    "guineafowl",
-    "peafowl",
-    "seriema",
-    "kori-bustard",
-    "tinamou",
-    "lyrebird",
-    "komodo-dragon",
-    "gila-monster",
-    "bearded-dragon",
-    "frilled-lizard",
-    "horned-lizard",
-    "thorny-devil",
-    "blue-tongued-skink",
-    "leopard-gecko",
-    "tuatara",
-    "rosy-boa",
-    "common-toad",
-    "fire-salamander",
-    "tiger-salamander",
-    "tomato-frog",
-    "ornate-horned-frog",
-    "golden-mantella",
-    "tarantula",
-    "scorpion",
-    "coconut-crab",
-    "tiger-beetle",
-    "silver-ant",
-    "cockroach",
-    "mantis",
-    "stick-insect",
-    "giant-millipede",
-    "centipede",
-    "earthworm",
-    "slug",
-    "velvet-worm",
-    "woodlouse"
-  ],
+  "framingStatus": "pass",
+  "framingExceptionIds": [],
   "visibleEdgeTouchIds": [],
   "note": "Integrity pass does not certify anatomy or strict art-direction compliance. Read artwork-review.json and framing exceptions. Source metadata validation is not a fresh link availability check.",
   "images": [
     {
       "speciesId": "quokka",
-      "sha256": "e3c2b3d97221694cada9ec8125d151df9a4cec7ce1c7280c06888424264381db",
-      "bytes": 455039,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "cfb131c97abd07d4feb07c02410b7113cb0eb57da396d4fd250a9f9deeb4e648",
+      "bytes": 527178,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.9007673053883076,
-      "partialAlphaPixelFraction": 0.09904446123282688,
+      "transparentPixelFraction": 0.9365315721314036,
+      "partialAlphaPixelFraction": 0.06334803532382341,
       "rawAlphaBounds": [
-        89,
-        63,
-        1234,
-        1254
+        246,
+        220,
+        1391,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        312,
-        408,
-        962,
-        904
+        469,
+        565,
+        1119,
+        1061
       ],
       "visibleMargins": [
-        0.24880382775119617,
-        0.3253588516746411,
-        0.23285486443381181,
-        0.27910685805422647
+        0.29910714285714285,
+        0.36033163265306123,
+        0.28635204081632654,
+        0.32334183673469385
       ],
-      "strictTenPercentTransparentBorder": false,
+      "strictTenPercentTransparentBorder": true,
       "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "wombat",
-      "sha256": "d170c30091e22a919ba3b270d6bcc0a80d334bfb238b26368ec8c825c6f02408",
-      "bytes": 1578874,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "d6c4f57699b91957e97616480b532e4121741a7403b489b373f111007ab7ff23",
+      "bytes": 1725071,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.6462853160158625,
-      "partialAlphaPixelFraction": 0.35361484398250953,
+      "transparentPixelFraction": 0.773766952571845,
+      "partialAlphaPixelFraction": 0.2261691905716368,
       "rawAlphaBounds": [
-        0,
-        37,
-        1254,
-        1228
+        157,
+        194,
+        1411,
+        1385
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        85,
-        270,
-        1224,
-        1001
+        242,
+        427,
+        1381,
+        1158
       ],
       "visibleMargins": [
-        0.06778309409888357,
-        0.215311004784689,
-        0.023923444976076555,
-        0.20175438596491227
+        0.15433673469387754,
+        0.27232142857142855,
+        0.11926020408163265,
+        0.2614795918367347
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "pangolin",
-      "sha256": "76694179224f4a81d624ed9c5eda4958446b323a201797b92841114eb0a85077",
-      "bytes": 933252,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "8fec55f8f9fb5e35945c3bb5673a733d5e4b7782ea985bdede348351156bd312",
+      "bytes": 1120824,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7824200198916895,
-      "partialAlphaPixelFraction": 0.21735486316196465,
+      "transparentPixelFraction": 0.860837606726364,
+      "partialAlphaPixelFraction": 0.13901841029779258,
       "rawAlphaBounds": [
-        0,
-        21,
-        1234,
-        1222
+        157,
+        178,
+        1391,
+        1379
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        52,
-        328,
-        1221,
-        928
+        209,
+        485,
+        1378,
+        1085
       ],
       "visibleMargins": [
-        0.04146730462519936,
-        0.26156299840510366,
-        0.02631578947368421,
-        0.25996810207336524
+        0.13329081632653061,
+        0.3093112244897959,
+        0.1211734693877551,
+        0.3080357142857143
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "aardvark",
-      "sha256": "4f837c5296b6ad0d621eebcec459a11eee0122922f5579be727b4ae6bdd5eb04",
-      "bytes": 1166652,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "bda86a96d21ffe3406f1ff749b44606dbb68b08e1131fb5a15e393e031ff188a",
+      "bytes": 1326321,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7266647843328781,
-      "partialAlphaPixelFraction": 0.2731488900589883,
+      "transparentPixelFraction": 0.8251770095793419,
+      "partialAlphaPixelFraction": 0.1747038180705956,
       "rawAlphaBounds": [
-        0,
-        0,
-        1251,
-        1254
+        157,
+        157,
+        1408,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        28,
-        208,
-        1231,
-        1020
+        185,
+        365,
+        1388,
+        1177
       ],
       "visibleMargins": [
-        0.022328548644338118,
-        0.16586921850079744,
-        0.018341307814992026,
-        0.18660287081339713
+        0.11798469387755102,
+        0.23278061224489796,
+        0.11479591836734694,
+        0.2493622448979592
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "echidna",
-      "sha256": "058f20212fc32c556d5ab0a75c09aaa8f8eb1a6e4188bf66a9e9ae47c072fa34",
-      "bytes": 1374914,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "b7729f9eaf178b1c4f039ecb84fe318dd8cd8fbf5edb2db2902747674dc0c814",
+      "bytes": 1535162,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.6949118482737219,
-      "partialAlphaPixelFraction": 0.30496287478156026,
+      "transparentPixelFraction": 0.8048680888171595,
+      "partialAlphaPixelFraction": 0.1950517850635152,
       "rawAlphaBounds": [
-        0,
-        0,
-        1238,
-        1254
+        157,
+        157,
+        1395,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        74,
-        294,
-        1206,
-        987
+        231,
+        451,
+        1363,
+        1144
       ],
       "visibleMargins": [
-        0.05901116427432217,
-        0.23444976076555024,
-        0.03827751196172249,
-        0.21291866028708134
+        0.14732142857142858,
+        0.28762755102040816,
+        0.13073979591836735,
+        0.27040816326530615
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "armadillo",
-      "sha256": "5993f8b3c2409c097087326279c25ccd703a1a914a3d9ad74e84dfac37200cc9",
-      "bytes": 1126206,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "4fed32b629bf86b840e2c243d9f8196b84ff9744ce4240de5ed63a2997a8087d",
+      "bytes": 1296263,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7484674241788318,
-      "partialAlphaPixelFraction": 0.25129283263254554,
+      "transparentPixelFraction": 0.8391218014629321,
+      "partialAlphaPixelFraction": 0.16072486073511036,
       "rawAlphaBounds": [
-        0,
-        19,
-        1253,
-        1254
+        157,
+        176,
+        1410,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        39,
-        286,
-        1234,
-        965
+        196,
+        443,
+        1391,
+        1122
       ],
       "visibleMargins": [
-        0.03110047846889952,
-        0.22807017543859648,
-        0.01594896331738437,
-        0.23046251993620415
+        0.125,
+        0.2825255102040816,
+        0.11288265306122448,
+        0.2844387755102041
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "giant-anteater",
-      "sha256": "57092fc4f405b4ce137bd857128a3595c05afc7883f4ad97cf64c4b6fdf3fd16",
-      "bytes": 1325364,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "fe188aa5c156d7d08b66a75af1873016341aba3a3c5bb414d7f2c523a13d9a54",
+      "bytes": 1509013,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.6772357165205314,
-      "partialAlphaPixelFraction": 0.32271277366971146,
+      "transparentPixelFraction": 0.7935625780924614,
+      "partialAlphaPixelFraction": 0.20640447665035402,
       "rawAlphaBounds": [
-        0,
-        21,
-        1240,
-        1254
+        157,
+        178,
+        1397,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        25,
-        302,
-        1235,
-        958
+        182,
+        459,
+        1392,
+        1115
       ],
       "visibleMargins": [
-        0.019936204146730464,
-        0.24082934609250398,
-        0.015151515151515152,
-        0.23604465709728867
+        0.11607142857142858,
+        0.2927295918367347,
+        0.11224489795918367,
+        0.2889030612244898
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "meerkat",
-      "sha256": "c3d6c538a8c1045737e4bbf01367342f2fa68749353ac49c5ddbda7ad34e22cd",
-      "bytes": 950310,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "fde703ab7af06e2bc77eb9a09beb972244ecb15521854a3bd1659db496fbf4b2",
+      "bytes": 1086558,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7806591475062893,
-      "partialAlphaPixelFraction": 0.21924991542216424,
+      "transparentPixelFraction": 0.8597113670085381,
+      "partialAlphaPixelFraction": 0.1402304703769263,
       "rawAlphaBounds": [
-        25,
-        25,
-        1242,
-        1254
+        182,
+        182,
+        1399,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        65,
-        237,
-        1227,
-        1021
+        222,
+        394,
+        1384,
+        1178
       ],
       "visibleMargins": [
-        0.051834130781499205,
-        0.18899521531100477,
-        0.0215311004784689,
-        0.18580542264752792
+        0.14158163265306123,
+        0.2512755102040816,
+        0.11734693877551021,
+        0.24872448979591838
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "badger",
-      "sha256": "7630cebe256df067017c08df5c3f7195e495a3ba3b97a3d309aa3c6bd403d68a",
-      "bytes": 1299306,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "31a8ea870a53ad2f86e871be6535145c5dcdd7a458133ac191780cde7069fdc4",
+      "bytes": 1424374,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7050160379926182,
-      "partialAlphaPixelFraction": 0.2949248211146977,
+      "transparentPixelFraction": 0.8113306467357351,
+      "partialAlphaPixelFraction": 0.18863152722823823,
       "rawAlphaBounds": [
-        0,
-        17,
-        1240,
-        1254
+        157,
+        174,
+        1397,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        83,
-        329,
-        1191,
-        993
+        240,
+        486,
+        1348,
+        1150
       ],
       "visibleMargins": [
-        0.06618819776714513,
-        0.2623604465709729,
-        0.050239234449760764,
-        0.20813397129186603
+        0.15306122448979592,
+        0.30994897959183676,
+        0.14030612244897958,
+        0.26658163265306123
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "wolverine",
-      "sha256": "aa48b5fa7b09ee0c99bfcaf34bff324bffd0ade0a4510aa200825d872c5d5ba7",
-      "bytes": 1189524,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "dc52abd9ff80cea7347740b9b19a017862c4b539e5126a958f62355c6cc5d054",
+      "bytes": 1462986,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.6842238807109117,
-      "partialAlphaPixelFraction": 0.315723973555754,
+      "transparentPixelFraction": 0.7980321513171595,
+      "partialAlphaPixelFraction": 0.2019344966940858,
       "rawAlphaBounds": [
-        25,
-        21,
-        1248,
-        1228
+        182,
+        178,
+        1405,
+        1385
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        48,
-        336,
-        1223,
-        983
+        205,
+        493,
+        1380,
+        1140
       ],
       "visibleMargins": [
-        0.03827751196172249,
-        0.2679425837320574,
-        0.024720893141945772,
-        0.21610845295055822
+        0.13073979591836735,
+        0.31441326530612246,
+        0.11989795918367346,
+        0.2729591836734694
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "raccoon",
-      "sha256": "e06bffd5df837b9d05ec1129915d5133346a04b797688395b47e7a9a9c876896",
-      "bytes": 1216580,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "8e1e70e394ce051e5e18096bb9587e98e64c8537e5ef7095bdab4b86d85e0c9d",
+      "bytes": 1428052,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7058039473048286,
-      "partialAlphaPixelFraction": 0.29415280989191844,
+      "transparentPixelFraction": 0.8118345871511871,
+      "partialAlphaPixelFraction": 0.1881377551020408,
       "rawAlphaBounds": [
-        17,
-        17,
-        1238,
-        1254
+        174,
+        174,
+        1395,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        49,
-        300,
-        1221,
-        990
+        206,
+        457,
+        1378,
+        1147
       ],
       "visibleMargins": [
-        0.03907496012759171,
-        0.23923444976076555,
-        0.02631578947368421,
-        0.21052631578947367
+        0.13137755102040816,
+        0.2914540816326531,
+        0.1211734693877551,
+        0.2684948979591837
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "red-panda",
-      "sha256": "4973cfe1284b3f094581da91cf681678d677ab31ac4cdc4d13a2add0e471f350",
-      "bytes": 1292346,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "664206f1030de976d9d0b5fdded02350702b2a342ff18893452ab59a35880dac",
+      "bytes": 1592743,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.6674469448959501,
-      "partialAlphaPixelFraction": 0.3325435162503911,
+      "transparentPixelFraction": 0.7873017590326947,
+      "partialAlphaPixelFraction": 0.2126921399937526,
       "rawAlphaBounds": [
-        0,
-        10,
-        1254,
-        1254
+        157,
+        167,
+        1411,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        34,
-        200,
-        1237,
-        1069
+        191,
+        357,
+        1394,
+        1226
       ],
       "visibleMargins": [
-        0.02711323763955343,
-        0.1594896331738437,
-        0.013556618819776715,
-        0.14752791068580542
+        0.12181122448979592,
+        0.22767857142857142,
+        0.11096938775510204,
+        0.2181122448979592
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "fossa",
-      "sha256": "95ef71d2ca46786634c46a5fbd5154bd500e5f4413ccbb7a226914304bd47d8b",
-      "bytes": 912687,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "de4ee2632ed4b5fa5c71e811219e61542b06c7dd87dae35cd9873058e384b2e7",
+      "bytes": 1073865,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7834063373600014,
-      "partialAlphaPixelFraction": 0.2161637783017788,
+      "transparentPixelFraction": 0.8614684473917118,
+      "partialAlphaPixelFraction": 0.13825660206684715,
       "rawAlphaBounds": [
-        0,
-        23,
-        1254,
-        1230
+        157,
+        180,
+        1411,
+        1387
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        36,
-        221,
-        1242,
-        1013
+        193,
+        378,
+        1399,
+        1170
       ],
       "visibleMargins": [
-        0.028708133971291867,
-        0.1762360446570973,
-        0.009569377990430622,
-        0.19218500797448165
+        0.12308673469387756,
+        0.24107142857142858,
+        0.10778061224489796,
+        0.2538265306122449
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "ring-tailed-lemur",
-      "sha256": "a0955b29f9900be782eb8ba4966aef54e155ae747c7c198b4dece43f7252f821",
-      "bytes": 1144276,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "2ebd3eb121620c74946c0d1e65f4a1fac676dbf9fe84b328f3d21b9ff418e818",
+      "bytes": 1317789,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.733716540880983,
-      "partialAlphaPixelFraction": 0.26621668714340585,
+      "transparentPixelFraction": 0.8296872559610579,
+      "partialAlphaPixelFraction": 0.1702700372240733,
       "rawAlphaBounds": [
-        25,
-        33,
-        1238,
-        1254
+        182,
+        190,
+        1395,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        71,
-        145,
-        1206,
-        1074
+        228,
+        302,
+        1363,
+        1231
       ],
       "visibleMargins": [
-        0.05661881977671451,
-        0.11562998405103668,
-        0.03827751196172249,
-        0.14354066985645933
+        0.14540816326530612,
+        0.19260204081632654,
+        0.13073979591836735,
+        0.2149234693877551
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "olive-baboon",
-      "sha256": "68ba93bfc43171f532e06a1de1e52ac261a04b0c2c05a88804c0907ecd66f1c1",
-      "bytes": 1198134,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "e99620824bf8d42195167704b43fcec32ad2b2a588290245d0a649ae9b27e175",
+      "bytes": 1452391,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.6970867069079106,
-      "partialAlphaPixelFraction": 0.3028185404790794,
+      "transparentPixelFraction": 0.806259110787172,
+      "partialAlphaPixelFraction": 0.19368028620887132,
       "rawAlphaBounds": [
-        0,
-        29,
-        1234,
-        1254
+        157,
+        186,
+        1391,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        78,
-        243,
-        1219,
-        1064
+        235,
+        400,
+        1376,
+        1221
       ],
       "visibleMargins": [
-        0.06220095693779904,
-        0.1937799043062201,
-        0.027910685805422646,
-        0.15151515151515152
+        0.14987244897959184,
+        0.25510204081632654,
+        0.12244897959183673,
+        0.22130102040816327
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "crested-porcupine",
-      "sha256": "db435aedcd06e0fd882197cffaa1d39035214a2a54a6bf4fb2ab2ed9d4eaa57f",
-      "bytes": 1864178,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "ae405704b6f63c7b543362c32d450f7d7fd0cee7bc5c6dab7181e79a342d785a",
+      "bytes": 1944570,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.5983271394376909,
-      "partialAlphaPixelFraction": 0.4016022730452345,
+      "transparentPixelFraction": 0.7430932912067888,
+      "partialAlphaPixelFraction": 0.25686156158892126,
       "rawAlphaBounds": [
-        31,
-        35,
-        1254,
-        1254
+        188,
+        192,
+        1411,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        41,
-        170,
-        1242,
-        1099
+        198,
+        327,
+        1399,
+        1256
       ],
       "visibleMargins": [
-        0.03269537480063796,
-        0.13556618819776714,
-        0.009569377990430622,
-        0.12360446570972887
+        0.12627551020408162,
+        0.20854591836734693,
+        0.10778061224489796,
+        0.1989795918367347
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "hedgehog",
-      "sha256": "cdf2367e80e958193a8b0409c244e2fb05ee99a61871bdf4847e9d8d5fa5b0f1",
-      "bytes": 1539522,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "115f279a87d7de5a8ab985f4d3f35ad67568617cc65f86a117c3099404b053d9",
+      "bytes": 1755764,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.6550330807444884,
-      "partialAlphaPixelFraction": 0.3448632637124201,
+      "transparentPixelFraction": 0.7793619520512286,
+      "partialAlphaPixelFraction": 0.22057175070283216,
       "rawAlphaBounds": [
-        23,
-        19,
-        1234,
-        1254
+        180,
+        176,
+        1391,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        127,
-        268,
-        1204,
-        1008
+        284,
+        425,
+        1361,
+        1165
       ],
       "visibleMargins": [
-        0.10127591706539076,
-        0.21371610845295055,
-        0.03987240829346093,
-        0.19617224880382775
+        0.18112244897959184,
+        0.2710459183673469,
+        0.13201530612244897,
+        0.257015306122449
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "tenrec",
-      "sha256": "c07fc4eed21ac2820a45fba27792275531e2dfa11e790024491bbd7f3ed996fb",
-      "bytes": 1313424,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "dd8ba7eab9996cabf2a854f87f27dbb1d72480a80591b663902cff88f5386eff",
+      "bytes": 1421224,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7144874837521527,
-      "partialAlphaPixelFraction": 0.28542475879418716,
+      "transparentPixelFraction": 0.8173885067419825,
+      "partialAlphaPixelFraction": 0.1825553643013328,
       "rawAlphaBounds": [
-        0,
-        19,
-        1242,
-        1231
+        157,
+        176,
+        1399,
+        1388
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        111,
-        327,
-        1237,
-        973
+        268,
+        484,
+        1394,
+        1130
       ],
       "visibleMargins": [
-        0.08851674641148326,
-        0.2607655502392344,
-        0.013556618819776715,
-        0.2240829346092504
+        0.17091836734693877,
+        0.3086734693877551,
+        0.11096938775510204,
+        0.27933673469387754
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "shrew",
-      "sha256": "e607ff221c45de6145658ad059a91d9c15c8162b575022c8e25c5b7691ad2042",
-      "bytes": 827343,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "d9aea1572dbd760fab0a3948b1fb5a20db540bca5dbcb228fe3584a03f2e4e02",
+      "bytes": 892417,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8151929773687517,
-      "partialAlphaPixelFraction": 0.18475487689791392,
+      "transparentPixelFraction": 0.8817989249271136,
+      "partialAlphaPixelFraction": 0.1181677230841316,
       "rawAlphaBounds": [
-        0,
-        21,
-        1230,
-        1254
+        157,
+        178,
+        1387,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        75,
-        425,
-        1224,
-        931
+        232,
+        582,
+        1381,
+        1088
       ],
       "visibleMargins": [
-        0.05980861244019139,
-        0.33891547049441784,
-        0.023923444976076555,
-        0.25757575757575757
+        0.14795918367346939,
+        0.3711734693877551,
+        0.11926020408163265,
+        0.30612244897959184
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "elephant-shrew",
-      "sha256": "d3ca8c04486a59c0360e5e4d8dd78f5fd5a59207129cc38b03256339677c3bd5",
-      "bytes": 844995,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "f8c6b73b4d9c3576c8296daeb54e86f020d8675bbd003d3c8c5efbec402d1877",
+      "bytes": 983450,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8019689465798758,
-      "partialAlphaPixelFraction": 0.19781293163312805,
+      "transparentPixelFraction": 0.8733409419252395,
+      "partialAlphaPixelFraction": 0.1265195491461891,
       "rawAlphaBounds": [
-        0,
-        19,
-        1234,
-        1254
+        157,
+        176,
+        1391,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        44,
-        296,
-        1214,
-        991
+        201,
+        453,
+        1371,
+        1148
       ],
       "visibleMargins": [
-        0.03508771929824561,
-        0.23604465709728867,
-        0.03189792663476874,
-        0.20972886762360446
+        0.12818877551020408,
+        0.2889030612244898,
+        0.1256377551020408,
+        0.26785714285714285
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "springhare",
-      "sha256": "007dfabac74b0de3030f57eac4b41e35d7dc5839f8dcaaa5e2093087cfd93f5a",
-      "bytes": 1029944,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "b47db1666b2e40171eac3b9f0f563147bedbfab9849c5cb8d0d4e2141c52b2c5",
+      "bytes": 1235702,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7541824693675613,
-      "partialAlphaPixelFraction": 0.24571387508934725,
+      "transparentPixelFraction": 0.8427770980841316,
+      "partialAlphaPixelFraction": 0.1571566046699292,
       "rawAlphaBounds": [
-        37,
-        9,
-        1254,
-        1254
+        194,
+        166,
+        1411,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        47,
-        165,
-        1239,
-        1091
+        204,
+        322,
+        1396,
+        1248
       ],
       "visibleMargins": [
-        0.037480063795853266,
-        0.13157894736842105,
-        0.011961722488038277,
-        0.12998405103668262
+        0.13010204081632654,
+        0.20535714285714285,
+        0.1096938775510204,
+        0.20408163265306123
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "okapi",
-      "sha256": "98de61f35ebcd18b340f3a1adf2e13e37588906266e27e00ff8a6a0022127d5c",
-      "bytes": 1161277,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "ba20bf2ee1279af819dabc229b69f55476e9e88779fe8f4b3346adcd402b03a6",
+      "bytes": 1430224,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.6882518206492017,
-      "partialAlphaPixelFraction": 0.3113418241849368,
+      "transparentPixelFraction": 0.8006083890826738,
+      "partialAlphaPixelFraction": 0.19913170944398167,
       "rawAlphaBounds": [
-        0,
-        19,
-        1236,
-        1254
+        157,
+        176,
+        1393,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        50,
-        114,
-        1227,
-        1142
+        207,
+        271,
+        1384,
+        1299
       ],
       "visibleMargins": [
-        0.03987240829346093,
-        0.09090909090909091,
-        0.0215311004784689,
-        0.08931419457735247
+        0.13201530612244897,
+        0.17283163265306123,
+        0.11734693877551021,
+        0.17155612244897958
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "cassowary",
-      "sha256": "7d4c03b8f01c0070ab00d5e9fac3bc9306b7021a421ad9a921f358b3849b538f",
-      "bytes": 1296365,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "6ce001b639618ef5d0a0e0c167600dd91bdeedb612ee260befe56f88f7041d14",
+      "bytes": 1464420,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.673385835183871,
-      "partialAlphaPixelFraction": 0.3264958830307609,
+      "transparentPixelFraction": 0.7911002251665973,
+      "partialAlphaPixelFraction": 0.20882412276134943,
       "rawAlphaBounds": [
-        0,
-        17,
-        1238,
-        1254
+        157,
+        174,
+        1395,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        108,
-        97,
-        1218,
-        1181
+        265,
+        254,
+        1375,
+        1338
       ],
       "visibleMargins": [
-        0.0861244019138756,
-        0.0773524720893142,
-        0.028708133971291867,
-        0.058213716108452954
+        0.1690051020408163,
+        0.16198979591836735,
+        0.12308673469387756,
+        0.14668367346938777
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "emu",
-      "sha256": "c7151816a13383b848edfc0b5bb797bab0e312f7aa70dc4d0f058411215489e9",
-      "bytes": 1313181,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "8da2103db3806d6bc3131883ec23920130d917a6ea565ca7ed4495e437b03602",
+      "bytes": 1466097,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7141466287147475,
-      "partialAlphaPixelFraction": 0.28567276898931393,
+      "transparentPixelFraction": 0.8171704986203665,
+      "partialAlphaPixelFraction": 0.18271398961370264,
       "rawAlphaBounds": [
-        0,
-        9,
-        1218,
-        1254
+        157,
+        166,
+        1375,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        101,
-        124,
-        1186,
-        1158
+        258,
+        281,
+        1343,
+        1315
       ],
       "visibleMargins": [
-        0.08054226475279107,
-        0.09888357256778309,
-        0.05422647527910686,
-        0.07655502392344497
+        0.16454081632653061,
+        0.17920918367346939,
+        0.1434948979591837,
+        0.16135204081632654
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "secretary-bird",
-      "sha256": "e87912ededb0a1b9507a4c34626691274b0aa297d1972a1616625bd2de1e43b6",
-      "bytes": 797208,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "91afeb5beb4317a9903b4d33d4859c07f30acd1f4715e2246d81d05b3c52c98b",
+      "bytes": 944977,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.79743163185621,
-      "partialAlphaPixelFraction": 0.20235469782183457,
+      "transparentPixelFraction": 0.8704389121720116,
+      "partialAlphaPixelFraction": 0.12942442602040816,
       "rawAlphaBounds": [
-        51,
-        23,
-        1242,
-        1238
+        208,
+        180,
+        1399,
+        1395
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        57,
-        92,
-        1212,
-        1160
+        214,
+        249,
+        1369,
+        1317
       ],
       "visibleMargins": [
-        0.045454545454545456,
-        0.0733652312599681,
-        0.03349282296650718,
-        0.07496012759170653
+        0.1364795918367347,
+        0.15880102040816327,
+        0.12691326530612246,
+        0.1600765306122449
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "roadrunner",
-      "sha256": "68edca8a81130b208e271bd38d17ea3abb770dfaefecc3313fb786b2980be065",
-      "bytes": 922570,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "e0837538890db3eb2aaf1a34c2f198c3eeab902f63d8cd3b50ec2ee31169a906",
+      "bytes": 1052386,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7962303722187882,
-      "partialAlphaPixelFraction": 0.20360683134543622,
+      "transparentPixelFraction": 0.8696705962359433,
+      "partialAlphaPixelFraction": 0.13022528048209078,
       "rawAlphaBounds": [
-        0,
-        23,
-        1237,
-        1202
+        157,
+        180,
+        1394,
+        1359
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        30,
-        142,
-        1232,
-        1103
+        187,
+        299,
+        1389,
+        1260
       ],
       "visibleMargins": [
-        0.023923444976076555,
-        0.11323763955342903,
-        0.017543859649122806,
-        0.12041467304625199
+        0.11926020408163265,
+        0.19068877551020408,
+        0.11415816326530612,
+        0.19642857142857142
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "kiwi",
-      "sha256": "526304ccd4b02f6061eb56e1443b46078a30b4b09cb19802b765b64064605fe4",
-      "bytes": 1237243,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "a412871f94b2aa339b9b4c8bd2189d564245fe45e574ed0eb8a86fc60c0d0b7d",
+      "bytes": 1352452,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7247322125816208,
-      "partialAlphaPixelFraction": 0.27512661238423014,
+      "transparentPixelFraction": 0.8239409523375677,
+      "partialAlphaPixelFraction": 0.17596875325385256,
       "rawAlphaBounds": [
-        0,
-        17,
-        1230,
-        1254
+        157,
+        174,
+        1387,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        188,
-        242,
-        1153,
-        1042
+        345,
+        399,
+        1310,
+        1199
       ],
       "visibleMargins": [
-        0.14992025518341306,
-        0.19298245614035087,
-        0.08054226475279107,
-        0.16905901116427433
+        0.22002551020408162,
+        0.2544642857142857,
+        0.16454081632653061,
+        0.23533163265306123
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "wild-turkey",
-      "sha256": "40d0047c23b6792963e487834dae3fd40bd5825c4a205c2aff76e6bb21a40b6e",
-      "bytes": 1036929,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "867a15667e8edf938e3db38814f2af2e87b4033a18063859f946602af6dd4129",
+      "bytes": 1293876,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7398373053119969,
-      "partialAlphaPixelFraction": 0.2600100730294636,
+      "transparentPixelFraction": 0.8336020473240316,
+      "partialAlphaPixelFraction": 0.16630033709912537,
       "rawAlphaBounds": [
-        0,
-        21,
-        1242,
-        1254
+        157,
+        178,
+        1399,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        85,
-        198,
-        1175,
-        1075
+        242,
+        355,
+        1332,
+        1232
       ],
       "visibleMargins": [
-        0.06778309409888357,
-        0.15789473684210525,
-        0.06299840510366826,
-        0.14274322169059012
+        0.15433673469387754,
+        0.2264030612244898,
+        0.15051020408163265,
+        0.21428571428571427
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "guineafowl",
-      "sha256": "13299a35055af00f9eb8ea90a04ba76047dd8a94c662c416bdf951dfb8d4f51b",
-      "bytes": 1145757,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "c9029789c4c25e4951aa1e755f11d7e2a9d9f1721e6e02361de0961a7d7eeec1",
+      "bytes": 1248280,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.722980243126302,
-      "partialAlphaPixelFraction": 0.2768639555972721,
+      "transparentPixelFraction": 0.8228204068617243,
+      "partialAlphaPixelFraction": 0.17707994390358184,
       "rawAlphaBounds": [
-        56,
-        23,
-        1240,
-        1254
+        213,
+        180,
+        1397,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        98,
-        128,
-        1181,
-        1122
+        255,
+        285,
+        1338,
+        1279
       ],
       "visibleMargins": [
-        0.07814992025518341,
-        0.10207336523125997,
-        0.058213716108452954,
-        0.10526315789473684
+        0.16262755102040816,
+        0.18176020408163265,
+        0.14668367346938777,
+        0.18431122448979592
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "peafowl",
-      "sha256": "d820143c7a76364a3a39cd3aeef8c0e2c4d4816610ed144e172fcb5c1f8f11a1",
-      "bytes": 1123813,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "d87216472ab3147cb4724bef48783a8bdc99a1d5cfedb10fcafcd32a8781d2d5",
+      "bytes": 1287661,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7489424590910363,
-      "partialAlphaPixelFraction": 0.2509030114796924,
+      "transparentPixelFraction": 0.8394256299458559,
+      "partialAlphaPixelFraction": 0.1604755342825906,
       "rawAlphaBounds": [
-        0,
-        21,
-        1238,
-        1254
+        157,
+        178,
+        1395,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        31,
-        214,
-        1224,
-        1068
+        188,
+        371,
+        1381,
+        1225
       ],
       "visibleMargins": [
-        0.024720893141945772,
-        0.17065390749601275,
-        0.023923444976076555,
-        0.14832535885167464
+        0.11989795918367346,
+        0.23660714285714285,
+        0.11926020408163265,
+        0.21875
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "seriema",
-      "sha256": "1fddd9765a6370037bb6597b96e4b63b91316a68f4f222042ee94af9fad179e8",
-      "bytes": 821781,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "86e62a2551ee628ede50f1af7f7f8fabe4bab91f6ccca574399916e4312c9723",
+      "bytes": 931385,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8108547067247647,
-      "partialAlphaPixelFraction": 0.18886294320693717,
+      "transparentPixelFraction": 0.8790242021553519,
+      "partialAlphaPixelFraction": 0.12079520902748854,
       "rawAlphaBounds": [
-        0,
-        19,
-        1240,
-        1220
+        157,
+        176,
+        1397,
+        1377
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        80,
-        72,
-        1201,
-        1195
+        237,
+        229,
+        1358,
+        1352
       ],
       "visibleMargins": [
-        0.06379585326953748,
-        0.05741626794258373,
-        0.04226475279106858,
-        0.04704944178628389
+        0.15114795918367346,
+        0.14604591836734693,
+        0.13392857142857142,
+        0.1377551020408163
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "kori-bustard",
-      "sha256": "9680cd2f4a1e64acfa68d7b6bb44aec0976528659f3e0d1a9a106a373ecde1bc",
-      "bytes": 982751,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "dbf27f669712bee0303ff1e9c6358fffb363b9f2716875727d50ccda1b161bfe",
+      "bytes": 1182685,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7583445891806506,
-      "partialAlphaPixelFraction": 0.24151805132666376,
+      "transparentPixelFraction": 0.8454391562109538,
+      "partialAlphaPixelFraction": 0.15447298976988755,
       "rawAlphaBounds": [
-        0,
-        0,
-        1236,
-        1230
+        157,
+        157,
+        1393,
+        1387
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        94,
-        134,
-        1182,
-        1137
+        251,
+        291,
+        1339,
+        1294
       ],
       "visibleMargins": [
-        0.07496012759170653,
-        0.10685805422647528,
-        0.05741626794258373,
-        0.09330143540669857
+        0.1600765306122449,
+        0.18558673469387754,
+        0.14604591836734693,
+        0.1747448979591837
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "tinamou",
-      "sha256": "e82fac1b2a0e045ab9e09520bdd04f0e223206fe93f954e862a4a532ffca146e",
-      "bytes": 1008625,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "889ef4f18f38ecfb7af88e6c0a7da2c5743c55534294f6cf8a417847d88dacd4",
+      "bytes": 1177431,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7622211793075555,
-      "partialAlphaPixelFraction": 0.2376459126647996,
+      "transparentPixelFraction": 0.8479185918627655,
+      "partialAlphaPixelFraction": 0.15199640123906705,
       "rawAlphaBounds": [
-        11,
-        52,
-        1234,
-        1254
+        168,
+        209,
+        1391,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        171,
-        222,
-        1167,
-        1079
+        328,
+        379,
+        1324,
+        1236
       ],
       "visibleMargins": [
-        0.13636363636363635,
-        0.17703349282296652,
-        0.06937799043062201,
-        0.13955342902711323
+        0.20918367346938777,
+        0.24170918367346939,
+        0.1556122448979592,
+        0.21173469387755103
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "lyrebird",
-      "sha256": "5aa4fe4f3de0d838eae72799ee6d472a7d00ef581aaefcc541753b8e0524fd1d",
-      "bytes": 1339839,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "9c6178b01d8a0ff137d717bc84288db021ceb62205063e2e84d3ed26ab5bab44",
+      "bytes": 1483675,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.703685685869015,
-      "partialAlphaPixelFraction": 0.2962424547667559,
+      "transparentPixelFraction": 0.8104797642909205,
+      "partialAlphaPixelFraction": 0.18947427504164932,
       "rawAlphaBounds": [
-        0,
-        16,
-        1232,
-        1254
+        157,
+        173,
+        1389,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        120,
-        118,
-        1193,
-        1125
+        277,
+        275,
+        1350,
+        1282
       ],
       "visibleMargins": [
-        0.09569377990430622,
-        0.09409888357256778,
-        0.04864433811802233,
-        0.10287081339712918
+        0.17665816326530612,
+        0.1753826530612245,
+        0.13903061224489796,
+        0.18239795918367346
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "komodo-dragon",
-      "sha256": "ea0c900493bbcc39854e48dc7b5ac76d3931cff10e49e5a198b9cc9db3dd6c7c",
-      "bytes": 898112,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "382f47e46049b8ad22c6bc4bb2891a9fc6044491e4956593871a6936c12e73c0",
+      "bytes": 958744,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8118435678873855,
-      "partialAlphaPixelFraction": 0.18792686370122785,
+      "transparentPixelFraction": 0.8796566697469804,
+      "partialAlphaPixelFraction": 0.12019650015618492,
       "rawAlphaBounds": [
-        18,
-        54,
-        1244,
-        1232
+        175,
+        211,
+        1401,
+        1389
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        23,
-        372,
-        1239,
-        928
+        180,
+        529,
+        1396,
+        1085
       ],
       "visibleMargins": [
-        0.018341307814992026,
-        0.2966507177033493,
-        0.011961722488038277,
-        0.25996810207336524
+        0.11479591836734694,
+        0.33737244897959184,
+        0.1096938775510204,
+        0.3080357142857143
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "gila-monster",
-      "sha256": "2c95f77fb699b316933d89a96ad4c0e142813c4aec3aee640893239bdf6cfbe0",
-      "bytes": 954653,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "fe07f66094b8b8ea9855d1e1362c14f6cc327de15c685b3173216bf94d8eeea0",
+      "bytes": 1105736,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7836060173632573,
-      "partialAlphaPixelFraction": 0.21613134619933916,
+      "transparentPixelFraction": 0.861596161104748,
+      "partialAlphaPixelFraction": 0.13823585875676803,
       "rawAlphaBounds": [
-        33,
-        31,
-        1237,
-        1222
+        190,
+        188,
+        1394,
+        1379
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        42,
-        350,
-        1233,
-        946
+        199,
+        507,
+        1390,
+        1103
       ],
       "visibleMargins": [
-        0.03349282296650718,
-        0.27910685805422647,
-        0.01674641148325359,
-        0.24561403508771928
+        0.12691326530612246,
+        0.32334183673469385,
+        0.11352040816326531,
+        0.2965561224489796
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "bearded-dragon",
-      "sha256": "b2a347813f1dd8c4f96d1de652bffda8bda3c15203af5dd26db6ba694a522277",
-      "bytes": 952832,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "c60afbb445bcae4591bbf13e4703541feeeec44cc6bf0b56f960969e811f93a9",
+      "bytes": 1122725,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7867398487519364,
-      "partialAlphaPixelFraction": 0.21313233060903672,
+      "transparentPixelFraction": 0.8636005342825905,
+      "partialAlphaPixelFraction": 0.13631771267180343,
       "rawAlphaBounds": [
-        25,
-        47,
-        1233,
-        1214
+        182,
+        204,
+        1390,
+        1371
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        33,
-        246,
-        1226,
-        997
+        190,
+        403,
+        1383,
+        1154
       ],
       "visibleMargins": [
-        0.02631578947368421,
-        0.19617224880382775,
-        0.022328548644338118,
-        0.20494417862838915
+        0.1211734693877551,
+        0.257015306122449,
+        0.11798469387755102,
+        0.26403061224489793
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "frilled-lizard",
-      "sha256": "b4afb101427fd8dc7a7dfbe1606df7962ccdcc162abae3d51487b5c704aa24db",
-      "bytes": 865983,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "efe34cae6a4d97bdb265ddc162fc94f3634c8f8fd4f232088c0e66459aa977cd",
+      "bytes": 1007311,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8091739607100977,
-      "partialAlphaPixelFraction": 0.19061936412729663,
+      "transparentPixelFraction": 0.8779492106153686,
+      "partialAlphaPixelFraction": 0.12191860162432319,
       "rawAlphaBounds": [
-        0,
-        21,
-        1230,
-        1254
+        157,
+        178,
+        1387,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        62,
-        253,
-        1201,
-        1045
+        219,
+        410,
+        1358,
+        1202
       ],
       "visibleMargins": [
-        0.049441786283891544,
-        0.20175438596491227,
-        0.04226475279106858,
-        0.16666666666666666
+        0.13966836734693877,
+        0.2614795918367347,
+        0.13392857142857142,
+        0.23341836734693877
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "horned-lizard",
-      "sha256": "c1bbe63b1585b6de2aebcf865a819c62be47a3800184e21642e019c429e1ba21",
-      "bytes": 1145691,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "5011df3e0dd339f98e1df206453db9064d1d8e9e407e8a2635b1e6d23ce4354e",
+      "bytes": 1381177,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7351473689297915,
-      "partialAlphaPixelFraction": 0.2646071645693907,
+      "transparentPixelFraction": 0.8306024019939608,
+      "partialAlphaPixelFraction": 0.16924059961995003,
       "rawAlphaBounds": [
-        31,
-        21,
-        1238,
-        1254
+        188,
+        178,
+        1395,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        50,
-        277,
-        1220,
-        992
+        207,
+        434,
+        1377,
+        1149
       ],
       "visibleMargins": [
-        0.03987240829346093,
-        0.22089314194577353,
-        0.02711323763955343,
-        0.20893141945773525
+        0.13201530612244897,
+        0.2767857142857143,
+        0.12181122448979592,
+        0.26721938775510207
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "thorny-devil",
-      "sha256": "09d2086053136d34a4537cf9bc55ef6fa244038f894f09e0249bf05f75577638",
-      "bytes": 1262354,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "6df3abb0d39e7b8740945d0eb25ecdedac241894f5505acb1130f0399fe54c57",
+      "bytes": 1502383,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7148747612106967,
-      "partialAlphaPixelFraction": 0.2850152240104393,
+      "transparentPixelFraction": 0.8176362062682215,
+      "partialAlphaPixelFraction": 0.18229342917013744,
       "rawAlphaBounds": [
-        0,
-        21,
-        1246,
-        1254
+        157,
+        178,
+        1403,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        49,
-        215,
-        1218,
-        1018
+        206,
+        372,
+        1375,
+        1175
       ],
       "visibleMargins": [
-        0.03907496012759171,
-        0.17145135566188197,
-        0.028708133971291867,
-        0.18819776714513556
+        0.13137755102040816,
+        0.2372448979591837,
+        0.12308673469387756,
+        0.25063775510204084
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "blue-tongued-skink",
-      "sha256": "8a13c95e2daed82bcef681c848766b27a1bde05581ef434cb1dfc6553074ec65",
-      "bytes": 762604,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "24135120a4a92cebc24372790601a44c554365947ea8747633d0ebd05468298f",
+      "bytes": 945142,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8118912621556792,
-      "partialAlphaPixelFraction": 0.18784101401829933,
+      "transparentPixelFraction": 0.8796871746147439,
+      "partialAlphaPixelFraction": 0.12014159139421074,
       "rawAlphaBounds": [
-        2,
-        30,
-        1222,
-        1254
+        159,
+        187,
+        1379,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        48,
-        373,
-        1212,
-        911
+        205,
+        530,
+        1369,
+        1068
       ],
       "visibleMargins": [
-        0.03827751196172249,
-        0.2974481658692185,
-        0.03349282296650718,
-        0.27352472089314195
+        0.13073979591836735,
+        0.3380102040816326,
+        0.12691326530612246,
+        0.31887755102040816
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "leopard-gecko",
-      "sha256": "fcc9de0ce6cd46219e67abdd5cda940afd699945b3501f0a01280ea000b373cb",
-      "bytes": 753117,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "401ca53a35c0c7446c88b418bca451b758aec82366b2fb32f6b74b5af6587aaa",
+      "bytes": 978918,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8039822806254435,
-      "partialAlphaPixelFraction": 0.19574681593064872,
+      "transparentPixelFraction": 0.8746286540764265,
+      "partialAlphaPixelFraction": 0.12519807827467722,
       "rawAlphaBounds": [
-        39,
-        41,
-        1232,
-        1234
+        196,
+        198,
+        1389,
+        1391
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        44,
-        356,
-        1229,
-        945
+        201,
+        513,
+        1386,
+        1102
       ],
       "visibleMargins": [
-        0.03508771929824561,
-        0.2838915470494418,
-        0.019936204146730464,
-        0.24641148325358853
+        0.12818877551020408,
+        0.32716836734693877,
+        0.11607142857142858,
+        0.2971938775510204
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "tuatara",
-      "sha256": "81d09692a35c020ad98b8d2cbfa2997b21aac20045eff99986e6a72fd5b5f53c",
-      "bytes": 930270,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "486598edeb4670b16d5f9c5d94c086701d962e5c92faa472cb05b6b025473c04",
+      "bytes": 1022436,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8000312874400006,
-      "partialAlphaPixelFraction": 0.19978620249332915,
+      "transparentPixelFraction": 0.8721016308309038,
+      "partialAlphaPixelFraction": 0.1277816372084548,
       "rawAlphaBounds": [
-        27,
-        23,
-        1238,
-        1254
+        184,
+        180,
+        1395,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        38,
-        365,
-        1227,
-        927
+        195,
+        522,
+        1384,
+        1084
       ],
       "visibleMargins": [
-        0.030303030303030304,
-        0.29106858054226475,
-        0.0215311004784689,
-        0.2607655502392344
+        0.12436224489795919,
+        0.33290816326530615,
+        0.11734693877551021,
+        0.3086734693877551
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "rosy-boa",
-      "sha256": "f3082dd457995ad999fcc32aed7ba62238bcb5a1fcb43b44e8623d07c5a57ce4",
-      "bytes": 687809,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "e7c29fd4433a51ab3da8cc80dde77ceb6355476294288b31941653ddc6171b50",
+      "bytes": 850529,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8335781639105739,
-      "partialAlphaPixelFraction": 0.16612803939673745,
+      "transparentPixelFraction": 0.8935579413525614,
+      "partialAlphaPixelFraction": 0.10625414866201582,
       "rawAlphaBounds": [
-        33,
-        55,
-        1226,
-        1218
+        190,
+        212,
+        1383,
+        1375
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        71,
-        318,
-        1213,
-        901
+        228,
+        475,
+        1370,
+        1058
       ],
       "visibleMargins": [
-        0.05661881977671451,
-        0.2535885167464115,
-        0.03269537480063796,
-        0.28149920255183414
+        0.14540816326530612,
+        0.30293367346938777,
+        0.12627551020408162,
+        0.3252551020408163
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "common-toad",
-      "sha256": "0937efed05df7bb47bd825c6358d18c8d98bd95267a18cc05e96954a5576ddb0",
-      "bytes": 966763,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "286c52b94c35aea146a780710b5cdfefa6cc7e38f1d4657c5dcd20214c1242d4",
+      "bytes": 1230919,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7648933301791524,
-      "partialAlphaPixelFraction": 0.23496104332165776,
+      "transparentPixelFraction": 0.8496276779206581,
+      "partialAlphaPixelFraction": 0.15027918054977094,
       "rawAlphaBounds": [
-        0,
-        20,
-        1240,
-        1254
+        157,
+        177,
+        1397,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        186,
-        329,
-        1166,
-        948
+        343,
+        486,
+        1323,
+        1105
       ],
       "visibleMargins": [
-        0.14832535885167464,
-        0.2623604465709729,
-        0.07017543859649122,
-        0.24401913875598086
+        0.21875,
+        0.30994897959183676,
+        0.15625,
+        0.29528061224489793
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "fire-salamander",
-      "sha256": "24d4411cb3a6f7a2be119a67034dae19921168ccb6f8db178a20d2e337e4ecfb",
-      "bytes": 850364,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "853027d9598a9903403ece9421fdc415f74e820f2d5701f7f6eaf5d699550a07",
+      "bytes": 985191,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7953254529683641,
-      "partialAlphaPixelFraction": 0.2042516578527659,
+      "transparentPixelFraction": 0.8690918172115785,
+      "partialAlphaPixelFraction": 0.1306377062942524,
       "rawAlphaBounds": [
-        31,
-        52,
-        1228,
-        1220
+        188,
+        209,
+        1385,
+        1377
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        39,
-        289,
-        1224,
-        943
+        196,
+        446,
+        1381,
+        1100
       ],
       "visibleMargins": [
-        0.03110047846889952,
-        0.23046251993620415,
-        0.023923444976076555,
-        0.24800637958532695
+        0.125,
+        0.2844387755102041,
+        0.11926020408163265,
+        0.29846938775510207
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "tiger-salamander",
-      "sha256": "dba75c72eb5fbf8681c1776254d5ce23f844ca0611b431f8476778956f911a57",
-      "bytes": 766839,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "00f977cdb87863728975fdfb76ede6f7858f13db893484b3a23c3e53ea5ec7a0",
+      "bytes": 936808,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.808129138272679,
-      "partialAlphaPixelFraction": 0.19143398222975155,
+      "transparentPixelFraction": 0.8772809506455643,
+      "partialAlphaPixelFraction": 0.12243962476572262,
       "rawAlphaBounds": [
-        25,
-        53,
-        1224,
-        1254
+        182,
+        210,
+        1381,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        42,
-        352,
-        1221,
-        956
+        199,
+        509,
+        1378,
+        1113
       ],
       "visibleMargins": [
-        0.03349282296650718,
-        0.2807017543859649,
-        0.02631578947368421,
-        0.23763955342902712
+        0.12691326530612246,
+        0.32461734693877553,
+        0.1211734693877551,
+        0.29017857142857145
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "tomato-frog",
-      "sha256": "ad524a89d4a547cd621071f5839fdd9b1e0245e23cc22790c9ff677c496a240a",
-      "bytes": 877836,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "a8ed91c40f9cce260aacc303a210740d30911a9b94256ea4e5703e1f25ccaf95",
+      "bytes": 1184167,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7709409633987826,
-      "partialAlphaPixelFraction": 0.22887589061096994,
+      "transparentPixelFraction": 0.8534956951530612,
+      "partialAlphaPixelFraction": 0.1463871661547272,
       "rawAlphaBounds": [
-        0,
-        19,
-        1228,
-        1254
+        157,
+        176,
+        1385,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        226,
-        347,
-        1201,
-        928
+        383,
+        504,
+        1358,
+        1085
       ],
       "visibleMargins": [
-        0.18022328548644337,
-        0.2767145135566188,
-        0.04226475279106858,
-        0.25996810207336524
+        0.24426020408163265,
+        0.32142857142857145,
+        0.13392857142857142,
+        0.3080357142857143
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "ornate-horned-frog",
-      "sha256": "4e2229f9fd340f1c32070a11820980c7430781bfdf3cd5dacee382e4660463a8",
-      "bytes": 1167488,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "3abe49a9c9c40f6282617173f6a4ede936ebc670a706249ff25f64a949744b99",
+      "bytes": 1515895,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7141110169944217,
-      "partialAlphaPixelFraction": 0.2858082207112678,
+      "transparentPixelFraction": 0.8171477216524364,
+      "partialAlphaPixelFraction": 0.18280062343815076,
       "rawAlphaBounds": [
-        0,
-        29,
-        1240,
-        1254
+        157,
+        186,
+        1397,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        159,
-        282,
-        1202,
-        959
+        316,
+        439,
+        1359,
+        1116
       ],
       "visibleMargins": [
-        0.12679425837320574,
-        0.22488038277511962,
-        0.04146730462519936,
-        0.23524720893141945
+        0.20153061224489796,
+        0.2799744897959184,
+        0.13329081632653061,
+        0.288265306122449
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "golden-mantella",
-      "sha256": "c00113abbcd0778d7a215345ce251a8171636b1aced6576f839e4d7e983bdfaa",
-      "bytes": 562713,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "7abbd54cd158069dd548f0a7a2c897f1d891620bc7d96034cde3c11abb6940af",
+      "bytes": 724322,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8355190026683353,
-      "partialAlphaPixelFraction": 0.16403076343897297,
+      "transparentPixelFraction": 0.894799286104748,
+      "partialAlphaPixelFraction": 0.10491274794356518,
       "rawAlphaBounds": [
-        0,
-        27,
-        1254,
-        1238
+        157,
+        184,
+        1411,
+        1395
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        245,
-        356,
-        1096,
-        931
+        402,
+        513,
+        1253,
+        1088
       ],
       "visibleMargins": [
-        0.19537480063795853,
-        0.2838915470494418,
-        0.12599681020733652,
-        0.25757575757575757
+        0.25637755102040816,
+        0.32716836734693877,
+        0.20089285714285715,
+        0.30612244897959184
       ],
-      "strictTenPercentTransparentBorder": false,
+      "strictTenPercentTransparentBorder": true,
       "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "tarantula",
-      "sha256": "9c4c6011d9241f6eb9bb902f0cfd1bd5302632e87b68765d593a07300df8d71a",
-      "bytes": 1336288,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "050811456dc399d9c5b2656deab4c12e947151cd9ba9c88195527c11f99e3709",
+      "bytes": 1499672,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7169370613717126,
-      "partialAlphaPixelFraction": 0.28305276385105144,
+      "transparentPixelFraction": 0.8189552367503123,
+      "partialAlphaPixelFraction": 0.18103825554456476,
       "rawAlphaBounds": [
-        0,
-        19,
-        1244,
-        1254
+        157,
+        176,
+        1401,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        48,
-        282,
-        1222,
-        1023
+        205,
+        439,
+        1379,
+        1180
       ],
       "visibleMargins": [
-        0.03827751196172249,
-        0.22488038277511962,
-        0.025518341307814992,
-        0.18421052631578946
+        0.13073979591836735,
+        0.2799744897959184,
+        0.12053571428571429,
+        0.24744897959183673
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "scorpion",
-      "sha256": "a6233896c95be03e68b32c284f0758b18fe7ae34a7417c89def702d3f5a1424c",
-      "bytes": 1151610,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "e41523c37a960e8065cf84a13586df06e823aedb33766a44379ed42948e7c7f7",
+      "bytes": 1290215,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7310768221118259,
-      "partialAlphaPixelFraction": 0.26880998349142393,
+      "transparentPixelFraction": 0.8279989132132445,
+      "partialAlphaPixelFraction": 0.17192868856726365,
       "rawAlphaBounds": [
-        31,
-        19,
-        1225,
-        1254
+        188,
+        176,
+        1382,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        49,
-        139,
-        1215,
-        1044
+        206,
+        296,
+        1372,
+        1201
       ],
       "visibleMargins": [
-        0.03907496012759171,
-        0.11084529505582137,
-        0.03110047846889952,
-        0.1674641148325359
+        0.13137755102040816,
+        0.18877551020408162,
+        0.125,
+        0.23405612244897958
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "coconut-crab",
-      "sha256": "a6cdfd36995d1ad6aee075317a9fd1de0cd3dbb22a90a1dfcabf5661046782b5",
-      "bytes": 1048302,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "ea5f86a69c40b35073ab798f31e9818b21fde11c4ea89300c387739dc4ea2f34",
+      "bytes": 1319290,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7532266762309573,
-      "partialAlphaPixelFraction": 0.24663723612351163,
+      "transparentPixelFraction": 0.8421657805341525,
+      "partialAlphaPixelFraction": 0.15774717890982923,
       "rawAlphaBounds": [
-        0,
-        23,
-        1239,
-        1234
+        157,
+        180,
+        1396,
+        1391
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        87,
-        247,
-        1237,
-        1005
+        244,
+        404,
+        1394,
+        1162
       ],
       "visibleMargins": [
-        0.06937799043062201,
-        0.19696969696969696,
-        0.013556618819776715,
-        0.19856459330143542
+        0.1556122448979592,
+        0.2576530612244898,
+        0.11096938775510204,
+        0.25892857142857145
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "tiger-beetle",
-      "sha256": "94bab1764f381ec0bb7ee4b97b65b9bc709a52848a5eca3cdbcb9e65e1ac93c2",
-      "bytes": 953622,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "2787c0ed4f5f7bcd0a13c292fdf41b1648c3695720580cc18c0bf75cb835c94f",
+      "bytes": 967738,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8046226556677325,
-      "partialAlphaPixelFraction": 0.19531565974527446,
+      "transparentPixelFraction": 0.8750382327675968,
+      "partialAlphaPixelFraction": 0.1249223142700958,
       "rawAlphaBounds": [
-        37,
-        31,
-        1239,
-        1230
+        194,
+        188,
+        1396,
+        1387
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        44,
-        287,
-        1236,
-        1058
+        201,
+        444,
+        1393,
+        1215
       ],
       "visibleMargins": [
-        0.03508771929824561,
-        0.22886762360446572,
-        0.014354066985645933,
-        0.15629984051036683
+        0.12818877551020408,
+        0.28316326530612246,
+        0.11160714285714286,
+        0.22512755102040816
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "silver-ant",
-      "sha256": "611161645f656a71632ee279a585c7ea310860d8c3b2812c44c8e0923f18452b",
-      "bytes": 898193,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "39f72ee9ce203f2e44d90b6561998fe75db44e80635a6e389d3c2572c5296d44",
+      "bytes": 923153,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7936726875910961,
-      "partialAlphaPixelFraction": 0.2062688074397971,
+      "transparentPixelFraction": 0.8680347218606831,
+      "partialAlphaPixelFraction": 0.13192785883486047,
       "rawAlphaBounds": [
-        0,
-        23,
-        1246,
-        1254
+        157,
+        180,
+        1403,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        48,
-        325,
-        1229,
-        978
+        205,
+        482,
+        1386,
+        1135
       ],
       "visibleMargins": [
-        0.03827751196172249,
-        0.259170653907496,
-        0.019936204146730464,
-        0.22009569377990432
+        0.13073979591836735,
+        0.30739795918367346,
+        0.11607142857142858,
+        0.27614795918367346
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "cockroach",
-      "sha256": "28c458da888a9ae69be2a97d3d0c433205c476d6d45b35757fdc5539cfdfbb3b",
-      "bytes": 938914,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "19829c87707f6c8617008caf314e99f870740928ae1b2e1d4f7644c03cd7f42c",
+      "bytes": 1079810,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7857681575259011,
-      "partialAlphaPixelFraction": 0.21411546845946242,
+      "transparentPixelFraction": 0.8629790484433569,
+      "partialAlphaPixelFraction": 0.1369465196793003,
       "rawAlphaBounds": [
-        0,
-        35,
-        1244,
-        1246
+        157,
+        192,
+        1401,
+        1403
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        76,
-        263,
-        1239,
-        995
+        233,
+        420,
+        1396,
+        1152
       ],
       "visibleMargins": [
-        0.06060606060606061,
-        0.20972886762360446,
-        0.011961722488038277,
-        0.2065390749601276
+        0.1485969387755102,
+        0.26785714285714285,
+        0.1096938775510204,
+        0.2653061224489796
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "mantis",
-      "sha256": "227bb14db6e84fc8316a78e691973aa77ad6124fd96972f4ab30c61fcaa54d0a",
-      "bytes": 782137,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "95964c5aebee59fe6f77361d114f118c99d977cf98e6f7969a88fe0071f5b4dd",
+      "bytes": 899837,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8161977366208039,
-      "partialAlphaPixelFraction": 0.18350401522146675,
+      "transparentPixelFraction": 0.8824415608079966,
+      "partialAlphaPixelFraction": 0.11736768208558934,
       "rawAlphaBounds": [
-        0,
-        23,
-        1224,
-        1254
+        157,
+        180,
+        1381,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        83,
-        87,
-        1214,
-        1133
+        240,
+        244,
+        1371,
+        1290
       ],
       "visibleMargins": [
-        0.06618819776714513,
-        0.06937799043062201,
-        0.03189792663476874,
-        0.09649122807017543
+        0.15306122448979592,
+        0.1556122448979592,
+        0.1256377551020408,
+        0.17729591836734693
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "stick-insect",
-      "sha256": "28a6a62d342425bb35e613fb6ef871f42daf9714e4b44a9480ee9e906495bc1c",
-      "bytes": 466242,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "519cda25a65b774dbc4c0b3994435bc51d575e801a7d62e80cfae746040da718",
+      "bytes": 429790,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.9040715642956892,
-      "partialAlphaPixelFraction": 0.09569314398072898,
+      "transparentPixelFraction": 0.9386449493700542,
+      "partialAlphaPixelFraction": 0.061204559948979595,
       "rawAlphaBounds": [
-        0,
-        47,
-        1253,
-        1230
+        157,
+        204,
+        1410,
+        1387
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        82,
-        213,
-        1244,
-        1052
+        239,
+        370,
+        1401,
+        1209
       ],
       "visibleMargins": [
-        0.06539074960127592,
-        0.16985645933014354,
-        0.007974481658692184,
-        0.16108452950558214
+        0.1524234693877551,
+        0.23596938775510204,
+        0.10650510204081633,
+        0.22895408163265307
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "giant-millipede",
-      "sha256": "94f37035c751b3b2a4fa7cfd6c69b1a6b7800de31bd063ff393499dc482f5e1c",
-      "bytes": 795951,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "b0da610b421dd47d47d7f3ac82e4c59bb4c4efb54d4b2182886940b984640b3e",
+      "bytes": 969545,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.7991181011830722,
-      "partialAlphaPixelFraction": 0.20054104377952275,
+      "transparentPixelFraction": 0.8715175642961266,
+      "partialAlphaPixelFraction": 0.1282644275822574,
       "rawAlphaBounds": [
-        17,
-        21,
-        1238,
-        1232
+        174,
+        178,
+        1395,
+        1389
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        58,
-        349,
-        1236,
-        923
+        215,
+        506,
+        1393,
+        1080
       ],
       "visibleMargins": [
-        0.046251993620414676,
-        0.2783094098883573,
-        0.014354066985645933,
-        0.26395534290271133
+        0.1371173469387755,
+        0.3227040816326531,
+        0.11160714285714286,
+        0.3112244897959184
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "centipede",
-      "sha256": "875d6b4f6158d3bab85c21ed05e2553bbf902b16d26cebcbefac53ea24524ada",
-      "bytes": 711534,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "6796ba1faa6afefc5b06714bc5805db064940755f0648a73bf59b923b87ce926",
+      "bytes": 821648,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8379456870391144,
-      "partialAlphaPixelFraction": 0.16157927804868122,
+      "transparentPixelFraction": 0.8963513737765514,
+      "partialAlphaPixelFraction": 0.10334479774052478,
       "rawAlphaBounds": [
-        25,
-        32,
-        1236,
-        1254
+        182,
+        189,
+        1393,
+        1411
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        28,
-        314,
-        1227,
-        1005
+        185,
+        471,
+        1384,
+        1162
       ],
       "visibleMargins": [
-        0.022328548644338118,
-        0.2503987240829346,
-        0.0215311004784689,
-        0.19856459330143542
+        0.11798469387755102,
+        0.30038265306122447,
+        0.11734693877551021,
+        0.25892857142857145
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "earthworm",
-      "sha256": "2e0be17c4d02dab5e8eeb3ef80442d895efd5ea75ec90119484e1f5e19188863",
-      "bytes": 467945,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "011507fb66776c5d4b32e8f78b3eb0c923de2121d72034d5b313beedd01eae66",
+      "bytes": 569159,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8879833337148875,
-      "partialAlphaPixelFraction": 0.11182270959405183,
+      "transparentPixelFraction": 0.9283550473760933,
+      "partialAlphaPixelFraction": 0.07152089949500208,
       "rawAlphaBounds": [
-        33,
-        22,
-        1214,
-        1150
+        190,
+        179,
+        1371,
+        1307
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        120,
-        376,
-        1162,
-        852
+        277,
+        533,
+        1319,
+        1009
       ],
       "visibleMargins": [
-        0.09569377990430622,
-        0.29984051036682613,
-        0.0733652312599681,
-        0.32057416267942584
+        0.17665816326530612,
+        0.3399234693877551,
+        0.15880102040816327,
+        0.3565051020408163
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "slug",
-      "sha256": "c9a08c5d2cefa266868e19f77c26ef0b5536a15a9ac32492acb7ec7fcc9a4b31",
-      "bytes": 728141,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "63799fa4e41fee467ede013c50cdcbd1acbc10740a7a8fc30ba39f4889eace9f",
+      "bytes": 807985,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8276666183364748,
-      "partialAlphaPixelFraction": 0.17222082319035228,
+      "transparentPixelFraction": 0.8897769646761766,
+      "partialAlphaPixelFraction": 0.11015104383590171,
       "rawAlphaBounds": [
-        0,
-        31,
-        1226,
-        1230
+        157,
+        188,
+        1383,
+        1387
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        41,
-        424,
-        1221,
-        865
+        198,
+        581,
+        1378,
+        1022
       ],
       "visibleMargins": [
-        0.03269537480063796,
-        0.33811802232854865,
-        0.02631578947368421,
-        0.310207336523126
+        0.12627551020408162,
+        0.3705357142857143,
+        0.1211734693877551,
+        0.3482142857142857
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "velvet-worm",
-      "sha256": "a3879c99bef96552f02feb12877cc09899394b889f0f1f4e136006695539d9dc",
-      "bytes": 530360,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "6064f1d6108e73fe837c82d36e5ff6d645eedbd1cc25a5d9ae28fbd1b5a58f9a",
+      "bytes": 545008,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8976964304337762,
-      "partialAlphaPixelFraction": 0.1019601708345098,
+      "transparentPixelFraction": 0.9345674653790087,
+      "partialAlphaPixelFraction": 0.06521289957309455,
       "rawAlphaBounds": [
-        33,
-        19,
-        1240,
-        1221
+        190,
+        176,
+        1397,
+        1378
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        55,
-        379,
-        1231,
-        904
+        212,
+        536,
+        1388,
+        1061
       ],
       "visibleMargins": [
-        0.043859649122807015,
-        0.3022328548644338,
-        0.018341307814992026,
-        0.27910685805422647
+        0.13520408163265307,
+        0.34183673469387754,
+        0.11479591836734694,
+        0.32334183673469385
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     },
     {
       "speciesId": "woodlouse",
-      "sha256": "2bc364c1c0dc3a7f424d18a0cd5556214a381051b14da39a2f23ddb203980fb9",
-      "bytes": 982696,
-      "width": 1254,
-      "height": 1254,
+      "sha256": "bae68995070660b65be2368ff915d5834b46efd120e8bc25f2ddb4203753ab7c",
+      "bytes": 986226,
+      "width": 1568,
+      "height": 1568,
       "mode": "RGBA",
-      "transparentPixelFraction": 0.8017393781684892,
-      "partialAlphaPixelFraction": 0.19812135456809343,
+      "transparentPixelFraction": 0.8731941118284048,
+      "partialAlphaPixelFraction": 0.12671681395772594,
       "rawAlphaBounds": [
-        23,
-        20,
-        1253,
-        1232
+        180,
+        177,
+        1410,
+        1389
       ],
       "visibleAlphaThreshold": 16,
       "visibleBounds": [
-        52,
-        398,
-        1239,
-        891
+        209,
+        555,
+        1396,
+        1048
       ],
       "visibleMargins": [
-        0.04146730462519936,
-        0.31738437001594894,
-        0.011961722488038277,
-        0.2894736842105263
+        0.13329081632653061,
+        0.3539540816326531,
+        0.1096938775510204,
+        0.33163265306122447
       ],
-      "strictTenPercentTransparentBorder": false,
-      "visibleTenPercentBorder": false,
+      "strictTenPercentTransparentBorder": true,
+      "visibleTenPercentBorder": true,
       "visibleEdgeTouch": false
     }
   ]

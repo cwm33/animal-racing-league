@@ -106,6 +106,6 @@
     "woodlouse": "Small grey flattened oval terrestrial isopod, rough overlapping dorsal plates, SEVEN pairs of walking legs, two main antennae, short rear uropods, no snail shell, walking rather than rolled up."
   },
   "styleReferenceSha256": "e929e4eb921f64087e56216189c92074a81d30949f055cac6f69e705adc2de1c",
-  "expansionGenerationNotes": "Generated individually with the original cheetah attached as style reference. Prompts requested central 70–80% framing, transparent background and species-specific anatomy. Generated originals are retained unchanged; actual framing and alpha exceptions are documented in review/image-checks.json. Generative illustrations are not scientific reference plates.",
+  "expansionGenerationNotes": "Generated individually with the original cheetah as style reference. The 64 expansion source canvases were subsequently extended losslessly by 157 transparent pixels on all sides. Every delivered RGBA pixel remains unchanged; source border checks pass. See expansion/review/border-repair.json for hashes and preservation checks. Fine anatomy remains subject to review.",
   "expansionReview": "../../expansion/review/artwork-review.json"
 }

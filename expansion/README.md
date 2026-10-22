@@ -1,7 +1,11 @@
 > Integration status: all 64 records are now in `src/data/animals.ts`, with taxonomy in
 > `src/data/expansion-metadata.json` and canonical provenance in `src/data/provenance.json`.
 > The PNGs moved unchanged to `assets/animals/originals/`; `species.json` and the viewer
-> now point there. The source-border and fine-anatomy exceptions below remain open.
+> now point there. The source-border issue is resolved by lossless canvas extension;
+> all 64 sources now pass. Fine-anatomy limitations below remain open. The original
+> failed measurements are retained in `review/pre-border-image-checks.json`;
+> `review/border-repair.json` proves exact RGBA pixel preservation. Run
+> `npm run assets:pad -- --check` to verify the current padded sources.
 > See [integration audit](../docs/integration-audit.md). The following describes the
 > preparation commit; its baseline hashes and validation reports are historical.
 > `validate.py` and `validate-simulation.mjs` now validate the integrated layout.
@@ -29,10 +33,10 @@ The additions also represent 64 different genera. Cassowary, emu, secretary bird
 - **Research:** 56 entries have quantitative mass evidence in consulted accounts, zoo material, or studies. Eight masses remain estimates: Gila monster, common toad, six-spotted tiger beetle, Saharan silver ant, European mantis, giant desert centipede, Solórzano's velvet worm, and common rough woodlouse. Their references establish identity or biological context, not those mass values.
 - **Speed:** nine entries have quantitative speed context. These include reported maxima, conflicting summaries, and a travel-speed observation that is explicitly **not** treated as a top speed. The Saharan silver ant has a primary video-measured maximum of 0.855 m/s; its simulation preset is rounded down to 0.8 m/s. Other top-speed presets remain estimates unless their evidence record says otherwise. This is a scoped research pass, not an exhaustive literature review.
 - **Artwork:** 64 individually generated, decodable RGBA PNGs with genuinely transparent backgrounds, one per ID, using the original cheetah as the style reference. No emoji, photographs, stock art, copied existing species, or procedural animal placeholders were substituted. Originals are retained as delivered by the generator, except that selected images were replaced by reviewed image-generation retries. No original application artwork was changed.
-- **Art-direction exceptions:** the generator left low-opacity stray alpha outside the visible silhouettes. All 64 originals fail the literal requirement of a completely clear 10% border. Most visible silhouettes are also larger than the requested central 80%; none visibly touches a canvas edge at alpha ≥ 16/255. The quokka framing retry improves visible padding. These are **known exceptions, not a claim of perfect framing compliance**. See the current per-image values in [image-checks.json](review/image-checks.json). Integration needs padding/alpha cleanup through the normal asset pipeline or further reviewed regeneration before strict art acceptance.
+- **Historical art-direction exceptions (source borders repaired):** the generator left low-opacity stray alpha outside the visible silhouettes. All 64 originals fail the literal requirement of a completely clear 10% border. Most visible silhouettes are also larger than the requested central 80%; none visibly touches a canvas edge at alpha ≥ 16/255. The quokka framing retry improves visible padding. These are **known exceptions, not a claim of perfect framing compliance**. The failed delivered-source measurements are preserved in [pre-border-image-checks.json](review/pre-border-image-checks.json). Current [image-checks.json](review/image-checks.json) confirms clear borders after the lossless padding repair; fine anatomy still needs review.
 - **Anatomy:** all originals were visually reviewed in native-size contact sheets and at 64 px and 32 px. Species silhouettes and major appendages were checked. Small toes, occluded limbs, and exact multi-legged segment counts cannot be certified from stylized art. Per-image review notes and regeneration history are in [artwork-review.json](review/artwork-review.json). The velvet worm was regenerated after the first version had too few legs. Illustrations are not scientific anatomical reference plates.
 
-This pack is complete in record and PNG coverage. **Strict art-direction acceptance remains conditional** on the documented framing and fine-anatomy review issues.
+This pack is complete in record and PNG coverage. **Strict art-direction acceptance remains conditional** on fine-anatomy review; the source-border issue is resolved.
 
 ## Contents
 
@@ -91,7 +95,7 @@ npm_config_cache="$PWD/expansion/.cache" npm exec --yes --package=typescript@5.9
   --moduleResolution bundler --resolveJsonModule expansion/typecheck.ts
 ```
 
-`generate.py` is offline and deterministic. `prepare.py --research` performs fresh ADW requests and overwrites **only** the pack's initial retrieval audit; review new findings before recompiling. Supplemental reviewed references and model choices are explicit in `generate.py`. Image generation is not deterministic and cannot be reproduced by these scripts. `validate.py` fails on missing files, duplicate IDs/taxa, malformed values or source links, schema mismatches, invalid PNGs or missing real transparency. It reports strict framing separately and does not call a metadata pass an anatomical pass. No tool writes application assets.
+`generate.py` is offline and deterministic. `prepare.py --research` performs fresh ADW requests and overwrites **only** the pack's initial retrieval audit; review new findings before recompiling. Supplemental reviewed references and model choices are explicit in `generate.py`. Image generation is not deterministic and cannot be reproduced by these scripts. `validate.py` fails on missing files, duplicate IDs/taxa, malformed values or source links, schema mismatches, invalid PNGs or missing real transparency. It enforces the strict clear 10% source border and does not call a metadata pass an anatomical pass. No tool writes application assets.
 
 Pack checks passed: 64 IDs, 64 species, 64 distinct new genera, all required species, 64 source records and briefs, seven finite racing fields per record, 64 PNGs, image hashes and actual transparent pixels, shared schema shape and enum compatibility, and 600 numerical race checks over 25/100/400/1000/5000/10000 m with monotonic finite finishes.
 

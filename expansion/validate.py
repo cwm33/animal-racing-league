@@ -2,7 +2,7 @@
 
 Requires Pillow. Run from any working directory: python expansion/validate.py
 Use --sheets to also refresh full-size (1:1), 64 px and 32 px contact sheets.
-Framing exceptions are reported separately from PNG/data integrity failures.
+Strict source borders are required; fine-anatomy acceptance is a separate review.
 """
 from collections import Counter
 import hashlib
@@ -109,9 +109,10 @@ def main():
             assert hist[0]>w*h*0.05 and sum(hist[240:])>w*h*0.01,'Must contain genuinely clear and substantially opaque pixels'
             raw=alpha.getbbox();visible=alpha.point(lambda x:255 if x>=16 else 0).getbbox()
             margins=[visible[0]/w,visible[1]/h,(w-visible[2])/w,(h-visible[3])/h]
-            border=math.floor(w*0.1)
+            border=math.ceil(w*0.1)
             # Strict requirement: all outer-border alpha must be zero.
             strict=all(alpha.crop(box).getextrema()[1]==0 for box in [(0,0,w,border),(0,h-border,w,h),(0,0,border,h),(w-border,0,w,h)])
+            assert strict, f'{id}: source PNG needs a completely clear 10% border'
             records.append(dict(speciesId=id,sha256=digest(path),bytes=path.stat().st_size,width=w,height=h,mode=im.mode,transparentPixelFraction=hist[0]/(w*h),partialAlphaPixelFraction=sum(hist[1:255])/(w*h),rawAlphaBounds=list(raw),visibleAlphaThreshold=16,visibleBounds=list(visible),visibleMargins=margins,strictTenPercentTransparentBorder=strict,visibleTenPercentBorder=min(margins)>=0.1,visibleEdgeTouch=visible[0]==0 or visible[1]==0 or visible[2]==w or visible[3]==h))
     assert set(ids)<={p.stem for p in (ROOT.parent/'assets/animals/originals').glob('*.png')}
     assert len({r['sha256'] for r in records})==64,'Artwork must be individually distinct'
