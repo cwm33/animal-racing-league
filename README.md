@@ -165,3 +165,19 @@ npm run assets:review   # create full-detail, 64px and 32px review sheets in tes
 Animations transform only an inner visual layer. The outer competitor position continues to use the unchanged racing engine. Running uses rhythmic bounce; bounding uses hop/compression; waddling uses gentle rocking; crawling uses small body movement; elephant seals have slow undulation. Cadence follows current simulated speed with conservative visual bounds, never feeds back into physics, and stops on pause or finish. Reduced-motion preferences disable these animations.
 
 Browser tests additionally cover all 36 loaded illustrations, failed-image fallback sizing, every gait, and paused/reduced-motion behavior. CI checks asset integrity before the existing application checks and deployment.
+
+## Adding more competitors
+
+The project is prepared for a **100-species target**, but this commit does **not** add any animals or replace existing artwork. Species identities and racing parameters live in `src/data/animals.ts`; the asset catalog is generated from that source with `npm run roster:sync`. Add researched species entries there, maintain new-species source/provenance notes, and add matching anatomy briefs to `assets/animals/art-direction.json`. Consult `AGENTS.md` for the full research and image-quality checklist.
+
+For each added species, create a right-facing transparent PNG using the existing cheetah artwork as the style reference, save it under `assets/animals/originals/<id>.png`, then run:
+
+```bash
+npm run roster:sync
+npm run assets:build
+npm run assets:check
+npm run assets:review
+npm run typecheck && npm run lint && npm test && npm run build
+```
+
+The asset validator and contact-sheet generator now derive roster counts and page counts from the catalog instead of assuming exactly 36 species. Existing asset IDs and original art are retained.
