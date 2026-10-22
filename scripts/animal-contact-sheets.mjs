@@ -38,15 +38,16 @@ for (let i = 0; i < catalog.length; i++) {
     { input: label('32 px', 64, 20), left: x + 96, top: y + 99 },
   )
 }
-await sharp(background(1104, 732))
+await sharp(background(1104, Math.max(122, Math.ceil(catalog.length / 6) * 122)))
   .composite(overview)
   .png()
-  .toFile(path.join(destination, 'all-36-at-64-and-32.png'))
-for (let page = 0; page < 6; page++) {
+  .toFile(path.join(destination, 'all-at-64-and-32.png'))
+for (let page = 0; page < Math.ceil(catalog.length / 6); page++) {
   const composites = []
   for (let slot = 0; slot < 6; slot++) {
-    const animal = catalog[page * 6 + slot],
-      x = (slot % 3) * 384,
+    const animal = catalog[page * 6 + slot]
+    if (!animal) continue
+    const x = (slot % 3) * 384,
       y = Math.floor(slot / 3) * 416
     const input = await sharp(
       path.join(root, `public/animals/${animal.id}-384.webp`),
@@ -63,9 +64,9 @@ for (let page = 0; page < 6; page++) {
     .png()
     .toFile(path.join(destination, `detail-${page + 1}.png`))
 }
-await sharp(path.join(destination, 'all-36-at-64-and-32.png'))
+await sharp(path.join(destination, 'all-at-64-and-32.png'))
   .webp({ quality: 90, effort: 4 })
   .toFile(path.join(root, 'assets/animals/collection-preview.webp'))
 console.log(
-  `Wrote 7 review sheets to ${destination} and the collection preview to assets/animals/`,
+  `Wrote ${1 + Math.ceil(catalog.length / 6)} review sheets to ${destination} and the collection preview to assets/animals/`,
 )
