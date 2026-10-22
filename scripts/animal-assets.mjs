@@ -146,8 +146,8 @@ for (const animal of catalog) {
     issues.push(`${animal.id}: ${error.message}`)
   }
 }
-if (!partial && report.length !== 36)
-  issues.push(`Expected 36 complete species, got ${report.length}`)
+if (!partial && report.length !== catalog.length)
+  issues.push(`Expected ${catalog.length} complete species, got ${report.length}`)
 console.log(
   JSON.stringify(
     {
