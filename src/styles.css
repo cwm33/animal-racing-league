@@ -325,7 +325,7 @@ main {
   font-size: 128px;
   top: 59px;
   left: 89px;
-  transform: scaleX(-1) rotate(-5deg);
+  transform: rotate(-5deg);
   filter: drop-shadow(0 10px 5px #58664913);
   z-index: 2;
 }
@@ -334,7 +334,7 @@ main {
   font-size: 123px;
   top: 124px;
   left: 228px;
-  transform: scaleX(-1);
+  transform: none;
   filter: drop-shadow(0 10px 5px #58664913);
   z-index: 3;
 }
@@ -995,32 +995,6 @@ main {
   min-width: 47px;
   width: 47px;
   z-index: 4;
-}
-.runner-emoji {
-  position: relative;
-  display: block;
-  font-size: 34px;
-  line-height: 1.25;
-  transform: scaleX(-1);
-  transform-origin: 50% 80%;
-  z-index: 2;
-  text-align: center;
-  filter: drop-shadow(0 2px 1px #4a5b3322);
-}
-.runner-shadow {
-  position: absolute;
-  bottom: 4px;
-  left: 10px;
-  width: 29px;
-  height: 5px;
-  background: #48583120;
-  border-radius: 50%;
-}
-.running .runner-emoji {
-  animation: gallop 0.35s ease-in-out infinite alternate;
-}
-.running .runner-shadow {
-  animation: shadow 0.35s ease-in-out infinite alternate;
 }
 .finish-line {
   position: absolute;
@@ -2189,28 +2163,6 @@ td:last-child {
   font-size: 14px;
   color: #5e764d;
 }
-.reduced-motion .runner-emoji,
-.reduced-motion .runner-shadow {
-  animation: none;
-}
-@keyframes gallop {
-  0% {
-    transform: scaleX(-1) translateY(0) rotate(-3deg);
-  }
-  100% {
-    transform: scaleX(-1) translateY(-4px) rotate(3deg);
-  }
-}
-@keyframes shadow {
-  0% {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scaleX(0.7);
-    opacity: 0.6;
-  }
-}
 @keyframes confetti {
   0% {
     transform: translateY(-10px) rotate(0);
@@ -2421,9 +2373,6 @@ td:last-child {
   }
   .arena-badge {
     display: none;
-  }
-  .runner-emoji {
-    font-size: 30px;
   }
   .runner {
     width: 40px;
@@ -2853,9 +2802,6 @@ td:last-child {
   }
   .track-ruler {
     height: 27px;
-  }
-  .runner-emoji {
-    font-size: 32px;
   }
   .runner {
     top: 10px;
@@ -3832,4 +3778,213 @@ td strong {
     max-width: 100%;
     min-width: 0;
   }
+}
+
+/* Generated illustration frames reserve their complete layout before loading. */
+.animal-sprite {
+  display: inline-block;
+  flex-shrink: 0;
+  position: relative;
+  vertical-align: middle;
+  line-height: 0;
+  isolation: isolate;
+}
+.animal-sprite-motion {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 84%;
+}
+.animal-sprite img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+.animal-sprite-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: calc(var(--fallback-size, 32px));
+  line-height: 1;
+}
+.animal-avatar .animal-sprite {
+  width: 100% !important;
+  height: 100% !important;
+}
+.animal-sprite.art-cheetah {
+  position: absolute;
+  top: 35px;
+  left: 63px;
+  transform: rotate(-5deg);
+}
+.animal-sprite.art-hippo {
+  position: absolute;
+  top: 88px;
+  left: 222px;
+  transform: none;
+}
+.track-lane {
+  height: 74px;
+}
+.runner {
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
+  top: 3px;
+}
+.lane-course,
+.track-ruler > div {
+  margin-left: 30px;
+}
+.result-sprite {
+  margin-right: 7px;
+}
+.podium-sprite {
+  margin: 0 2px;
+}
+.mini-podium > div > span {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+.finish-rank {
+  top: 0;
+  right: 1px;
+}
+.animal-sprite.is-moving[data-gait='run'] .animal-sprite-motion {
+  animation: sprite-run var(--stride-duration) ease-in-out infinite;
+}
+.animal-sprite.is-moving[data-gait='bound'] .animal-sprite-motion {
+  animation: sprite-bound var(--stride-duration) ease-in-out infinite;
+}
+.animal-sprite.is-moving[data-gait='waddle'] .animal-sprite-motion {
+  animation: sprite-waddle var(--stride-duration) ease-in-out infinite;
+}
+.animal-sprite.is-moving[data-gait='crawl'] .animal-sprite-motion {
+  animation: sprite-crawl var(--stride-duration) ease-in-out infinite;
+}
+.animal-sprite.is-moving[data-gait='undulate'] .animal-sprite-motion {
+  animation: sprite-undulate var(--stride-duration) ease-in-out infinite;
+}
+@keyframes sprite-run {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  25% {
+    transform: translateY(-3px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(0) scaleY(0.97);
+  }
+  75% {
+    transform: translateY(-2px) rotate(-1deg);
+  }
+}
+@keyframes sprite-bound {
+  0%,
+  100% {
+    transform: translateY(0) scale(1.03, 0.94);
+  }
+  40% {
+    transform: translateY(-6px) scale(0.98, 1.03) rotate(-2deg);
+  }
+  75% {
+    transform: translateY(-1px) scale(1.02, 0.96);
+  }
+}
+@keyframes sprite-waddle {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  25% {
+    transform: translateY(-1px) rotate(0);
+  }
+  50% {
+    transform: translateY(0) rotate(4deg);
+  }
+  75% {
+    transform: translateY(-1px) rotate(0);
+  }
+}
+@keyframes sprite-crawl {
+  0%,
+  100% {
+    transform: translateX(-1px) scaleX(0.98);
+  }
+  50% {
+    transform: translateX(1px) scaleX(1.01);
+  }
+}
+@keyframes sprite-undulate {
+  0%,
+  100% {
+    transform: translateX(-1px) scale(1.02, 0.97) rotate(-1deg);
+  }
+  40% {
+    transform: translateY(-2px) scale(0.98, 1.04) rotate(1deg);
+  }
+  70% {
+    transform: translateX(1px) scale(1.01, 0.98);
+  }
+}
+.reduced-motion .animal-sprite-motion {
+  animation: none !important;
+}
+@media (max-width: 1000px) {
+  .runner {
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+    top: 3px;
+  }
+}
+@media (max-width: 760px) {
+  .track-lane {
+    height: 74px;
+  }
+  .runner {
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+    top: 3px;
+  }
+  .track,
+  .track-ruler {
+    padding-right: 38px;
+  }
+  .lane-course,
+  .track-ruler > div {
+    margin-left: 27px;
+  }
+  .result-sprite {
+    margin-right: 5px;
+  }
+  .comparison-card .mini-podium span {
+    max-width: none;
+    white-space: normal;
+    line-height: 1.4;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animal-sprite-motion {
+    animation: none !important;
+  }
+}
+
+.comparison-card {
+  min-width: 0;
+}
+.mini-podium > div > span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+.mini-podium > div > b {
+  flex-shrink: 0;
 }

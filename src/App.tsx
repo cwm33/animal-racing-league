@@ -21,6 +21,7 @@ import { FieldNotes } from './components/FieldNotes'
 import { Modal } from './components/Modal'
 import { RaceDay } from './components/RaceDay'
 import { Roster } from './components/Roster'
+import { AnimalSprite } from './components/AnimalSprite'
 import { ANIMALS, defaultEntrants, toEntrant } from './data/animals'
 import {
   defaultSettings,
@@ -225,8 +226,18 @@ export default function App() {
                   SPORTING INSTITUTION.
                 </span>
                 <div className="art-blob" />
-                <span className="art-cheetah">🐆</span>
-                <span className="art-hippo">🦛</span>
+                <AnimalSprite
+                  animal={ANIMALS.find((a) => a.id === 'cheetah')!}
+                  size={220}
+                  className="art-cheetah"
+                  priority
+                />
+                <AnimalSprite
+                  animal={ANIMALS.find((a) => a.id === 'hippo')!}
+                  size={220}
+                  className="art-hippo"
+                  priority
+                />
                 <span className="art-dust">···</span>
                 <span className="art-seal">
                   <span>100% WILD</span>
@@ -466,7 +477,10 @@ export class ErrorBoundary extends Component<
     if (this.state.error)
       return (
         <div className="error-screen">
-          <span>🦛</span>
+          <AnimalSprite
+            animal={ANIMALS.find((a) => a.id === 'hippo')!}
+            size={140}
+          />
           <h1>A hippo has sat on the timing equipment.</h1>
           <p>Your saved stable is safe. Reset league settings to recover.</p>
           <button

@@ -125,8 +125,8 @@ export function FieldNotes() {
           <p>
             Everything runs in your browser. Settings and saved creatures stay
             in local storage. No account or analytics. A reduced-motion
-            preference disables runner bounce and confetti; playback starts only
-            when you choose.
+            preference disables animal gait animations and confetti; playback
+            starts only when you choose.
           </p>
           <p>
             Given the same settings, the race is deterministic. Shuffle only
