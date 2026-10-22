@@ -317,3 +317,130 @@ test('gait animations follow moving species and stop on pause', async ({
     page.getByRole('button', { name: 'Pause race', exact: true }),
   ).toBeVisible()
 })
+
+test('biological and pace filters assemble a matched crowd while mixed races remain available', async ({
+  page,
+}) => {
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  const dialog = page.getByRole('dialog')
+  const group = dialog.getByLabel('Biological group', { exact: true })
+  await group.selectOption('big-cats')
+  await expect(dialog.locator('.roster-card')).toHaveCount(3)
+  await expect(dialog.locator('.roster-card').first()).toContainText('Cheetah')
+  await group.selectOption('amphibians')
+  await expect(dialog.locator('.roster-card')).toHaveCount(0)
+  await expect(dialog.getByText(/No competitors match/)).toBeVisible()
+  await dialog.getByRole('button', { name: 'Clear filters' }).click()
+  await dialog.getByRole('searchbox').fill('Canidae')
+  await expect(dialog.locator('.roster-card')).toHaveCount(3)
+  await dialog.getByRole('searchbox').fill('')
+  await dialog.getByLabel('Roster race distance').selectOption('250')
+  await dialog
+    .getByLabel('Competitive division', { exact: true })
+    .selectOption('elite')
+  const count = Math.min(6, await dialog.locator('.roster-card').count())
+  await dialog.locator('.matching-tools > summary').click()
+  await dialog
+    .getByRole('button', { name: `Race matched ${count}`, exact: true })
+    .click()
+  await expect(dialog).not.toBeVisible()
+  await expect(page.locator('.lineup-row')).toHaveCount(count)
+  for (const row of await page.locator('.lineup-row').all())
+    await expect(row).toContainText('Elite pace')
+  await expect(page.getByLabel('Custom distance in metres')).toHaveValue('250')
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  await dialog.getByRole('searchbox').fill('snail')
+  await dialog.locator('.roster-card').click()
+  await dialog.getByRole('button', { name: /Meet me at the start/ }).click()
+  await expect(page.getByTitle('Edit Garden snail')).toBeVisible()
+  await expect(page.locator('.lineup-row')).toHaveCount(count + 1)
+  await expect(page.getByTitle('Edit Garden snail')).toContainText(
+    'Geological time',
+  )
+  await page.reload()
+  await expect(page.locator('.lineup-row')).toHaveCount(count + 1)
+})
+
+test('divisions update across distances and edited racing parameters without changing species identity', async ({
+  page,
+}) => {
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  const dialog = page.getByRole('dialog')
+  await dialog.getByRole('searchbox').fill('cheetah')
+  const card = dialog.locator('.roster-card')
+  await dialog.getByLabel('Roster race distance').selectOption('25')
+  await expect(card).toContainText('Elite pace')
+  await dialog.getByLabel('Roster race distance').selectOption('10000')
+  await expect(card).toContainText('Club racers')
+  await dialog.getByRole('button', { name: 'Close animal roster' }).click()
+  await page.getByTitle('Edit Cheetah').click()
+  await dialog.getByLabel('Competitor name').fill('Turbo Bird')
+  await dialog.getByLabel('Launch acceleration').fill('0')
+  await dialog.getByRole('button', { name: 'Apply to lineup' }).click()
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  await dialog.getByRole('searchbox').fill('cheetah')
+  await dialog
+    .getByLabel('Biological group', { exact: true })
+    .selectOption('big-cats')
+  await expect(card).toContainText('Turbo Bird')
+  await expect(card).toContainText('No predicted finish · DNF')
+  await dialog
+    .getByLabel('Competitive division', { exact: true })
+    .selectOption('dnf')
+  await expect(card).toHaveCount(1)
+  await dialog.locator('.matching-tools > summary').click()
+  await expect(
+    dialog.getByRole('button', { name: 'Race matched crowd' }),
+  ).toBeDisabled()
+})
+
+test('legacy saved stable configurations paginate, filter and load with their original statistics', async ({
+  page,
+}) => {
+  await page.evaluate(() => {
+    const settings = JSON.parse(localStorage.getItem('arl:settings:v1')!)
+    const hippo = settings.entrants.find(
+      (a: { id: string }) => a.id === 'hippo',
+    )
+    localStorage.setItem(
+      'arl:library:v1',
+      JSON.stringify(
+        Array.from({ length: 100 }, (_, i) => ({
+          id: `legacy-${i}`,
+          savedAt: '2026-01-01',
+          animal: {
+            ...hippo,
+            custom: true,
+            name: `Stable hippo ${i}`,
+            stats: { ...hippo.stats, delay: i },
+          },
+        })),
+      ),
+    )
+  })
+  await page.reload()
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  const dialog = page.getByRole('dialog')
+  await dialog
+    .getByRole('button', { name: 'Saved stable (100)', exact: true })
+    .click()
+  await expect(dialog.locator('.roster-card')).toHaveCount(36)
+  await expect(dialog.locator('.animal-sprite img')).toHaveCount(36)
+  await dialog.getByRole('button', { name: 'Next page' }).click()
+  await expect(dialog.getByText('Page 2 of 3')).toBeVisible()
+  await dialog.getByRole('searchbox').fill('Stable hippo 99')
+  await expect(dialog.locator('.roster-card')).toHaveCount(1)
+  await expect(
+    dialog.getByRole('navigation', { name: 'Roster pages' }),
+  ).not.toBeVisible()
+  await dialog.locator('.roster-card').click()
+  await dialog.getByRole('button', { name: /Meet me at the start/ }).click()
+  await expect(
+    page.getByRole('button', { name: 'Unrestricted nonsense' }),
+  ).toBeVisible()
+  await page.getByTitle('Edit Stable hippo 99').click()
+  await expect(dialog.getByLabel('Launch delay')).toHaveValue('99')
+  await dialog.getByRole('button', { name: 'Close animal editor' }).click()
+  await page.reload()
+  await expect(page.getByTitle('Edit Stable hippo 99')).toBeVisible()
+})

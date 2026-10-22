@@ -147,7 +147,9 @@ for (const animal of catalog) {
   }
 }
 if (!partial && report.length !== catalog.length)
-  issues.push(`Expected ${catalog.length} complete species, got ${report.length}`)
+  issues.push(
+    `Expected ${catalog.length} complete species, got ${report.length}`,
+  )
 console.log(
   JSON.stringify(
     {

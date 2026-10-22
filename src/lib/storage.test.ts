@@ -68,3 +68,23 @@ describe('browser persistence', () => {
     expect(loadLibrary()).toHaveLength(1)
   })
 })
+
+it('keeps pre-division v1 custom settings and saved animals unchanged', () => {
+  const settings = defaultSettings()
+  settings.entrants[0] = {
+    ...settings.entrants[0],
+    name: 'Grandfathered Turbo Cat',
+    custom: true,
+    stats: { ...settings.entrants[0].stats, acceleration: 99 },
+  }
+  settings.mode = 'experimental'
+  const library = [
+    { id: 'old-v1', savedAt: '2026-01-01', animal: settings.entrants[0] },
+  ]
+  persist('settings', settings)
+  persist('library', library)
+  expect(loadSettings()).toEqual(settings)
+  expect(loadLibrary()).toEqual(library)
+  expect(loadSettings().entrants[0]).not.toHaveProperty('division')
+  expect(loadSettings().entrants[0]).not.toHaveProperty('taxonomy')
+})
