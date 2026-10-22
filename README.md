@@ -2,7 +2,7 @@
 
 **Fast paws. Wild science. Extremely questionable matchups.**
 
-A complete browser-based racing playground built with React, TypeScript, and Vite. Race 36 species across 25 metres to 10 kilometres, tune their characteristics, and give a hippopotamus the turbo it never asked for.
+A complete browser-based racing playground built with React, TypeScript, and Vite. Race 100 species across 25 metres to 10 kilometres, tune their characteristics, and give a hippopotamus the turbo it never asked for.
 
 Play Animal Racing League: **https://cwm33.github.io/animal-racing-league/**
 
@@ -38,7 +38,7 @@ On Linux, `npx playwright install --with-deps chromium` also installs system dep
 PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH=/usr/bin/chromium npm run test:e2e
 ```
 
-Browser tests cover desktop and mobile race controls, finishing results, roster search, comparisons, monster creation, saving/loading, reload persistence, custom distance entry, keyboard focus, reduced motion, DNF experiments, and automated WCAG A/AA checks with axe. Automated accessibility checks complement manual review; they do not certify complete conformance.
+Browser tests cover biological/division filters, distance and edited-stat reclassification, matched and mixed lineups, legacy stable pagination, and desktop and mobile race controls, finishing results, roster search, comparisons, monster creation, saving/loading, reload persistence, custom distance entry, keyboard focus, reduced motion, DNF experiments, and automated WCAG A/AA checks with axe. Automated accessibility checks complement manual review; they do not certify complete conformance.
 
 `npm run format` formats source; `npm run format:check` checks formatting.
 
@@ -54,6 +54,41 @@ Browser tests cover desktop and mobile race controls, finishing results, roster 
 8. Reveal predicted results, run the race to reveal final results, inspect speed/distance curves, or download results as CSV.
 
 Settings and saved configurations use local storage. There is no backend, account, API key, telemetry, or tracking. Clearing browser storage removes saved creations. The footer’s **Reset settings** restores the default lineup and preferences while keeping the stable. A separate **Species defaults** control resets an editor draft; apply it to update the lineup.
+
+## Find your racing crowd
+
+Open **Add competitors** from Race day (or **Add an animal** from the lab). The roster now combines biological browsing with predicted racing divisions:
+
+- Search common/scientific names, descriptions, biological groups, orders, or families. For example, `Canidae` finds the three canines, and `Vulpes Carnivora` finds the fox.
+- Filter **Biological group** and **Competitive division** together. Mammals has both an umbrella filter and narrower groups, including big cats, canines, hoofed mammals, marsupials, rodents, and primates. Birds, reptiles, amphibians, and invertebrates are supported; the current roster has no amphibians.
+- Change **Race distance** in the roster to see predictions update immediately. This changes the actual race distance too. Cards show predicted finishing time and division; the race sidebar shows the same division. Current lineup edits, gait, launch delay, reference mass, and the mass-effects toggle all affect predictions.
+- Open **Build a matched race**, choose an anchor under **Match pace with**, then **Race matched …** to replace the lineup with up to six unique species nearest its predicted finishing time, within its division and your active filters. At least two finishers are needed. Matching uses proportional time differences, so it works for seconds or days. The default anchor is the first finisher in a division with at least two different species (falling back to the first finisher); it can always be changed.
+- Switch to **Saved stable** to search/filter saved variants and load their original statistics. Loading a variant replaces that species in the current lineup; out-of-range plausible stats automatically activate Unrestricted nonsense. Current edits appear in the species roster with their edited names; original species names remain searchable.
+- Individual selection is always free to mix groups and divisions. Existing quick lineups, lab editing, and saving still work. **Clear filters** returns to the full species roster.
+
+### How divisions are calculated
+
+The benchmark is the fastest **unedited default species in the full league** at the selected distance, calculated with the existing simulation engine. Each competitor’s predicted finish time is divided by that benchmark. Filtering, selecting a different crowd, or creating a monster never changes the benchmark. When new species are intentionally added to the canonical roster, they become part of the default benchmark too.
+
+| Division            | Predicted finish time / benchmark |
+| ------------------- | --------------------------------- |
+| Elite pace          | ≤ 1.5×                            |
+| Contenders          | > 1.5× through 3×                 |
+| Club racers         | > 3× through 8×                   |
+| Leisure league      | > 8× through 30×                  |
+| Scenic route        | > 30× through 300×                |
+| Geological time     | > 300×                            |
+| No predicted finish | DNF under the simulation model    |
+
+Upper bounds are inclusive. A tiny ratio from an experimental monster still counts as Elite pace. These are playful game divisions, not measurements of biological fitness. They change with distance: the default cheetah is Elite pace at 25 m and Club racers at 10 km. A snail can take days and still have a real predicted finish; DNF is a separate case.
+
+Taxonomy-inspired browsing groups use explicit species-ID metadata in `src/data/taxonomy.ts`, including order and family, separately from racing statistics. They intentionally mix taxonomic ranks: “big cats” is informal and includes the cheetah; “hoofed mammals” combines odd- and even-toed ungulates; “invertebrates” is an umbrella. A renamed turbo hippo stays a hoofed mammal. This is browsing metadata, not a complete taxonomic tree. Existing species identities and biological context remain in the canonical animal database and its linked references.
+
+### Scaling and saved-data compatibility
+
+`src/lib/divisions.ts` calls the unchanged analytical engine and keeps bounded LRU caches (4,096 numerical forecasts and 64 distance benchmarks). Keys include every physics input, distance, and mass-effects setting; changing names or artwork reuses the calculation, while stat edits recalculate it. `src/lib/roster.ts` builds search text once per roster/configuration update, then filters without running physics. The interface paginates at 36 cards and lazy-loads small responsive WebPs, so a 1,000-species roster never mounts 1,000 illustrations. Tests exercise 1,000 forecasts, cache reuse, and filtering; desktop/phone browser tests exercise paging with 100 legacy saved variants. Very large datasets may benefit from a search worker in a future version, but do not need a new rendering dependency for this scale.
+
+No storage migration is required. Existing `arl:settings:v1` and `arl:library:v1` records, custom names/stats, species IDs, and quick presets remain compatible. Biological metadata and division membership are derived rather than copied into saved configurations. The old `category` value is retained for compatibility, but no longer controls roster filters or division labels.
 
 ## The physics, without the lab coat
 
@@ -79,8 +114,9 @@ Optional **estimated mass effects** scale acceleration by `(originalMass / edite
 | Bipedal run      |                0.85 |           0.85 |
 | Waddle / shuffle |                0.65 |           1.15 |
 | Crawl / haul     |                0.55 |            1.2 |
+| Slither / glide  |                0.55 |            1.2 |
 
-These coefficients are invented, not measured gait efficiencies. Gallop / run is a generic launch profile; it does not imply that elephants use a horse-like aerial gallop.
+Slither / glide labels the boa, earthworm and slug without adding legs to their animations. It shares crawl’s coefficients, so the imported forecasts stay unchanged. Legacy saved crawl configurations still load. These coefficients are invented, not measured gait efficiencies. Gallop / run is a generic launch profile; it does not imply that elephants use a horse-like aerial gallop.
 
 ### Honest biology
 
@@ -92,7 +128,7 @@ References in Field notes and the editor provide biological context:
 - [Wilson et al. (2013)](https://doi.org/10.1038/nature12295) — wild cheetah locomotion.
 - [Bramble & Lieberman (2004)](https://doi.org/10.1038/nature03052) — human endurance running.
 
-They do not substantiate the full set of racing numbers. Each of the 36 species has its own generated full-body illustration. Unicode emoji are retained only as a fallback when an image fails to load.
+They do not substantiate the full set of racing numbers. New-species per-field evidence lives in `src/data/provenance.json` and loads on demand in the editor’s Biological context panel. It records units, accessed dates, reference links, observed values and model assumptions. Eight new masses and most top speeds remain estimates; conflicting or travel-speed reports are explicitly qualified. Each of the 100 species has its own generated full-body illustration. Unicode emoji are retained only as a fallback when an image fails to load.
 
 ### Boundaries and unusual experiments
 
@@ -107,7 +143,10 @@ They do not substantiate the full set of racing numbers. Each of the 36 species 
 ## Project map
 
 ```text
-src/data/animals.ts               36 presets and biological context
+src/data/animals.ts               100 presets and biological context
+src/data/taxonomy.ts              explicit ID-based biological browsing metadata
+src/lib/divisions.ts              cached distance-relative predicted divisions
+src/lib/roster.ts                 search/filter index, saved variants, matched lineups
 src/lib/types.ts                 typed models and locomotion profiles
 src/lib/simulation.ts             pure analytical racing engine
 src/lib/playback.ts               smart-clock mapping
@@ -144,19 +183,21 @@ If organization policy blocks Actions or Pages, the owner must allow them in rep
 
 ## Illustrated competitors
 
-![All 36 illustrated competitors at 64 px and 32 px](assets/animals/collection-preview.webp)
+![All 100 illustrated competitors at 64 px and 32 px](assets/animals/collection-preview.webp)
 
-The complete 36-species collection uses a shared premium, softly shaded 3D cartoon style. Every character faces right. The cheetah was generated first, inspected, and used as the visual reference for the remaining species. Prompts explicitly describe species-specific anatomy (including the platypus, elephant seal, pronghorn, and Hermann’s tortoise).
+The complete 100-species collection uses a shared premium, softly shaded 3D cartoon style. Every character faces right. The cheetah was generated first, inspected, and used as the visual reference for the remaining species. Prompts explicitly describe species-specific anatomy (including the platypus, elephant seal, pronghorn, and Hermann’s tortoise).
 
-- Original transparent PNG artwork: `assets/animals/originals/{animal-id}.png`. Originals are retained unchanged and excluded from the production site's public directory.
-- Runtime files: `public/animals/{animal-id}-{96,192,384}.webp`. Transparent padding is normalized onto a shared square frame and ground baseline. Original anatomy is not altered.
+- Original transparent PNG artwork: `assets/animals/originals/{animal-id}.png`. The original 36 files are unchanged; the 64 expansion images retain every delivered pixel inside a losslessly added transparent frame. All source PNGs are excluded from the production site's public directory.
+- **Source-border repair complete:** all 64 expansion PNGs now pass the strict clear 10% source-border requirement after lossless canvas extension. Both source and production borders are validated; before/after hashes and pixel preservation are recorded in `expansion/review/border-repair.json`. Fine toe and occluded multi-legged anatomy still needs specialist review; see [integration audit](docs/integration-audit.md).
+- Runtime files: `public/animals/{animal-id}-{96,192,384}.webp`. Transparent padding is normalized onto a square frame; the original 36 retain their existing baseline and the 64 additions use a smaller silhouette with a clear border. Original anatomy is not altered.
 - [Collection review and original downloads](assets/animals/README.md).
 - Art direction and species briefs: `assets/animals/art-direction.json`.
 - Integrity and framing manifest: `assets/animals/manifest.json`.
 
 ```bash
+npm run assets:pad      # idempotent lossless border repair for the 64 expansion PNGs
 npm run assets:build    # rebuild responsive WebP derivatives from the original PNGs
-npm run assets:check    # verify all 36 originals and 108 runtime files, alpha and dimensions
+npm run assets:check    # verify all 100 originals and 300 runtime files, alpha and dimensions
 npm run assets:review   # create full-detail, 64px and 32px review sheets in test-results/animal-art/
 ```
 
@@ -164,20 +205,21 @@ npm run assets:review   # create full-detail, 64px and 32px review sheets in tes
 
 Animations transform only an inner visual layer. The outer competitor position continues to use the unchanged racing engine. Running uses rhythmic bounce; bounding uses hop/compression; waddling uses gentle rocking; crawling uses small body movement; elephant seals have slow undulation. Cadence follows current simulated speed with conservative visual bounds, never feeds back into physics, and stops on pause or finish. Reduced-motion preferences disable these animations.
 
-Browser tests additionally cover all 36 loaded illustrations, failed-image fallback sizing, every gait, and paused/reduced-motion behavior. CI checks asset integrity before the existing application checks and deployment.
+Browser tests additionally cover all 100 loaded illustrations across three roster pages, failed-image fallback sizing, every gait, and paused/reduced-motion behavior. CI checks asset integrity before the existing application checks and deployment.
 
 ## Adding more competitors
 
-The project is prepared for a **100-species target**, but this commit does **not** add any animals or replace existing artwork. Species identities and racing parameters live in `src/data/animals.ts`; the asset catalog is generated from that source with `npm run roster:sync`. Add researched species entries there, maintain new-species source/provenance notes, and add matching anatomy briefs to `assets/animals/art-direction.json`. Consult `AGENTS.md` for the full research and image-quality checklist.
+The league now contains **100 unique species entries**: the original 36 plus the 64-species menagerie pack. The original IDs, statistics, PNG bytes, default lineup and presets are preserved. Species identities and racing parameters live in `src/data/animals.ts`; the asset catalog is generated from that source with `npm run roster:sync`. Add researched species entries there, maintain new-species source/provenance notes, and add matching anatomy briefs to `assets/animals/art-direction.json`. Consult `AGENTS.md` for the full research and image-quality checklist.
 
 For each added species, create a right-facing transparent PNG using the existing cheetah artwork as the style reference, save it under `assets/animals/originals/<id>.png`, then run:
 
 ```bash
 npm run roster:sync
+npm run roster:check
 npm run assets:build
 npm run assets:check
 npm run assets:review
-npm run typecheck && npm run lint && npm test && npm run build
+npm run typecheck && npm run lint && npm test && npm run test:e2e && npm run build
 ```
 
 The asset validator and contact-sheet generator now derive roster counts and page counts from the catalog instead of assuming exactly 36 species. Existing asset IDs and original art are retained.

@@ -25,6 +25,8 @@ import {
   speedKmh,
 } from '../lib/simulation'
 import { clockPlan, smartTime } from '../lib/playback'
+import { divisionForTime } from '../lib/divisions'
+import { leagueDivisions } from '../lib/roster'
 import type { RaceSettings } from '../lib/types'
 import { AnimalAvatar } from './AnimalAvatar'
 import { AnimalSprite } from './AnimalSprite'
@@ -48,6 +50,15 @@ export function RaceDay({
     () => simulate(entrants, distance, massEffects),
     [entrants, distance, massEffects],
   )
+  const lineupDivisions = useMemo(() => {
+    const benchmark = leagueDivisions.benchmark(distance)
+    return new Map(
+      results.map((result) => [
+        result.animal.id,
+        divisionForTime(result.finish, benchmark).label,
+      ]),
+    )
+  }, [results, distance])
   const plan = useMemo(() => clockPlan(results.map((r) => r.finish)), [results])
   const [playing, setPlaying] = useState(false)
   const [smart, setSmart] = useState(true)
@@ -233,11 +244,7 @@ export function RaceDay({
                   title={`Edit ${animal.name}`}
                 >
                   <strong>{animal.name}</strong>
-                  <small>
-                    {animal.custom
-                      ? 'Custom contender'
-                      : `${speedKmh(animal.stats.topSpeed)} km/h · ${animal.category === 'Heavyweights' ? 'Heavyweight' : animal.category === 'Distance stars' ? 'Distance star' : animal.category === 'Sprinters' ? 'Sprinter' : 'Wildcard'}`}
-                  </small>
+                  <small>{lineupDivisions.get(animal.id)} · predicted</small>
                 </button>
                 <button
                   className="icon-button edit-animal"

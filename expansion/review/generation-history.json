@@ -1,0 +1,29 @@
+{
+  "generator": "Built-in image generation",
+  "initialIndividualRequests": 64,
+  "reviewedReplacementRequests": 4,
+  "styleReference": "../assets/animals/originals/cheetah.png",
+  "notes": "Initial artwork generated individually with the cheetah as style reference. Selected replacements use the corresponding generated original as edit reference. No original application artwork was edited.",
+  "replacements": [
+    {
+      "speciesId": "quokka",
+      "rejectedSha256": "bb2d4c9d6eb7a2d50349c092b9c7302f10794605e6c8666e2351fd705dc379b2",
+      "reason": "Tight visible framing"
+    },
+    {
+      "speciesId": "velvet-worm",
+      "rejectedSha256": "477ba287367c8bea57d15d8333eb68fa60522af8b8c42cd9c0bb322f9bb602b6",
+      "reason": "Far too few lobopods and short caterpillar-like body"
+    },
+    {
+      "speciesId": "centipede",
+      "rejectedSha256": "73ed12114e3b40db304b35693defc462c747d0bd0d2c7e6c751c40a0c53e4e01",
+      "reason": "Uncertain leg count; retried with explicit 21-pair brief"
+    },
+    {
+      "speciesId": "golden-mantella",
+      "rejectedSha256": "42a5760f328e37ca0a671f03f7931e49f947ecdd1243817e45ae909ecd78587b",
+      "reason": "Incorrect dark dorsal spotting"
+    }
+  ]
+}

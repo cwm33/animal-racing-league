@@ -1,0 +1,1173 @@
+{
+  "reviewed": "2026-10-22",
+  "reviewer": "Codex visual review",
+  "scope": "All 64 originals reviewed in native-size contact sheets and 64/32px sheets, with individual inspection of selected and regenerated originals. Sheets use a checker background; selected originals were also viewed against the image viewer background.",
+  "overallStatus": "conditional_art_acceptance",
+  "limitations": [
+    "All 64 source borders now pass after lossless canvas extension. Faint alpha noise inside the preserved delivered canvas remains; no original RGBA pixel was altered.",
+    "Occlusion and stylization prevent certification of fine appendage counts.",
+    "Small review sprites are scaled directly from original canvas, before future asset-pipeline normalization."
+  ],
+  "regeneratedIds": [
+    "quokka",
+    "velvet-worm",
+    "golden-mantella",
+    "centipede"
+  ],
+  "images": [
+    {
+      "speciesId": "quokka",
+      "sha256": "cfb131c97abd07d4feb07c02410b7113cb0eb57da396d4fd250a9f9deeb4e648",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-01.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Framing retry adds visible padding. Rounded ears, hunched body, small forelimbs, strong hind feet and relatively short tail retained; faint alpha noise remains.",
+      "deliveredSha256": "e3c2b3d97221694cada9ec8125d151df9a4cec7ce1c7280c06888424264381db"
+    },
+    {
+      "speciesId": "wombat",
+      "sha256": "d6c4f57699b91957e97616480b532e4121741a7403b489b373f111007ab7ff23",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-01.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "d170c30091e22a919ba3b270d6bcc0a80d334bfb238b26368ec8c825c6f02408"
+    },
+    {
+      "speciesId": "pangolin",
+      "sha256": "8fec55f8f9fb5e35945c3bb5673a733d5e4b7782ea985bdede348351156bd312",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-01.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Scaled body, foreclaws and long tail retained. Low quadrupedal pose is stylized; ground pangolins also walk bipedally.",
+      "deliveredSha256": "76694179224f4a81d624ed9c5eda4958446b323a201797b92841114eb0a85077"
+    },
+    {
+      "speciesId": "aardvark",
+      "sha256": "bda86a96d21ffe3406f1ff749b44606dbb68b08e1131fb5a15e393e031ff188a",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-01.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "4f837c5296b6ad0d621eebcec459a11eee0122922f5579be727b4ae6bdd5eb04"
+    },
+    {
+      "speciesId": "echidna",
+      "sha256": "b7729f9eaf178b1c4f039ecb84fe318dd8cd8fbf5edb2db2902747674dc0c814",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-01.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "058f20212fc32c556d5ab0a75c09aaa8f8eb1a6e4188bf66a9e9ae47c072fa34"
+    },
+    {
+      "speciesId": "armadillo",
+      "sha256": "4fed32b629bf86b840e2c243d9f8196b84ff9744ce4240de5ed63a2997a8087d",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-01.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Armor bands and tail retained. Exact band and toe counts are simplified.",
+      "deliveredSha256": "5993f8b3c2409c097087326279c25ccd703a1a914a3d9ad74e84dfac37200cc9"
+    },
+    {
+      "speciesId": "giant-anteater",
+      "sha256": "fe188aa5c156d7d08b66a75af1873016341aba3a3c5bb414d7f2c523a13d9a54",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-01.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "57092fc4f405b4ce137bd857128a3595c05afc7883f4ad97cf64c4b6fdf3fd16"
+    },
+    {
+      "speciesId": "meerkat",
+      "sha256": "fde703ab7af06e2bc77eb9a09beb972244ecb15521854a3bd1659db496fbf4b2",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-01.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "c3d6c538a8c1045737e4bbf01367342f2fa68749353ac49c5ddbda7ad34e22cd"
+    },
+    {
+      "speciesId": "badger",
+      "sha256": "31a8ea870a53ad2f86e871be6535145c5dcdd7a458133ac191780cde7069fdc4",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-02.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "7630cebe256df067017c08df5c3f7195e495a3ba3b97a3d309aa3c6bd403d68a"
+    },
+    {
+      "speciesId": "wolverine",
+      "sha256": "dc52abd9ff80cea7347740b9b19a017862c4b539e5126a958f62355c6cc5d054",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-02.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "aa48b5fa7b09ee0c99bfcaf34bff324bffd0ade0a4510aa200825d872c5d5ba7"
+    },
+    {
+      "speciesId": "raccoon",
+      "sha256": "8e1e70e394ce051e5e18096bb9587e98e64c8537e5ef7095bdab4b86d85e0c9d",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-02.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "e06bffd5df837b9d05ec1129915d5133346a04b797688395b47e7a9a9c876896"
+    },
+    {
+      "speciesId": "red-panda",
+      "sha256": "664206f1030de976d9d0b5fdded02350702b2a342ff18893452ab59a35880dac",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-02.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "4973cfe1284b3f094581da91cf681678d677ab31ac4cdc4d13a2add0e471f350"
+    },
+    {
+      "speciesId": "fossa",
+      "sha256": "de4ee2632ed4b5fa5c71e811219e61542b06c7dd87dae35cd9873058e384b2e7",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-02.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Slender body and very long tail retained. Face is strongly stylized and feline-looking.",
+      "deliveredSha256": "95ef71d2ca46786634c46a5fbd5154bd500e5f4413ccbb7a226914304bd47d8b"
+    },
+    {
+      "speciesId": "ring-tailed-lemur",
+      "sha256": "2ebd3eb121620c74946c0d1e65f4a1fac676dbf9fe84b328f3d21b9ff418e818",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-02.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "a0955b29f9900be782eb8ba4966aef54e155ae747c7c198b4dece43f7252f821"
+    },
+    {
+      "speciesId": "olive-baboon",
+      "sha256": "e99620824bf8d42195167704b43fcec32ad2b2a588290245d0a649ae9b27e175",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-02.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "68ba93bfc43171f532e06a1de1e52ac261a04b0c2c05a88804c0907ecd66f1c1"
+    },
+    {
+      "speciesId": "crested-porcupine",
+      "sha256": "ae405704b6f63c7b543362c32d450f7d7fd0cee7bc5c6dab7181e79a342d785a",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-02.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "db435aedcd06e0fd882197cffaa1d39035214a2a54a6bf4fb2ab2ed9d4eaa57f"
+    },
+    {
+      "speciesId": "hedgehog",
+      "sha256": "115f279a87d7de5a8ab985f4d3f35ad67568617cc65f86a117c3099404b053d9",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-03.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "cdf2367e80e958193a8b0409c244e2fb05ee99a61871bdf4847e9d8d5fa5b0f1"
+    },
+    {
+      "speciesId": "tenrec",
+      "sha256": "dd8ba7eab9996cabf2a854f87f27dbb1d72480a80591b663902cff88f5386eff",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-03.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "c07fc4eed21ac2820a45fba27792275531e2dfa11e790024491bbd7f3ed996fb"
+    },
+    {
+      "speciesId": "shrew",
+      "sha256": "d9aea1572dbd760fab0a3948b1fb5a20db540bca5dbcb228fe3584a03f2e4e02",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-03.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "e607ff221c45de6145658ad059a91d9c15c8162b575022c8e25c5b7691ad2042"
+    },
+    {
+      "speciesId": "elephant-shrew",
+      "sha256": "f8c6b73b4d9c3576c8296daeb54e86f020d8675bbd003d3c8c5efbec402d1877",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-03.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "d3ca8c04486a59c0360e5e4d8dd78f5fd5a59207129cc38b03256339677c3bd5"
+    },
+    {
+      "speciesId": "springhare",
+      "sha256": "b47db1666b2e40171eac3b9f0f563147bedbfab9849c5cb8d0d4e2141c52b2c5",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-03.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Large hind feet and black-tipped tail retained. Cartoon face is rabbit-like.",
+      "deliveredSha256": "007dfabac74b0de3030f57eac4b41e35d7dc5839f8dcaaa5e2093087cfd93f5a"
+    },
+    {
+      "speciesId": "okapi",
+      "sha256": "ba20bf2ee1279af819dabc229b69f55476e9e88779fe8f4b3346adcd402b03a6",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-03.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "98de61f35ebcd18b340f3a1adf2e13e37588906266e27e00ff8a6a0022127d5c"
+    },
+    {
+      "speciesId": "cassowary",
+      "sha256": "6ce001b639618ef5d0a0e0c167600dd91bdeedb612ee260befe56f88f7041d14",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-03.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Black body, blue neck, casque, wattles and two strong feet retained.",
+      "deliveredSha256": "7d4c03b8f01c0070ab00d5e9fac3bc9306b7021a421ad9a921f358b3849b538f"
+    },
+    {
+      "speciesId": "emu",
+      "sha256": "8da2103db3806d6bc3131883ec23920130d917a6ea565ca7ed4495e437b03602",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-03.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Brown shaggy body and two long legs retained; no cassowary casque.",
+      "deliveredSha256": "c7151816a13383b848edfc0b5bb797bab0e312f7aa70dc4d0f058411215489e9"
+    },
+    {
+      "speciesId": "secretary-bird",
+      "sha256": "91afeb5beb4317a9903b4d33d4859c07f30acd1f4715e2246d81d05b3c52c98b",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-04.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "e87912ededb0a1b9507a4c34626691274b0aa297d1972a1616625bd2de1e43b6"
+    },
+    {
+      "speciesId": "roadrunner",
+      "sha256": "e0837538890db3eb2aaf1a34c2f198c3eeab902f63d8cd3b50ec2ee31169a906",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-04.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "68edca8a81130b208e271bd38d17ea3abb770dfaefecc3313fb786b2980be065"
+    },
+    {
+      "speciesId": "kiwi",
+      "sha256": "a412871f94b2aa339b9b4c8bd2189d564245fe45e574ed0eb8a86fc60c0d0b7d",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-04.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Shaggy brown body, long bill and two feet retained; bill curve is stylized.",
+      "deliveredSha256": "526304ccd4b02f6061eb56e1443b46078a30b4b09cb19802b765b64064605fe4"
+    },
+    {
+      "speciesId": "wild-turkey",
+      "sha256": "867a15667e8edf938e3db38814f2af2e87b4033a18063859f946602af6dd4129",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-04.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "40d0047c23b6792963e487834dae3fd40bd5825c4a205c2aff76e6bb21a40b6e"
+    },
+    {
+      "speciesId": "guineafowl",
+      "sha256": "c9029789c4c25e4951aa1e755f11d7e2a9d9f1721e6e02361de0961a7d7eeec1",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-04.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "13299a35055af00f9eb8ea90a04ba76047dd8a94c662c416bdf951dfb8d4f51b"
+    },
+    {
+      "speciesId": "peafowl",
+      "sha256": "d87216472ab3147cb4724bef48783a8bdc99a1d5cfedb10fcafcd32a8781d2d5",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-04.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Blue neck and eye-spotted train retained. Train shortened for compact icon composition.",
+      "deliveredSha256": "d820143c7a76364a3a39cd3aeef8c0e2c4d4816610ed144e172fcb5c1f8f11a1"
+    },
+    {
+      "speciesId": "seriema",
+      "sha256": "86e62a2551ee628ede50f1af7f7f8fabe4bab91f6ccca574399916e4312c9723",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-04.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "1fddd9765a6370037bb6597b96e4b63b91316a68f4f222042ee94af9fad179e8"
+    },
+    {
+      "speciesId": "kori-bustard",
+      "sha256": "dbf27f669712bee0303ff1e9c6358fffb363b9f2716875727d50ccda1b161bfe",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-04.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "9680cd2f4a1e64acfa68d7b6bb44aec0976528659f3e0d1a9a106a373ecde1bc"
+    },
+    {
+      "speciesId": "tinamou",
+      "sha256": "889ef4f18f38ecfb7af88e6c0a7da2c5743c55534294f6cf8a417847d88dacd4",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-05.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "e82fac1b2a0e045ab9e09520bdd04f0e223206fe93f954e862a4a532ffca146e"
+    },
+    {
+      "speciesId": "lyrebird",
+      "sha256": "9c6178b01d8a0ff137d717bc84288db021ceb62205063e2e84d3ed26ab5bab44",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-05.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Lyre-like outer tail feathers retained. Fine filaments disappear at 32 px.",
+      "deliveredSha256": "5aa4fe4f3de0d838eae72799ee6d472a7d00ef581aaefcc541753b8e0524fd1d"
+    },
+    {
+      "speciesId": "komodo-dragon",
+      "sha256": "382f47e46049b8ad22c6bc4bb2891a9fc6044491e4956593871a6936c12e73c0",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-05.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "ea0c900493bbcc39854e48dc7b5ac76d3931cff10e49e5a198b9cc9db3dd6c7c"
+    },
+    {
+      "speciesId": "gila-monster",
+      "sha256": "fe07f66094b8b8ea9855d1e1362c14f6cc327de15c685b3173216bf94d8eeea0",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-05.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "2c95f77fb699b316933d89a96ad4c0e142813c4aec3aee640893239bdf6cfbe0"
+    },
+    {
+      "speciesId": "bearded-dragon",
+      "sha256": "c60afbb445bcae4591bbf13e4703541feeeec44cc6bf0b56f960969e811f93a9",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-05.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "b2a347813f1dd8c4f96d1de652bffda8bda3c15203af5dd26db6ba694a522277"
+    },
+    {
+      "speciesId": "frilled-lizard",
+      "sha256": "efe34cae6a4d97bdb265ddc162fc94f3634c8f8fd4f232088c0e66459aa977cd",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-05.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Two raised forelimbs and two running hind limbs retained, with frill and complete tail.",
+      "deliveredSha256": "b4afb101427fd8dc7a7dfbe1606df7962ccdcc162abae3d51487b5c704aa24db"
+    },
+    {
+      "speciesId": "horned-lizard",
+      "sha256": "5011df3e0dd339f98e1df206453db9064d1d8e9e407e8a2635b1e6d23ce4354e",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-05.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "c1bbe63b1585b6de2aebcf865a819c62be47a3800184e21642e019c429e1ba21"
+    },
+    {
+      "speciesId": "thorny-devil",
+      "sha256": "6df3abb0d39e7b8740945d0eb25ecdedac241894f5505acb1130f0399fe54c57",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-05.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "09d2086053136d34a4537cf9bc55ef6fa244038f894f09e0249bf05f75577638"
+    },
+    {
+      "speciesId": "blue-tongued-skink",
+      "sha256": "24135120a4a92cebc24372790601a44c554365947ea8747633d0ebd05468298f",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-06.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "8a13c95e2daed82bcef681c848766b27a1bde05581ef434cb1dfc6553074ec65"
+    },
+    {
+      "speciesId": "leopard-gecko",
+      "sha256": "401ca53a35c0c7446c88b418bca451b758aec82366b2fb32f6b74b5af6587aaa",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-06.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "fcc9de0ce6cd46219e67abdd5cda940afd699945b3501f0a01280ea000b373cb"
+    },
+    {
+      "speciesId": "tuatara",
+      "sha256": "486598edeb4670b16d5f9c5d94c086701d962e5c92faa472cb05b6b025473c04",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-06.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "81d09692a35c020ad98b8d2cbfa2997b21aac20045eff99986e6a72fd5b5f53c"
+    },
+    {
+      "speciesId": "rosy-boa",
+      "sha256": "e7c29fd4433a51ab3da8cc80dde77ceb6355476294288b31941653ddc6171b50",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-06.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Longitudinal stripes and limbless body retained; no hood.",
+      "deliveredSha256": "f3082dd457995ad999fcc32aed7ba62238bcb5a1fcb43b44e8623d07c5a57ce4"
+    },
+    {
+      "speciesId": "common-toad",
+      "sha256": "286c52b94c35aea146a780710b5cdfefa6cc7e38f1d4657c5dcd20214c1242d4",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-06.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "0937efed05df7bb47bd825c6358d18c8d98bd95267a18cc05e96954a5576ddb0"
+    },
+    {
+      "speciesId": "fire-salamander",
+      "sha256": "853027d9598a9903403ece9421fdc415f74e820f2d5701f7f6eaf5d699550a07",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-06.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Finless four-limbed adult retained; tiny toe counts simplified.",
+      "deliveredSha256": "24d4411cb3a6f7a2be119a67034dae19921168ccb6f8db178a20d2e337e4ecfb"
+    },
+    {
+      "speciesId": "tiger-salamander",
+      "sha256": "00f977cdb87863728975fdfb76ede6f7858f13db893484b3a23c3e53ea5ec7a0",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-06.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Finless four-limbed adult retained; tiny toe counts simplified.",
+      "deliveredSha256": "dba75c72eb5fbf8681c1776254d5ce23f844ca0611b431f8476778956f911a57"
+    },
+    {
+      "speciesId": "tomato-frog",
+      "sha256": "a8ed91c40f9cce260aacc303a210740d30911a9b94256ea4e5703e1f25ccaf95",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-06.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "ad524a89d4a547cd621071f5839fdd9b1e0245e23cc22790c9ff677c496a240a"
+    },
+    {
+      "speciesId": "ornate-horned-frog",
+      "sha256": "3abe49a9c9c40f6282617173f6a4ede936ebc670a706249ff25f64a949744b99",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-07.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "4e2229f9fd340f1c32070a11820980c7430781bfdf3cd5dacee382e4660463a8"
+    },
+    {
+      "speciesId": "golden-mantella",
+      "sha256": "7abbd54cd158069dd548f0a7a2c897f1d891620bc7d96034cde3c11abb6940af",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-07.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Regenerated to remove incorrect dorsal spots. Uniform orange skin retained; eyes and toe tips remain stylized.",
+      "deliveredSha256": "c00113abbcd0778d7a215345ce251a8171636b1aced6576f839e4d7e983bdfaa"
+    },
+    {
+      "speciesId": "tarantula",
+      "sha256": "050811456dc399d9c5b2656deab4c12e947151cd9ba9c88195527c11f99e3709",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-07.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Hairy two-part body, small eye cluster, eight-leg body plan and short pedipalps retained. Limb overlap prevents complete independent accounting.",
+      "deliveredSha256": "9c4c6011d9241f6eb9bb902f0cfd1bd5302632e87b68765d593a07300df8d71a"
+    },
+    {
+      "speciesId": "scorpion",
+      "sha256": "e41523c37a960e8065cf84a13586df06e823aedb33766a44379ed42948e7c7f7",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-07.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Arachnid body plan with two separate pincers and segmented stinging tail retained. Far-side legs overlap.",
+      "deliveredSha256": "a6233896c95be03e68b32c284f0758b18fe7ae34a7417c89def702d3f5a1424c"
+    },
+    {
+      "speciesId": "coconut-crab",
+      "sha256": "ea5f86a69c40b35073ab798f31e9818b21fde11c4ea89300c387739dc4ea2f34",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-07.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Unequal claws and walking limbs retained. Reduced rear limbs are occluded and not independently countable.",
+      "deliveredSha256": "a6cdfd36995d1ad6aee075317a9fd1de0cd3dbb22a90a1dfcabf5661046782b5"
+    },
+    {
+      "speciesId": "tiger-beetle",
+      "sha256": "2787c0ed4f5f7bcd0a13c292fdf41b1648c3695720580cc18c0bf75cb835c94f",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-07.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "94bab1764f381ec0bb7ee4b97b65b9bc709a52848a5eca3cdbcb9e65e1ac93c2"
+    },
+    {
+      "speciesId": "silver-ant",
+      "sha256": "39f72ee9ce203f2e44d90b6561998fe75db44e80635a6e389d3c2572c5296d44",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-07.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Worker ant body plan, waist and antennae retained. Compound eyes exaggerated.",
+      "deliveredSha256": "611161645f656a71632ee279a585c7ea310860d8c3b2812c44c8e0923f18452b"
+    },
+    {
+      "speciesId": "cockroach",
+      "sha256": "19829c87707f6c8617008caf314e99f870740928ae1b2e1d4f7644c03cd7f42c",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-07.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Recognizable silhouette and major species markings retained. No obvious extra limb or visible clipping observed; this is not anatomical certification.",
+      "deliveredSha256": "28c458da888a9ae69be2a97d3d0c433205c476d6d45b35757fdc5539cfdfbb3b"
+    },
+    {
+      "speciesId": "mantis",
+      "sha256": "95964c5aebee59fe6f77361d114f118c99d977cf98e6f7969a88fe0071f5b4dd",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-08.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Two raptorial forelegs plus four walking legs retained.",
+      "deliveredSha256": "227bb14db6e84fc8316a78e691973aa77ad6124fd96972f4ab30c61fcaa54d0a"
+    },
+    {
+      "speciesId": "stick-insect",
+      "sha256": "519cda25a65b774dbc4c0b3994435bc51d575e801a7d62e80cfae746040da718",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-08.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Six-leg body plan and two antennae retained. Thin appendages have limited readability at 32 px.",
+      "deliveredSha256": "28a6a62d342425bb35e613fb6ef871f42daf9714e4b44a9480ee9e906495bc1c"
+    },
+    {
+      "speciesId": "giant-millipede",
+      "sha256": "b0da610b421dd47d47d7f3ac82e4c59bb4c4efb54d4b2182886940b984640b3e",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-08.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Cylindrical many-ringed body retained. Exact diplosegment leg pairing is not certified; specialist review recommended.",
+      "deliveredSha256": "94f37035c751b3b2a4fa7cfd6c69b1a6b7800de31bd063ff393499dc482f5e1c"
+    },
+    {
+      "speciesId": "centipede",
+      "sha256": "6796ba1faa6afefc5b06714bc5805db064940755f0648a73bf59b923b87ce926",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-08.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Regenerated with explicit 21-pair instruction. Flattened body, antennae and long ultimate legs retained. Exact pair count still not certified.",
+      "deliveredSha256": "875d6b4f6158d3bab85c21ed05e2553bbf902b16d26cebcbefac53ea24524ada"
+    },
+    {
+      "speciesId": "earthworm",
+      "sha256": "011507fb66776c5d4b32e8f78b3eb0c923de2121d72034d5b313beedd01eae66",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-08.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Segmented limbless body and clitellum retained; no invented eyes or antennae.",
+      "deliveredSha256": "2e0be17c4d02dab5e8eeb3ef80442d895efd5ea75ec90119484e1f5e19188863"
+    },
+    {
+      "speciesId": "slug",
+      "sha256": "63799fa4e41fee467ede013c50cdcbd1acbc10740a7a8fc30ba39f4889eace9f",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-08.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Shell-less body and four tentacles retained; no invented limbs.",
+      "deliveredSha256": "c9a08c5d2cefa266868e19f77c26ef0b5536a15a9ac32492acb7ec7fcc9a4b31"
+    },
+    {
+      "speciesId": "velvet-worm",
+      "sha256": "6064f1d6108e73fe837c82d36e5ff6d645eedbd1cc25a5d9ae28fbd1b5a58f9a",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-08.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Regenerated after first version had far too few lobopods. Replacement has a long body and closely spaced legs. Exact 34-pair male count not certified.",
+      "deliveredSha256": "a3879c99bef96552f02feb12877cc09899394b889f0f1f4e136006695539d9dc"
+    },
+    {
+      "speciesId": "woodlouse",
+      "sha256": "bae68995070660b65be2368ff915d5834b46efd120e8bc25f2ddb4203753ab7c",
+      "reviewedScales": [
+        "native-size contact sheet (1:1)",
+        "64px",
+        "32px"
+      ],
+      "fullSizeSheet": "full-size-08.webp",
+      "orientation": "right-facing",
+      "visibleClipping": "none observed",
+      "identityReview": "recognizable stylized body plan",
+      "limbReview": "major appendages reviewed; hidden limbs and fine toe/segment counts not certified",
+      "framing": "Strict 10% clear source border passed after lossless padding; see image-checks.json and border-repair.json.",
+      "status": "usable_with_documented_anatomy_limitations",
+      "notes": "Plated isopod body, antennae and uropods retained. Far-side legs overlap.",
+      "deliveredSha256": "2bc364c1c0dc3a7f424d18a0cd5556214a381051b14da39a2f23ddb203980fb9"
+    }
+  ],
+  "borderRepair": "border-repair.json",
+  "paddingFollowUp": "All 64 sources passed strict borders and exact retained RGBA hash checks after padding. Contact sheets refreshed. Anatomy review applies to the unchanged delivered illustration pixels; padding does not certify fine anatomy."
+}

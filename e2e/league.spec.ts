@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test'
 import type { Page } from '@playwright/test'
+import catalog from '../assets/animals/catalog.json' with { type: 'json' }
 import AxeBuilder from '@axe-core/playwright'
 async function navigate(page: Page, name: string) {
   const menu = page.getByRole('button', { name: 'Open navigation' })
@@ -201,36 +202,41 @@ test('the complete roster loads real responsive illustrations without emoji fall
 }) => {
   await page.getByRole('button', { name: /Add competitors/ }).click()
   const dialog = page.getByRole('dialog')
-  await expect(dialog.locator('.animal-sprite img')).toHaveCount(36)
-  const images = await dialog
-    .locator('.animal-sprite img')
-    .evaluateAll(async (elements) => {
-      return Promise.all(
-        elements.map(async (element) => {
-          const image = element as HTMLImageElement
-          image.loading = 'eager'
-          try {
+  const seen = new Set<string>()
+  for (let offset = 0; offset < catalog.length; offset += 36) {
+    const count = Math.min(36, catalog.length - offset)
+    await expect(dialog.locator('.animal-sprite img')).toHaveCount(count)
+    const images = await dialog
+      .locator('.animal-sprite img')
+      .evaluateAll(async (elements) => {
+        return Promise.all(
+          elements.map(async (element) => {
+            const image = element as HTMLImageElement
+            image.loading = 'eager'
             await image.decode()
-          } catch {
-            /* Return a useful assertion below. */
-          }
-          return {
-            loaded: image.naturalWidth > 0,
-            source: image.currentSrc,
-            width: image.naturalWidth,
-          }
-        }),
-      )
-    })
-  expect(
-    images.every(
-      (image) =>
-        image.loaded &&
-        image.source.includes('/animal-racing-league/animals/') &&
-        image.source.endsWith('.webp'),
-    ),
-  ).toBe(true)
-  await expect(dialog.locator('[data-fallback]')).toHaveCount(0)
+            return {
+              id: image.closest('[data-animal]')!.getAttribute('data-animal')!,
+              loaded: image.naturalWidth > 0,
+              source: image.currentSrc,
+            }
+          }),
+        )
+      })
+    for (const image of images) {
+      seen.add(image.id)
+      expect(image.loaded).toBe(true)
+      expect(image.source).toContain('/animal-racing-league/animals/')
+      expect(image.source).toMatch(/-(96|192|384)\.webp$/)
+    }
+    await expect(dialog.locator('[data-fallback]')).toHaveCount(0)
+    if (offset + 36 < catalog.length) {
+      await dialog.getByRole('button', { name: 'Next page' }).click()
+      await expect(
+        dialog.getByRole('group', { name: 'Species results' }),
+      ).toBeFocused()
+    }
+  }
+  expect([...seen].sort()).toEqual(catalog.map((a) => a.id).sort())
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -316,4 +322,202 @@ test('gait animations follow moving species and stop on pause', async ({
   await expect(
     page.getByRole('button', { name: 'Pause race', exact: true }),
   ).toBeVisible()
+})
+
+test('biological and pace filters assemble a matched crowd while mixed races remain available', async ({
+  page,
+}) => {
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  const dialog = page.getByRole('dialog')
+  const group = dialog.getByLabel('Biological group', { exact: true })
+  await group.selectOption('big-cats')
+  await expect(dialog.locator('.roster-card')).toHaveCount(3)
+  await expect(dialog.locator('.roster-card').first()).toContainText('Cheetah')
+  await group.selectOption('amphibians')
+  await expect(dialog.locator('.roster-card')).toHaveCount(6)
+  await expect(dialog.locator('.roster-card').first()).toContainText(
+    'Common toad',
+  )
+  await dialog.getByRole('searchbox').fill('no such athlete')
+  await expect(dialog.getByText(/No competitors match/)).toBeVisible()
+  await dialog.getByRole('button', { name: 'Clear filters' }).click()
+  await dialog.getByRole('searchbox').fill('Canidae')
+  await expect(dialog.locator('.roster-card')).toHaveCount(3)
+  await dialog.getByRole('searchbox').fill('')
+  await dialog.getByLabel('Roster race distance').selectOption('250')
+  await dialog
+    .getByLabel('Competitive division', { exact: true })
+    .selectOption('elite')
+  const count = Math.min(6, await dialog.locator('.roster-card').count())
+  await dialog.locator('.matching-tools > summary').click()
+  await dialog
+    .getByRole('button', { name: `Race matched ${count}`, exact: true })
+    .click()
+  await expect(dialog).not.toBeVisible()
+  await expect(page.locator('.lineup-row')).toHaveCount(count)
+  for (const row of await page.locator('.lineup-row').all())
+    await expect(row).toContainText('Elite pace')
+  await expect(page.getByLabel('Custom distance in metres')).toHaveValue('250')
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  await dialog.getByRole('searchbox').fill('snail')
+  await dialog.locator('.roster-card').click()
+  await dialog.getByRole('button', { name: /Meet me at the start/ }).click()
+  await expect(page.getByTitle('Edit Garden snail')).toBeVisible()
+  await expect(page.locator('.lineup-row')).toHaveCount(count + 1)
+  await expect(page.getByTitle('Edit Garden snail')).toContainText(
+    'Geological time',
+  )
+  await page.reload()
+  await expect(page.locator('.lineup-row')).toHaveCount(count + 1)
+})
+
+test('divisions update across distances and edited racing parameters without changing species identity', async ({
+  page,
+}) => {
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  const dialog = page.getByRole('dialog')
+  await dialog.getByRole('searchbox').fill('cheetah')
+  const card = dialog.locator('.roster-card')
+  await dialog.getByLabel('Roster race distance').selectOption('25')
+  await expect(card).toContainText('Elite pace')
+  await dialog.getByLabel('Roster race distance').selectOption('10000')
+  await expect(card).toContainText('Club racers')
+  await dialog.getByRole('button', { name: 'Close animal roster' }).click()
+  await page.getByTitle('Edit Cheetah').click()
+  await dialog.getByLabel('Competitor name').fill('Turbo Bird')
+  await dialog.getByLabel('Launch acceleration').fill('0')
+  await dialog.getByRole('button', { name: 'Apply to lineup' }).click()
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  await dialog.getByRole('searchbox').fill('cheetah')
+  await dialog
+    .getByLabel('Biological group', { exact: true })
+    .selectOption('big-cats')
+  await expect(card).toContainText('Turbo Bird')
+  await expect(card).toContainText('No predicted finish · DNF')
+  await dialog
+    .getByLabel('Competitive division', { exact: true })
+    .selectOption('dnf')
+  await expect(card).toHaveCount(1)
+  await dialog.locator('.matching-tools > summary').click()
+  await expect(
+    dialog.getByRole('button', { name: 'Race matched crowd' }),
+  ).toBeDisabled()
+})
+
+test('legacy saved stable configurations paginate, filter and load with their original statistics', async ({
+  page,
+}) => {
+  await page.evaluate(() => {
+    const settings = JSON.parse(localStorage.getItem('arl:settings:v1')!)
+    const hippo = settings.entrants.find(
+      (a: { id: string }) => a.id === 'hippo',
+    )
+    localStorage.setItem(
+      'arl:library:v1',
+      JSON.stringify(
+        Array.from({ length: 100 }, (_, i) => ({
+          id: `legacy-${i}`,
+          savedAt: '2026-01-01',
+          animal: {
+            ...hippo,
+            custom: true,
+            name: `Stable hippo ${i}`,
+            stats: { ...hippo.stats, delay: i },
+          },
+        })),
+      ),
+    )
+  })
+  await page.reload()
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  const dialog = page.getByRole('dialog')
+  await dialog
+    .getByRole('button', { name: 'Saved stable (100)', exact: true })
+    .click()
+  await expect(dialog.locator('.roster-card')).toHaveCount(36)
+  await expect(dialog.locator('.animal-sprite img')).toHaveCount(36)
+  await dialog.getByRole('button', { name: 'Next page' }).click()
+  await expect(dialog.getByText('Page 2 of 3')).toBeVisible()
+  await dialog.getByRole('searchbox').fill('Stable hippo 99')
+  await expect(dialog.locator('.roster-card')).toHaveCount(1)
+  await expect(
+    dialog.getByRole('navigation', { name: 'Roster pages' }),
+  ).not.toBeVisible()
+  await dialog.locator('.roster-card').click()
+  await dialog.getByRole('button', { name: /Meet me at the start/ }).click()
+  await expect(
+    page.getByRole('button', { name: 'Unrestricted nonsense' }),
+  ).toBeVisible()
+  await page.getByTitle('Edit Stable hippo 99').click()
+  await expect(dialog.getByLabel('Launch delay')).toHaveValue('99')
+  await dialog.getByRole('button', { name: 'Close animal editor' }).click()
+  await page.reload()
+  await expect(page.getByTitle('Edit Stable hippo 99')).toBeVisible()
+})
+
+test('expansion search, biological evidence and slithering stable variants survive reload', async ({
+  page,
+}) => {
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  const dialog = page.getByRole('dialog')
+  await dialog
+    .getByLabel('Biological group', { exact: true })
+    .selectOption('marsupials')
+  await expect(dialog.locator('.roster-card')).toHaveCount(3)
+  await dialog.getByRole('searchbox').fill('Setonix')
+  await expect(dialog.locator('.roster-card')).toHaveCount(1)
+  await dialog.locator('.roster-card').click()
+  await dialog.getByRole('button', { name: /Meet me at the start/ }).click()
+  await page.getByTitle('Edit Quokka').click()
+  await dialog
+    .getByText('Biological context & preset honesty', { exact: true })
+    .click()
+  await expect(
+    dialog.getByRole('region', { name: 'Species evidence' }),
+  ).toContainText('model estimate')
+  await expect(
+    dialog.getByRole('link', { name: /Setonix brachyurus/ }),
+  ).toHaveAttribute(
+    'href',
+    'https://animaldiversity.org/accounts/Setonix_brachyurus/',
+  )
+  const result = await new AxeBuilder({ page })
+    .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
+    .analyze()
+  expect(result.violations).toEqual([])
+  await dialog.getByRole('button', { name: 'Close animal editor' }).click()
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  await dialog.getByRole('searchbox').fill('Lichanura')
+  await dialog.locator('.roster-card').click()
+  await dialog.getByRole('button', { name: /Meet me at the start/ }).click()
+  await page.getByTitle('Edit Rosy boa').click()
+  await expect(dialog.getByLabel('Locomotion')).toHaveValue('slither')
+  await dialog.getByLabel('Competitor name').fill('Boa on a mission')
+  await dialog.getByRole('button', { name: 'Save to stable' }).click()
+  await page.reload()
+  await expect(page.getByTitle('Edit Boa on a mission')).toBeVisible()
+  await page.getByTitle('Edit Boa on a mission').click()
+  await expect(dialog.getByLabel('Locomotion')).toHaveValue('slither')
+})
+
+test('an unavailable expansion image keeps its frame and readable species name', async ({
+  page,
+}) => {
+  await page.route('**/animals/quokka-*.webp', (route) => route.abort())
+  await page.getByRole('button', { name: /Add competitors/ }).click()
+  const dialog = page.getByRole('dialog')
+  await dialog.getByRole('searchbox').fill('Quokka')
+  const card = dialog.locator('.roster-card')
+  const fallback = card.locator('.animal-sprite')
+  await expect(fallback).toHaveAttribute('data-fallback', 'true')
+  await expect(card).toContainText('Quokka')
+  await expect(fallback.locator('.animal-sprite-fallback')).toHaveText('?')
+  const bounds = await fallback.boundingBox()
+  const frame = await card
+    .locator('.animal-avatar')
+    .evaluate((el) => ({ width: el.clientWidth, height: el.clientHeight }))
+  expect(bounds?.width).toBe(frame.width)
+  expect(bounds?.height).toBe(frame.height)
+  await card.click()
+  await expect(dialog.getByText('6 competitors selected')).toBeVisible()
 })

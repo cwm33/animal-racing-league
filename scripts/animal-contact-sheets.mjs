@@ -38,7 +38,9 @@ for (let i = 0; i < catalog.length; i++) {
     { input: label('32 px', 64, 20), left: x + 96, top: y + 99 },
   )
 }
-await sharp(background(1104, Math.max(122, Math.ceil(catalog.length / 6) * 122)))
+await sharp(
+  background(1104, Math.max(122, Math.ceil(catalog.length / 6) * 122)),
+)
   .composite(overview)
   .png()
   .toFile(path.join(destination, 'all-at-64-and-32.png'))

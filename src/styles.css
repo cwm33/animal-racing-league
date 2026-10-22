@@ -3988,3 +3988,265 @@ td strong {
 .mini-podium > div > b {
   flex-shrink: 0;
 }
+
+/* Taxonomy and pace belong to the roster, never to the racing model. */
+.roster-context {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background: #eef3e5;
+  border: 1px solid #dce5ce;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.roster-context strong,
+.roster-context small {
+  display: block;
+  margin-top: 5px;
+}
+.roster-context strong {
+  font-size: 14px;
+}
+.roster-context small {
+  font-size: 11px;
+  color: #526348;
+  line-height: 1.5;
+}
+.roster-context label,
+.roster-filters label,
+.match-anchor {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  min-width: 0;
+}
+.roster-context select,
+.roster-filters select,
+.match-anchor select {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  color: var(--dark);
+  background: #fff;
+  border: 1px solid #b6c5a5;
+  border-radius: 7px;
+  padding: 10px 8px;
+  font-size: 12px;
+}
+.roster-context label {
+  flex-shrink: 0;
+}
+.roster-source {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+.roster-filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.division-explainer {
+  font-size: 11px;
+  color: #43563b;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.division-explainer summary {
+  cursor: pointer;
+  padding: 7px 0;
+  font-weight: 600;
+}
+.division-explainer p {
+  margin: 8px 0;
+}
+.division-explainer ul {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px 18px;
+}
+.division-explainer li {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #dce5ce;
+  padding: 4px 0;
+}
+.division-match {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: #fff8e7;
+  border: 1px solid #ead9ad;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.division-match > svg {
+  flex-shrink: 0;
+  color: #80601b;
+  margin-top: 2px;
+}
+.division-match > div {
+  flex: 1;
+  min-width: 0;
+}
+.division-match strong {
+  font-size: 14px;
+}
+.division-match p,
+.division-match small {
+  font-size: 11px;
+  color: #65572f;
+  line-height: 1.6;
+  display: block;
+  margin-top: 5px;
+}
+.division-match .button {
+  flex-shrink: 0;
+  font-size: 11px;
+  padding: 11px 12px;
+}
+.match-anchor {
+  margin-top: 10px;
+}
+.match-anchor select {
+  font-weight: 400;
+}
+.roster-results-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.roster-card-text .division-badge {
+  font-size: 10px;
+  font-weight: 600;
+  color: #284822;
+  background: #e7efdc;
+  border-radius: 5px;
+  padding: 3px 6px;
+  align-self: flex-start;
+}
+.roster-card-text .division-badge[data-division='elite'] {
+  background: #f5e4b4;
+  color: #624514;
+}
+.roster-card-text .division-badge[data-division='dnf'] {
+  background: #f3dfda;
+  color: #743b30;
+}
+.roster-card-text small {
+  line-height: 1.5;
+}
+.roster-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  gap: 10px;
+  margin-top: 14px;
+}
+.modal-footer > span > small {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+@media (max-width: 600px) {
+  .roster-context {
+    padding: 12px;
+    align-items: flex-start;
+  }
+  .roster-context strong {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .roster-context .eyebrow {
+    font-size: 8px;
+  }
+  .roster-context small {
+    font-size: 10px;
+  }
+  .roster-context select {
+    font-size: 16px;
+  }
+  .roster-filters {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .roster-filters select,
+  .match-anchor select {
+    font-size: 16px;
+  }
+  .division-match {
+    flex-wrap: wrap;
+    padding: 12px;
+  }
+  .division-match .button {
+    width: 100%;
+  }
+  .roster-pagination .button {
+    font-size: 10px;
+    padding: 9px;
+  }
+  .roster-source .chip {
+    font-size: 11px;
+    min-height: 40px;
+  }
+}
+.matching-tools {
+  border: 1px solid #ead9ad;
+  border-radius: 9px;
+  background: #fff8e7;
+  margin-bottom: 16px;
+}
+.matching-tools > summary {
+  cursor: pointer;
+  padding: 12px 14px;
+  color: #3e4d2e;
+  font-size: 12px;
+  font-weight: 600;
+}
+.matching-tools > summary > svg {
+  vertical-align: middle;
+  margin: 0 6px 0 2px;
+}
+.matching-tools > summary > small {
+  display: block;
+  color: #65572f;
+  margin: 5px 0 0 22px;
+  font-size: 10px;
+  font-weight: 400;
+}
+.matching-tools .division-match {
+  border: 0;
+  border-top: 1px solid #ead9ad;
+  border-radius: 0 0 9px 9px;
+  margin: 0;
+}
+
+.species-evidence {
+  overflow-wrap: anywhere;
+}
+.species-evidence dl > div {
+  margin-block: 12px;
+}
+.species-evidence dt {
+  font-weight: 700;
+}
+.species-evidence dd {
+  margin: 4px 0;
+  line-height: 1.6;
+}
+.species-evidence ul {
+  padding-left: 20px;
+}

@@ -1,4 +1,5 @@
-export type Locomotion = 'gallop' | 'bound' | 'biped' | 'waddle' | 'crawl'
+export type Locomotion =
+  'gallop' | 'bound' | 'biped' | 'waddle' | 'crawl' | 'slither'
 export type Mode = 'plausible' | 'experimental'
 export interface RacingStats {
   mass: number
@@ -57,5 +58,6 @@ export const LOCOMOTION: Record<
   bound: { label: 'Hop / bound', launch: 0.9, fatigue: 0.9 },
   biped: { label: 'Bipedal run', launch: 0.85, fatigue: 0.85 },
   waddle: { label: 'Waddle / shuffle', launch: 0.65, fatigue: 1.15 },
+  slither: { label: 'Slither / glide', launch: 0.55, fatigue: 1.2 },
   crawl: { label: 'Crawl / haul', launch: 0.55, fatigue: 1.2 },
 }

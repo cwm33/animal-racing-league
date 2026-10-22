@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { lazy, Suspense, useState } from 'react'
 import {
   ArrowRight,
   Beaker,
@@ -25,7 +25,10 @@ import type {
   RaceSettings,
   SavedAnimal,
 } from '../lib/types'
+import expansionMetadata from '../data/expansion-metadata.json'
 import { AnimalAvatar } from './AnimalAvatar'
+
+const SpeciesEvidence = lazy(() => import('./SpeciesEvidence'))
 
 export function AnimalEditor({
   animal,
@@ -48,6 +51,8 @@ export function AnimalEditor({
     ...animal,
     stats: { ...animal.stats },
   }))
+  const [showEvidence, setShowEvidence] = useState(false)
+  const hasEvidence = Object.hasOwn(expansionMetadata, animal.id)
   const [draftMode, setDraftMode] = useState(mode)
   const [error, setError] = useState<string | null>(null)
   const effective = validateStats(draft.stats)
@@ -226,7 +231,10 @@ export function AnimalEditor({
           </p>
         </div>
       </div>
-      <details className="biology-note">
+      <details
+        className="biology-note"
+        onToggle={(e) => setShowEvidence(e.currentTarget.open)}
+      >
         <summary>Biological context & preset honesty</summary>
         <p>{animal.biology}</p>
         <p>
@@ -235,9 +243,17 @@ export function AnimalEditor({
           are invented estimates. Plausible mode uses broad limits; it does not
           certify species-specific realism.
         </p>
-        <a href={source.url} target="_blank" rel="noreferrer">
-          {source.label} ↗
-        </a>
+        {hasEvidence ? (
+          showEvidence && (
+            <Suspense fallback={<p role="status">Loading species evidence…</p>}>
+              <SpeciesEvidence id={animal.id} />
+            </Suspense>
+          )
+        ) : (
+          <a href={source.url} target="_blank" rel="noreferrer">
+            {source.label} ↗
+          </a>
+        )}
       </details>
       {error && (
         <p className="form-error" role="alert">

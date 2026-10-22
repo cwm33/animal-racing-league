@@ -18,6 +18,7 @@ const GAITS: Record<Locomotion, SpriteGait> = {
   biped: 'run',
   waddle: 'waddle',
   crawl: 'crawl',
+  slither: 'undulate',
 }
 const CADENCE: Record<SpriteGait, { scale: number; min: number; max: number }> =
   {

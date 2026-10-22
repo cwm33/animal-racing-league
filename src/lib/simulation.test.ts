@@ -182,8 +182,8 @@ describe('numerical and biological edge cases', () => {
   })
 })
 describe('league-level guarantees', () => {
-  it('contains at least 30 unique, fully specified species with valid presets', () => {
-    expect(ANIMALS.length).toBeGreaterThanOrEqual(30)
+  it('contains exactly 100 unique, fully specified species with valid presets', () => {
+    expect(ANIMALS.length).toBe(100)
     expect(new Set(ANIMALS.map((a) => a.id)).size).toBe(ANIMALS.length)
     ANIMALS.forEach((a) => {
       expect(validateStats(a.stats, 'plausible')).toBeNull()

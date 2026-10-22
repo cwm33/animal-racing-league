@@ -1,0 +1,790 @@
+[
+  {
+    "url": "https://animaldiversity.org/accounts/Setonix_brachyurus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Setonix_brachyurus/",
+    "pageTitle": "Setonix brachyurus (quokka) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Setonix brachyurus (quokka) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Vombatus_ursinus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Vombatus_ursinus/",
+    "pageTitle": "Vombatus ursinus (coarse-haired wombat) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Vombatus ursinus (coarse-haired wombat) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://museumsvictoria.com.au/article/can-wombats-run-at-40kmh/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://museumsvictoria.com.au/article/can-wombats-run-at-40kmh/",
+    "pageTitle": "How do we know wombats can run at 40km/h? | Article | Museums Victoria",
+    "expectedTitle": "Museums Victoria: Can wombats run at 40 km/h?",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://www.mammaldiversity.org/taxon/1005801/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://www.mammaldiversity.org/taxon/1005801/",
+    "pageTitle": "Smutsia temminckii \u2022 Ground Pangolin",
+    "expectedTitle": "Mammal Diversity Database: Ground Pangolin",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Manis_temminckii/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Manis_temminckii/",
+    "pageTitle": "Manis temminckii (ground pangolin) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "ADW: Manis temminckii",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Orycteropus_afer/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Orycteropus_afer/",
+    "pageTitle": "Orycteropus afer (aardvark) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Orycteropus afer (aardvark) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Tachyglossus_aculeatus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Tachyglossus_aculeatus/",
+    "pageTitle": "Tachyglossus aculeatus (short-beaked echidna) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Tachyglossus aculeatus (short-beaked echidna) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Dasypus_novemcinctus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Dasypus_novemcinctus/",
+    "pageTitle": "Dasypus novemcinctus (nine-banded armadillo) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Dasypus novemcinctus (nine-banded armadillo) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Myrmecophaga_tridactyla/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Myrmecophaga_tridactyla/",
+    "pageTitle": "Myrmecophaga tridactyla (giant anteater) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Myrmecophaga tridactyla (giant anteater) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Suricata_suricatta/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Suricata_suricatta/",
+    "pageTitle": "Suricata suricatta (meerkat) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Suricata suricatta (meerkat) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Meles_meles/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Meles_meles/",
+    "pageTitle": "Meles meles (Eurasian badger) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Meles meles (Eurasian badger) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Gulo_gulo/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Gulo_gulo/",
+    "pageTitle": "Gulo gulo (wolverine) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Gulo gulo (wolverine) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Procyon_lotor/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Procyon_lotor/",
+    "pageTitle": "Procyon lotor (Guadeloupe raccoon) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Procyon lotor (Guadeloupe raccoon) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Ailurus_fulgens/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Ailurus_fulgens/",
+    "pageTitle": "Ailurus fulgens (red panda) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Ailurus fulgens (red panda) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Cryptoprocta_ferox/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Cryptoprocta_ferox/",
+    "pageTitle": "Cryptoprocta ferox (fossa) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Cryptoprocta ferox (fossa) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Lemur_catta/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Lemur_catta/",
+    "pageTitle": "Lemur catta (ring-tailed lemur) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Lemur catta (ring-tailed lemur) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Papio_anubis/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Papio_anubis/",
+    "pageTitle": "Papio anubis (anubis baboon) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Papio anubis (anubis baboon) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Hystrix_cristata/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Hystrix_cristata/",
+    "pageTitle": "Hystrix cristata (North African crested porcupine) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Hystrix cristata (North African crested porcupine) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Erinaceus_europaeus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Erinaceus_europaeus/",
+    "pageTitle": "Erinaceus europaeus (western European hedgehog) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Erinaceus europaeus (western European hedgehog) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Tenrec_ecaudatus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Tenrec_ecaudatus/",
+    "pageTitle": "Tenrec ecaudatus (tailless tenrec) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Tenrec ecaudatus (tailless tenrec) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Sorex_araneus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Sorex_araneus/",
+    "pageTitle": "Sorex araneus (Eurasian shrew) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Sorex araneus (Eurasian shrew) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Rhynchocyon_petersi/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Rhynchocyon_petersi/",
+    "pageTitle": "Rhynchocyon petersi (black and rufous elephant-shrew) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Rhynchocyon petersi (black and rufous elephant-shrew) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Pedetes_capensis/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Pedetes_capensis/",
+    "pageTitle": "Pedetes capensis (South African spring hare) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Pedetes capensis (South African spring hare) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Okapia_johnstoni/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Okapia_johnstoni/",
+    "pageTitle": "Okapia johnstoni (okapi) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Okapia johnstoni (okapi) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Casuarius_casuarius/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Casuarius_casuarius/",
+    "pageTitle": "Casuarius casuarius (southern cassowary) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Casuarius casuarius (southern cassowary) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://perthzoo.wa.gov.au/animal/southern-cassowary",
+    "httpStatus": 200,
+    "resolvedUrl": "https://perthzoo.wa.gov.au/animal/southern-cassowary",
+    "pageTitle": "Southern Cassowary | Perth Zoo",
+    "expectedTitle": "Perth Zoo: Southern Cassowary",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Dromaius_novaehollandiae/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Dromaius_novaehollandiae/",
+    "pageTitle": "Dromaius novaehollandiae (emu) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Dromaius novaehollandiae (emu) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://nationalzoo.si.edu/animals/emu",
+    "httpStatus": 200,
+    "resolvedUrl": "https://nationalzoo.si.edu/animals/emu",
+    "pageTitle": "Emu | Smithsonian&#039;s National Zoo and Conservation Biology Institute",
+    "expectedTitle": "Smithsonian National Zoo: Emu",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Sagittarius_serpentarius/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Sagittarius_serpentarius/",
+    "pageTitle": "Sagittarius serpentarius (secretary bird) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Sagittarius serpentarius (secretary bird) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Geococcyx_californianus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Geococcyx_californianus/",
+    "pageTitle": "Geococcyx californianus (greater roadrunner) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Geococcyx californianus (greater roadrunner) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://tpwd.texas.gov/publications/nonpwdpubs/introducing_birds/roadrunners/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://tpwd.texas.gov/publications/nonpwdpubs/introducing_birds/roadrunners/",
+    "pageTitle": "TPWD: Roadrunners, Cuckoos, and Anis &ndash; Introducing Birds to Young Naturalists",
+    "expectedTitle": "Texas Parks and Wildlife: Roadrunners",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12284840/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12284840/",
+    "pageTitle": "Survey of husbandry practices and captive environments for North Island brown kiwi (Apteryx mantelli) housed in facilities within and outside New Zealand - PMC",
+    "expectedTitle": "Survey of husbandry practices and captive environments for North Island brown kiwi",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://www.nzbirdsonline.org.nz/species/north-island-brown-kiwi",
+    "httpStatus": 200,
+    "resolvedUrl": "https://www.nzbirdsonline.org.nz/species/north-island-brown-kiwi",
+    "pageTitle": "North Island brown kiwi | Kiwi-nui | New Zealand Birds Online",
+    "expectedTitle": "New Zealand Birds Online: North Island brown kiwi",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Meleagris_gallopavo/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Meleagris_gallopavo/",
+    "pageTitle": "Meleagris gallopavo (wild turkey) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Meleagris gallopavo (wild turkey) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Numida_meleagris/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Numida_meleagris/",
+    "pageTitle": "Numida meleagris (helmeted guineafowl) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Numida meleagris (helmeted guineafowl) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Pavo_cristatus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Pavo_cristatus/",
+    "pageTitle": "Pavo cristatus (Indian peafowl) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Pavo cristatus (Indian peafowl) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Cariama_cristata/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Cariama_cristata/classification/",
+    "pageTitle": "Cariama cristata (red-legged seriema) | CLASSIFICATION | Animal Diversity Web",
+    "expectedTitle": "Cariama cristata (red-legged seriema) | CLASSIFICATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://www.torontozoo.com/animals/Red-legged%20Seriema",
+    "httpStatus": 200,
+    "resolvedUrl": "https://www.torontozoo.com/animals/Red-legged%20Seriema",
+    "pageTitle": "Toronto Zoo | Red-legged Seriema",
+    "expectedTitle": "Toronto Zoo: Red-legged Seriema",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Ardeotis_kori/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Ardeotis_kori/",
+    "pageTitle": "Ardeotis kori (Kori bustard) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Ardeotis kori (Kori bustard) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Tinamus_major/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Tinamus_major/classification/",
+    "pageTitle": "Tinamus major (great tinamou) | CLASSIFICATION | Animal Diversity Web",
+    "expectedTitle": "Tinamus major (great tinamou) | CLASSIFICATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://www.zootierliste.de/en/?art=50904920&familie=20201&klasse=2&ordnung=202&subhaltungen=2",
+    "httpStatus": 200,
+    "resolvedUrl": "https://www.zootierliste.de/en/?art=50904920&familie=20201&klasse=2&ordnung=202&subhaltungen=2",
+    "pageTitle": "ZootierlisteHomepage",
+    "expectedTitle": "Zootierliste: Great tinamou",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Menura_novaehollandiae/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Menura_novaehollandiae/classification/",
+    "pageTitle": "Menura novaehollandiae (superb lyrebird) | CLASSIFICATION | Animal Diversity Web",
+    "expectedTitle": "Menura novaehollandiae (superb lyrebird) | CLASSIFICATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://www.adelaidezoo.com.au/animals/superb-lyrebird/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://www.adelaidezoo.com.au/animals/superb-lyrebird/",
+    "pageTitle": "Superb Lyrebird - Adelaide Zoo",
+    "expectedTitle": "Adelaide Zoo: Superb Lyrebird",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Varanus_komodoensis/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Varanus_komodoensis/",
+    "pageTitle": "Varanus komodoensis (Komodo Dragon) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Varanus komodoensis (Komodo Dragon) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://nationalzoo.si.edu/animals/komodo-dragon",
+    "httpStatus": 200,
+    "resolvedUrl": "https://nationalzoo.si.edu/animals/komodo-dragon",
+    "pageTitle": "Komodo dragon | Smithsonian&#039;s National Zoo and Conservation Biology Institute",
+    "expectedTitle": "Smithsonian National Zoo: Komodo dragon",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Heloderma_suspectum/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Heloderma_suspectum/",
+    "pageTitle": "Heloderma suspectum (Gila Monster) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Heloderma suspectum (Gila Monster) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://nationalzoo.si.edu/animals/gila-monster",
+    "httpStatus": 200,
+    "resolvedUrl": "https://nationalzoo.si.edu/animals/gila-monster",
+    "pageTitle": "Gila monster | Smithsonian&#039;s National Zoo and Conservation Biology Institute",
+    "expectedTitle": "Smithsonian National Zoo: Gila monster",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Pogona_vitticeps/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Pogona_vitticeps/",
+    "pageTitle": "Pogona vitticeps (Central Bearded Dragon) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Pogona vitticeps (Central Bearded Dragon) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://reptilia.org/bearded-dragon/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://reptilia.org/bearded-dragon/",
+    "pageTitle": "Bearded Dragon &#8211; Reptilia Zoo",
+    "expectedTitle": "Reptilia Zoo: Bearded Dragon",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Chlamydosaurus_kingii/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Chlamydosaurus_kingii/",
+    "pageTitle": "Chlamydosaurus kingii (Frilled Lizard) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Chlamydosaurus kingii (Frilled Lizard) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Phrynosoma_cornutum/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Phrynosoma_cornutum/",
+    "pageTitle": "Phrynosoma cornutum (Texas Horned Lizard) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Phrynosoma cornutum (Texas Horned Lizard) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Moloch_horridus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Moloch_horridus/",
+    "pageTitle": "Moloch horridus (Thorny Devil, Mountain Devil) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Moloch horridus (Thorny Devil, Mountain Devil) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Tiliqua_scincoides/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Tiliqua_scincoides/",
+    "pageTitle": "Tiliqua scincoides (Common Bluetongue, Eastern Bluetongue, Northern Bluetongue, Eastern Blue-Tongued Lizard) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Tiliqua scincoides (Common Bluetongue, Eastern Bluetongue, Northern Bluetongue, Eastern Blue-Tongued Lizard) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Eublepharis_macularius/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Eublepharis_macularius/",
+    "pageTitle": "Eublepharis macularius (Common Leopard Gecko) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Eublepharis macularius (Common Leopard Gecko) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://www.belfastcity.gov.uk/zoo/our-animals/reptiles/leopard-gecko",
+    "httpStatus": 200,
+    "resolvedUrl": "https://www.belfastcity.gov.uk/zoo/our-animals/reptiles/leopard-gecko",
+    "pageTitle": "Leopard gecko at Belfast Zoo",
+    "expectedTitle": "Belfast Zoo: Leopard gecko",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Sphenodon_punctatus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Sphenodon_punctatus/",
+    "pageTitle": "Sphenodon punctatus (Tuatara) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Sphenodon punctatus (Tuatara) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://reptile-database.reptarium.cz/species?genus=Lichanura&species=trivirgata",
+    "httpStatus": 200,
+    "resolvedUrl": "https://reptile-database.reptarium.cz/Lichanura/trivirgata",
+    "pageTitle": "Lichanura trivirgata | The Reptile Database",
+    "expectedTitle": "The Reptile Database: Lichanura trivirgata",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://ogdennaturecenter.org/meet-our-animal-ambassadors/pancake-rosy-boa",
+    "httpStatus": 200,
+    "resolvedUrl": "https://ogdennaturecenter.org/meet-our-animal-ambassadors/pancake-rosy-boa",
+    "pageTitle": "Ogden Nature Center - Pancake: Rosy Boa",
+    "expectedTitle": "Ogden Nature Center: Rosy Boa",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Bufo_bufo/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Bufo_bufo/classification/",
+    "pageTitle": "Bufo bufo | CLASSIFICATION | Animal Diversity Web",
+    "expectedTitle": "Bufo bufo | CLASSIFICATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://www.wildlifetrusts.org/wildlife-explorer/amphibians/common-toad",
+    "httpStatus": 200,
+    "resolvedUrl": "https://www.wildlifetrusts.org/wildlife-explorer/amphibians/common-toad",
+    "pageTitle": "Common toad | The Wildlife Trusts",
+    "expectedTitle": "The Wildlife Trusts: Common toad",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Salamandra_salamandra/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Salamandra_salamandra/",
+    "pageTitle": "Salamandra salamandra | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Salamandra salamandra | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Ambystoma_tigrinum/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Ambystoma_tigrinum/",
+    "pageTitle": "Ambystoma tigrinum (Eastern Tiger Salamander) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Ambystoma tigrinum (Eastern Tiger Salamander) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://racinezoo.org/node/248",
+    "httpStatus": 200,
+    "resolvedUrl": "https://racinezoo.org/node/248",
+    "pageTitle": "Eastern Tiger Salamander Fact Sheet | racinezoo.org",
+    "expectedTitle": "Racine Zoo: Eastern Tiger Salamander",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Dyscophus_antongilii/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Dyscophus_antongilii/",
+    "pageTitle": "Dyscophus antongilii | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Dyscophus antongilii | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Ceratophrys_ornata/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Ceratophrys_ornata/classification/",
+    "pageTitle": "Ceratophrys ornata | CLASSIFICATION | Animal Diversity Web",
+    "expectedTitle": "Ceratophrys ornata | CLASSIFICATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://seaworld.org/animals/facts/amphibians/south-american-ornate-horned-frog/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://seaworld.org/animals/facts/amphibians/south-american-ornate-horned-frog/",
+    "pageTitle": "South American Ornate Horned Frog Facts and Information | United Parks &amp; Resorts",
+    "expectedTitle": "SeaWorld: South American ornate horned frog",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Mantella_aurantiaca/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Mantella_aurantiaca/",
+    "pageTitle": "Mantella aurantiaca | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Mantella aurantiaca | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://app-czn-prod-uks-headless.azurewebsites.net/media/zkhp0ud4/chester-zoo-annual-report-2016.pdf",
+    "httpStatus": 200,
+    "resolvedUrl": "https://app-czn-prod-uks-headless.azurewebsites.net/media/zkhp0ud4/chester-zoo-annual-report-2016.pdf",
+    "pageTitle": null,
+    "expectedTitle": "Chester Zoo annual report 2016",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Grammostola_rosea/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Grammostola_rosea/classification/",
+    "pageTitle": "Grammostola rosea | CLASSIFICATION | Animal Diversity Web",
+    "expectedTitle": "Grammostola rosea | CLASSIFICATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://www.eindhovenzoo.nl/en/animals/chilean-rose-tarantula",
+    "httpStatus": 200,
+    "resolvedUrl": "https://www.eindhovenzoo.nl/en/animals/chilean-rose-tarantula",
+    "pageTitle": "Chilean rose tarantula | Find out all about it | Eindhoven Zoo",
+    "expectedTitle": "Eindhoven Zoo: Chilean rose tarantula",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Pandinus_imperator/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Pandinus_imperator/",
+    "pageTitle": "Pandinus imperator | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Pandinus imperator | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Birgus_latro/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Birgus_latro/",
+    "pageTitle": "Birgus latro | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Birgus latro | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Cicindela_sexguttata/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Cicindela_sexguttata/classification/",
+    "pageTitle": "Cicindela sexguttata | CLASSIFICATION | Animal Diversity Web",
+    "expectedTitle": "Cicindela sexguttata | CLASSIFICATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://journals.biologists.com/jeb/article/222/20/jeb198705/224418/High-speed-locomotion-in-the-Saharan-silver-ant",
+    "error": "HTTP Error 403: Forbidden",
+    "expectedTitle": "Pfeffer et al. (2019): High-speed locomotion in the Saharan silver ant",
+    "note": "Research may have been available through indexed web results; this HTTP probe is not evidence of source correctness.",
+    "contentStatus": "http_error"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Gromphadorhina_portentosa/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Gromphadorhina_portentosa/",
+    "pageTitle": "Gromphadorhina portentosa (Madagascan hissing cockroach) | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Gromphadorhina portentosa (Madagascan hissing cockroach) | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5450327/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5450327/",
+    "pageTitle": "Checking your browser - reCAPTCHA",
+    "expectedTitle": "Adhesion and friction of the smooth attachment system of Gromphadorhina portentosa",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "bot_challenge"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Mantis_religiosa/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Mantis_religiosa/classification/",
+    "pageTitle": "Mantis religiosa | CLASSIFICATION | Animal Diversity Web",
+    "expectedTitle": "Mantis religiosa | CLASSIFICATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Carausius_morosus/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Carausius_morosus/classification/",
+    "pageTitle": "Carausius morosus (Indian Stick Insect) | CLASSIFICATION | Animal Diversity Web",
+    "expectedTitle": "Carausius morosus (Indian Stick Insect) | CLASSIFICATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3859514/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3859514/",
+    "pageTitle": "Checking your browser - reCAPTCHA",
+    "expectedTitle": "Labonte & Federle (2013): Functionally Different Pads on the Same Foot",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "bot_challenge"
+  },
+  {
+    "url": "https://animals.sandiegozoo.org/animals/giant-african-millipede",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animals.sandiegozoo.org/animals/giant-african-millipede",
+    "pageTitle": "Giant African Millipede | San Diego Zoo Animals &amp; Plants",
+    "expectedTitle": "San Diego Zoo: Giant African Millipede",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://topekazoo.org/explore/animals/arthropod/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://topekazoo.org/explore/animals/arthropod/",
+    "pageTitle": "Arthropod - Topeka Zoo &amp; Conservation Center",
+    "expectedTitle": "Topeka Zoo: Arthropods",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Scolopendra_heros/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Scolopendra_heros/classification/",
+    "pageTitle": "Scolopendra heros | CLASSIFICATION | Animal Diversity Web",
+    "expectedTitle": "Scolopendra heros | CLASSIFICATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10952876/",
+    "httpStatus": 203,
+    "resolvedUrl": "https://pubmed.ncbi.nlm.nih.gov/10952876/",
+    "pageTitle": "pubmed.ncbi.nlm.nih.gov",
+    "expectedTitle": "Quillin (2000): Ontogenetic scaling of burrowing forces in Lumbricus terrestris",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Arion_ater/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Arion_ater/",
+    "pageTitle": "Arion ater | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Arion ater | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/ivb.12415",
+    "error": "HTTP Error 403: Forbidden",
+    "expectedTitle": "Nyqvist et al. (2023): Dispersal movements of terrestrial slugs",
+    "note": "Research may have been available through indexed web results; this HTTP probe is not evidence of source correctness.",
+    "contentStatus": "http_error"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10680090/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10680090/",
+    "pageTitle": "Checking your browser - reCAPTCHA",
+    "expectedTitle": "Updated world checklist of Onychophora (2023)",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "bot_challenge"
+  },
+  {
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21246983/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://pubmed.ncbi.nlm.nih.gov/21246983/",
+    "pageTitle": "A new giant species of placented worm and the mechanism by which onychophorans weave their nets (Onychophora: Peripatidae) - PubMed",
+    "expectedTitle": "Morera-Brenes & Monge-N\u00e1jera (2010): A new giant species of placented worm",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  },
+  {
+    "url": "https://animaldiversity.org/accounts/Porcellio_scaber/",
+    "httpStatus": 200,
+    "resolvedUrl": "https://animaldiversity.org/accounts/Porcellio_scaber/",
+    "pageTitle": "Porcellio scaber | INFORMATION | Animal Diversity Web",
+    "expectedTitle": "Porcellio scaber | INFORMATION | Animal Diversity Web",
+    "note": "HTTP retrieval only; not automated claim verification.",
+    "contentStatus": "retrieved_not_claim_verified"
+  }
+]

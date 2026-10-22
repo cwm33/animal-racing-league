@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-22",
+  "scope": "All changed repository files under expansion/. Existing app checked in an ignored copy beneath expansion/.tooling/verification/.",
+  "checks": [
+    {
+      "name": "Pack shared-schema TypeScript check (TypeScript 5.9.3)",
+      "status": "pass"
+    },
+    {
+      "name": "Data/source metadata/image decoding/real alpha/IDs",
+      "status": "pass"
+    },
+    {
+      "name": "Actual application engine: 600 races at six distances",
+      "status": "pass"
+    },
+    {
+      "name": "Existing application typecheck",
+      "status": "pass"
+    },
+    {
+      "name": "Existing application unit tests",
+      "status": "pass",
+      "tests": 41
+    },
+    {
+      "name": "Existing application production build",
+      "status": "pass"
+    },
+    {
+      "name": "Existing application lint",
+      "status": "pre_existing_failure",
+      "file": "scripts/sync-animal-catalog.mjs",
+      "line": 11,
+      "rule": "no-regex-spaces",
+      "message": "Spaces are hard to count. Use {2}.",
+      "action": "Shared script unchanged under ownership boundary."
+    },
+    {
+      "name": "Browser E2E",
+      "status": "not_run",
+      "reason": "No running application changes in this pack."
+    },
+    {
+      "name": "Shared roster/asset build/review commands",
+      "status": "not_run",
+      "reason": "Those commands write outside expansion/. Pack-local equivalents used; execute shared pipeline during integration."
+    },
+    {
+      "name": "Strict 10% transparent border",
+      "status": "known_exception",
+      "reason": "Faint alpha noise and often tighter visible framing remain; see image-checks.json."
+    }
+  ]
+}

@@ -140,7 +140,9 @@ export function FieldNotes() {
           <h2>Sources & further wandering</h2>
           <p className="subtle">
             These support the biological context. They do not validate the
-            editable racing presets.
+            editable racing presets. The 64 expansion species have per-field
+            evidence and source links in the animal editor’s Biological context
+            panel; eight masses and most top speeds remain model estimates.
           </p>
         </div>
         {Object.values(SOURCES).map((source) => (

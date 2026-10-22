@@ -1,0 +1,1026 @@
+{
+  "quokka": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Diprotodontia",
+      "family": "Macropodidae",
+      "genus": "Setonix",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "quokka"
+  },
+  "wombat": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Diprotodontia",
+      "family": "Vombatidae",
+      "genus": "Vombatus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "wombat"
+  },
+  "pangolin": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Pholidota",
+      "family": "Manidae",
+      "genus": "Smutsia",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "pangolin"
+  },
+  "aardvark": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Tubulidentata",
+      "family": "Orycteropodidae",
+      "genus": "Orycteropus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "aardvark"
+  },
+  "echidna": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Monotremata",
+      "family": "Tachyglossidae",
+      "genus": "Tachyglossus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "echidna"
+  },
+  "armadillo": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Cingulata",
+      "family": "Dasypodidae",
+      "genus": "Dasypus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "armadillo"
+  },
+  "giant-anteater": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Pilosa",
+      "family": "Myrmecophagidae",
+      "genus": "Myrmecophaga",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "giant-anteater"
+  },
+  "meerkat": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Herpestidae",
+      "genus": "Suricata",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "meerkat"
+  },
+  "badger": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Mustelidae",
+      "genus": "Meles",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "badger"
+  },
+  "wolverine": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Mustelidae",
+      "genus": "Gulo",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "wolverine"
+  },
+  "raccoon": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Procyonidae",
+      "genus": "Procyon",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "raccoon"
+  },
+  "red-panda": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Ailuridae",
+      "genus": "Ailurus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "red-panda"
+  },
+  "fossa": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Carnivora",
+      "family": "Eupleridae",
+      "genus": "Cryptoprocta",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "fossa"
+  },
+  "ring-tailed-lemur": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Lemuridae",
+      "genus": "Lemur",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "ring-tailed-lemur"
+  },
+  "olive-baboon": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Primates",
+      "family": "Cercopithecidae",
+      "genus": "Papio",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "olive-baboon"
+  },
+  "crested-porcupine": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Hystricidae",
+      "genus": "Hystrix",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "crested-porcupine"
+  },
+  "hedgehog": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Eulipotyphla",
+      "family": "Erinaceidae",
+      "genus": "Erinaceus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "hedgehog"
+  },
+  "tenrec": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Afrosoricida",
+      "family": "Tenrecidae",
+      "genus": "Tenrec",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "tenrec"
+  },
+  "shrew": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Eulipotyphla",
+      "family": "Soricidae",
+      "genus": "Sorex",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "shrew"
+  },
+  "elephant-shrew": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Macroscelidea",
+      "family": "Macroscelididae",
+      "genus": "Rhynchocyon",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "elephant-shrew"
+  },
+  "springhare": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Rodentia",
+      "family": "Pedetidae",
+      "genus": "Pedetes",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "springhare"
+  },
+  "okapi": {
+    "biologicalGroup": "mammal",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Mammalia",
+      "order": "Artiodactyla",
+      "family": "Giraffidae",
+      "genus": "Okapia",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "okapi"
+  },
+  "cassowary": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Casuariiformes",
+      "family": "Casuariidae",
+      "genus": "Casuarius",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "cassowary"
+  },
+  "emu": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Casuariiformes",
+      "family": "Casuariidae",
+      "genus": "Dromaius",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "emu"
+  },
+  "secretary-bird": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Accipitriformes",
+      "family": "Sagittariidae",
+      "genus": "Sagittarius",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "secretary-bird"
+  },
+  "roadrunner": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Cuculiformes",
+      "family": "Cuculidae",
+      "genus": "Geococcyx",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "roadrunner"
+  },
+  "kiwi": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Apterygiformes",
+      "family": "Apterygidae",
+      "genus": "Apteryx",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "kiwi"
+  },
+  "wild-turkey": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Galliformes",
+      "family": "Phasianidae",
+      "genus": "Meleagris",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "wild-turkey"
+  },
+  "guineafowl": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Galliformes",
+      "family": "Numididae",
+      "genus": "Numida",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "guineafowl"
+  },
+  "peafowl": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Galliformes",
+      "family": "Phasianidae",
+      "genus": "Pavo",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "peafowl"
+  },
+  "seriema": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Cariamiformes",
+      "family": "Cariamidae",
+      "genus": "Cariama",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "seriema"
+  },
+  "kori-bustard": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Otidiformes",
+      "family": "Otididae",
+      "genus": "Ardeotis",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "kori-bustard"
+  },
+  "tinamou": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Tinamiformes",
+      "family": "Tinamidae",
+      "genus": "Tinamus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "tinamou"
+  },
+  "lyrebird": {
+    "biologicalGroup": "bird",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Aves",
+      "order": "Passeriformes",
+      "family": "Menuridae",
+      "genus": "Menura",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "lyrebird"
+  },
+  "komodo-dragon": {
+    "biologicalGroup": "reptile",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Varanidae",
+      "genus": "Varanus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "komodo-dragon"
+  },
+  "gila-monster": {
+    "biologicalGroup": "reptile",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Helodermatidae",
+      "genus": "Heloderma",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "gila-monster"
+  },
+  "bearded-dragon": {
+    "biologicalGroup": "reptile",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Agamidae",
+      "genus": "Pogona",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "bearded-dragon"
+  },
+  "frilled-lizard": {
+    "biologicalGroup": "reptile",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Agamidae",
+      "genus": "Chlamydosaurus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "frilled-lizard"
+  },
+  "horned-lizard": {
+    "biologicalGroup": "reptile",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Phrynosomatidae",
+      "genus": "Phrynosoma",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "horned-lizard"
+  },
+  "thorny-devil": {
+    "biologicalGroup": "reptile",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Agamidae",
+      "genus": "Moloch",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "thorny-devil"
+  },
+  "blue-tongued-skink": {
+    "biologicalGroup": "reptile",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Scincidae",
+      "genus": "Tiliqua",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "blue-tongued-skink"
+  },
+  "leopard-gecko": {
+    "biologicalGroup": "reptile",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Eublepharidae",
+      "genus": "Eublepharis",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "leopard-gecko"
+  },
+  "tuatara": {
+    "biologicalGroup": "reptile",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Rhynchocephalia",
+      "family": "Sphenodontidae",
+      "genus": "Sphenodon",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "tuatara"
+  },
+  "rosy-boa": {
+    "biologicalGroup": "reptile",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Reptilia",
+      "order": "Squamata",
+      "family": "Boidae",
+      "genus": "Lichanura",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "rosy-boa"
+  },
+  "common-toad": {
+    "biologicalGroup": "amphibian",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Amphibia",
+      "order": "Anura",
+      "family": "Bufonidae",
+      "genus": "Bufo",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "common-toad"
+  },
+  "fire-salamander": {
+    "biologicalGroup": "amphibian",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Amphibia",
+      "order": "Caudata",
+      "family": "Salamandridae",
+      "genus": "Salamandra",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "fire-salamander"
+  },
+  "tiger-salamander": {
+    "biologicalGroup": "amphibian",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Amphibia",
+      "order": "Caudata",
+      "family": "Ambystomatidae",
+      "genus": "Ambystoma",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "tiger-salamander"
+  },
+  "tomato-frog": {
+    "biologicalGroup": "amphibian",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Amphibia",
+      "order": "Anura",
+      "family": "Microhylidae",
+      "genus": "Dyscophus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "tomato-frog"
+  },
+  "ornate-horned-frog": {
+    "biologicalGroup": "amphibian",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Amphibia",
+      "order": "Anura",
+      "family": "Ceratophryidae",
+      "genus": "Ceratophrys",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "ornate-horned-frog"
+  },
+  "golden-mantella": {
+    "biologicalGroup": "amphibian",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Chordata",
+      "class": "Amphibia",
+      "order": "Anura",
+      "family": "Mantellidae",
+      "genus": "Mantella",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "golden-mantella"
+  },
+  "tarantula": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Araneae",
+      "family": "Theraphosidae",
+      "genus": "Grammostola",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "tarantula"
+  },
+  "scorpion": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Scorpiones",
+      "family": "Scorpionidae",
+      "genus": "Pandinus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "scorpion"
+  },
+  "coconut-crab": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Malacostraca",
+      "order": "Decapoda",
+      "family": "Coenobitidae",
+      "genus": "Birgus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "coconut-crab"
+  },
+  "tiger-beetle": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Coleoptera",
+      "family": "Carabidae",
+      "genus": "Cicindela",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "tiger-beetle"
+  },
+  "silver-ant": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Hymenoptera",
+      "family": "Formicidae",
+      "genus": "Cataglyphis",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "silver-ant"
+  },
+  "cockroach": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Blattodea",
+      "family": "Blaberidae",
+      "genus": "Gromphadorhina",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "cockroach"
+  },
+  "mantis": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Mantodea",
+      "family": "Mantidae",
+      "genus": "Mantis",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "mantis"
+  },
+  "stick-insect": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Phasmatodea",
+      "family": "Lonchodidae",
+      "genus": "Carausius",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "stick-insect"
+  },
+  "giant-millipede": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Diplopoda",
+      "order": "Spirostreptida",
+      "family": "Spirostreptidae",
+      "genus": "Archispirostreptus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "giant-millipede"
+  },
+  "centipede": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Chilopoda",
+      "order": "Scolopendromorpha",
+      "family": "Scolopendridae",
+      "genus": "Scolopendra",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "centipede"
+  },
+  "earthworm": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Annelida",
+      "class": "Clitellata",
+      "order": "Haplotaxida",
+      "family": "Lumbricidae",
+      "genus": "Lumbricus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "earthworm"
+  },
+  "slug": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Gastropoda",
+      "order": "Stylommatophora",
+      "family": "Arionidae",
+      "genus": "Arion",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "slug"
+  },
+  "velvet-worm": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Onychophora",
+      "class": "Udeonychophora",
+      "order": null,
+      "family": "Peripatidae",
+      "genus": "Mongeperipatus",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "velvet-worm"
+  },
+  "woodlouse": {
+    "biologicalGroup": "terrestrial-invertebrate",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Malacostraca",
+      "order": "Isopoda",
+      "family": "Porcellionidae",
+      "genus": "Porcellio",
+      "rank": "species",
+      "living": true
+    },
+    "lifeStage": "adult",
+    "raceMedium": "land",
+    "provenanceId": "woodlouse"
+  }
+}
