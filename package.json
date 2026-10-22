@@ -16,7 +16,9 @@
     "format:check": "prettier --check .",
     "assets:build": "node scripts/animal-assets.mjs",
     "assets:check": "node scripts/animal-assets.mjs --check",
-    "assets:review": "node scripts/animal-contact-sheets.mjs"
+    "assets:review": "node scripts/animal-contact-sheets.mjs",
+    "roster:sync": "node scripts/sync-animal-catalog.mjs",
+    "roster:check": "node scripts/sync-animal-catalog.mjs --check"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
