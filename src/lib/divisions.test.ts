@@ -161,7 +161,7 @@ describe('predicted performance divisions', () => {
     )
     expect(second).toEqual(first)
     expect(predictor.mock.calls.length).toBe(calls)
-    expect(calls).toBeLessThanOrEqual(1036)
+    expect(calls).toBeLessThanOrEqual(1000 + ANIMALS.length)
     classifier.classify(
       { ...racers[0], stats: { ...racers[0].stats, delay: 2000 } },
       250,

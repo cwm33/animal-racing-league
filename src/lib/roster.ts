@@ -1,5 +1,10 @@
 import { ANIMALS, toEntrant } from '../data/animals'
-import { belongsToGroup, classificationFor, groupLabel } from '../data/taxonomy'
+import {
+  belongsToGroup,
+  classificationFor,
+  groupLabel,
+  expansionMetadataFor,
+} from '../data/taxonomy'
 import type { BiologicalGroup } from '../data/taxonomy'
 import { createDivisionClassifier, racingSignature } from './divisions'
 import type { DivisionId, DivisionPrediction } from './divisions'
@@ -37,6 +42,7 @@ export function rosterEntries(
     origin: RosterEntry['origin'],
   ): RosterEntry {
     const metadata = classificationFor(animal.id)
+    const taxonomy = expansionMetadataFor(animal.id)?.taxonomy
     return {
       key,
       animal,
@@ -50,6 +56,9 @@ export function rosterEntries(
         metadata?.classId,
         metadata?.order,
         metadata?.family,
+        taxonomy?.phylum,
+        taxonomy?.class,
+        taxonomy?.genus,
       ]
         .join(' ')
         .normalize('NFKC')

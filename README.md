@@ -2,7 +2,7 @@
 
 **Fast paws. Wild science. Extremely questionable matchups.**
 
-A complete browser-based racing playground built with React, TypeScript, and Vite. Race 36 species across 25 metres to 10 kilometres, tune their characteristics, and give a hippopotamus the turbo it never asked for.
+A complete browser-based racing playground built with React, TypeScript, and Vite. Race 100 species across 25 metres to 10 kilometres, tune their characteristics, and give a hippopotamus the turbo it never asked for.
 
 Play Animal Racing League: **https://cwm33.github.io/animal-racing-league/**
 
@@ -114,8 +114,9 @@ Optional **estimated mass effects** scale acceleration by `(originalMass / edite
 | Bipedal run      |                0.85 |           0.85 |
 | Waddle / shuffle |                0.65 |           1.15 |
 | Crawl / haul     |                0.55 |            1.2 |
+| Slither / glide  |                0.55 |            1.2 |
 
-These coefficients are invented, not measured gait efficiencies. Gallop / run is a generic launch profile; it does not imply that elephants use a horse-like aerial gallop.
+Slither / glide labels the boa, earthworm and slug without adding legs to their animations. It shares crawl’s coefficients, so the imported forecasts stay unchanged. Legacy saved crawl configurations still load. These coefficients are invented, not measured gait efficiencies. Gallop / run is a generic launch profile; it does not imply that elephants use a horse-like aerial gallop.
 
 ### Honest biology
 
@@ -127,7 +128,7 @@ References in Field notes and the editor provide biological context:
 - [Wilson et al. (2013)](https://doi.org/10.1038/nature12295) — wild cheetah locomotion.
 - [Bramble & Lieberman (2004)](https://doi.org/10.1038/nature03052) — human endurance running.
 
-They do not substantiate the full set of racing numbers. Each of the 36 species has its own generated full-body illustration. Unicode emoji are retained only as a fallback when an image fails to load.
+They do not substantiate the full set of racing numbers. New-species per-field evidence lives in `src/data/provenance.json` and loads on demand in the editor’s Biological context panel. It records units, accessed dates, reference links, observed values and model assumptions. Eight new masses and most top speeds remain estimates; conflicting or travel-speed reports are explicitly qualified. Each of the 100 species has its own generated full-body illustration. Unicode emoji are retained only as a fallback when an image fails to load.
 
 ### Boundaries and unusual experiments
 
@@ -142,7 +143,7 @@ They do not substantiate the full set of racing numbers. Each of the 36 species 
 ## Project map
 
 ```text
-src/data/animals.ts               36 presets and biological context
+src/data/animals.ts               100 presets and biological context
 src/data/taxonomy.ts              explicit ID-based biological browsing metadata
 src/lib/divisions.ts              cached distance-relative predicted divisions
 src/lib/roster.ts                 search/filter index, saved variants, matched lineups
@@ -182,19 +183,20 @@ If organization policy blocks Actions or Pages, the owner must allow them in rep
 
 ## Illustrated competitors
 
-![All 36 illustrated competitors at 64 px and 32 px](assets/animals/collection-preview.webp)
+![All 100 illustrated competitors at 64 px and 32 px](assets/animals/collection-preview.webp)
 
-The complete 36-species collection uses a shared premium, softly shaded 3D cartoon style. Every character faces right. The cheetah was generated first, inspected, and used as the visual reference for the remaining species. Prompts explicitly describe species-specific anatomy (including the platypus, elephant seal, pronghorn, and Hermann’s tortoise).
+The complete 100-species collection uses a shared premium, softly shaded 3D cartoon style. Every character faces right. The cheetah was generated first, inspected, and used as the visual reference for the remaining species. Prompts explicitly describe species-specific anatomy (including the platypus, elephant seal, pronghorn, and Hermann’s tortoise).
 
 - Original transparent PNG artwork: `assets/animals/originals/{animal-id}.png`. Originals are retained unchanged and excluded from the production site's public directory.
-- Runtime files: `public/animals/{animal-id}-{96,192,384}.webp`. Transparent padding is normalized onto a shared square frame and ground baseline. Original anatomy is not altered.
+- **Art acceptance remains conditional:** the 64 delivered PNGs have stray low alpha and fail the strict clear 10% source-border requirement. Production derivatives have a validated clear 10% border, while source PNGs remain unchanged. Fine toe and occluded multi-legged anatomy still needs specialist review; see [integration audit](docs/integration-audit.md).
+- Runtime files: `public/animals/{animal-id}-{96,192,384}.webp`. Transparent padding is normalized onto a square frame; the original 36 retain their existing baseline and the 64 additions use a smaller silhouette with a clear border. Original anatomy is not altered.
 - [Collection review and original downloads](assets/animals/README.md).
 - Art direction and species briefs: `assets/animals/art-direction.json`.
 - Integrity and framing manifest: `assets/animals/manifest.json`.
 
 ```bash
 npm run assets:build    # rebuild responsive WebP derivatives from the original PNGs
-npm run assets:check    # verify all 36 originals and 108 runtime files, alpha and dimensions
+npm run assets:check    # verify all 100 originals and 300 runtime files, alpha and dimensions
 npm run assets:review   # create full-detail, 64px and 32px review sheets in test-results/animal-art/
 ```
 
@@ -202,20 +204,21 @@ npm run assets:review   # create full-detail, 64px and 32px review sheets in tes
 
 Animations transform only an inner visual layer. The outer competitor position continues to use the unchanged racing engine. Running uses rhythmic bounce; bounding uses hop/compression; waddling uses gentle rocking; crawling uses small body movement; elephant seals have slow undulation. Cadence follows current simulated speed with conservative visual bounds, never feeds back into physics, and stops on pause or finish. Reduced-motion preferences disable these animations.
 
-Browser tests additionally cover all 36 loaded illustrations, failed-image fallback sizing, every gait, and paused/reduced-motion behavior. CI checks asset integrity before the existing application checks and deployment.
+Browser tests additionally cover all 100 loaded illustrations across three roster pages, failed-image fallback sizing, every gait, and paused/reduced-motion behavior. CI checks asset integrity before the existing application checks and deployment.
 
 ## Adding more competitors
 
-The project is prepared for a **100-species target**, but this commit does **not** add any animals or replace existing artwork. Species identities and racing parameters live in `src/data/animals.ts`; the asset catalog is generated from that source with `npm run roster:sync`. Add researched species entries there, maintain new-species source/provenance notes, and add matching anatomy briefs to `assets/animals/art-direction.json`. Consult `AGENTS.md` for the full research and image-quality checklist.
+The league now contains **100 unique species entries**: the original 36 plus the 64-species menagerie pack. The original IDs, statistics, PNG bytes, default lineup and presets are preserved. Species identities and racing parameters live in `src/data/animals.ts`; the asset catalog is generated from that source with `npm run roster:sync`. Add researched species entries there, maintain new-species source/provenance notes, and add matching anatomy briefs to `assets/animals/art-direction.json`. Consult `AGENTS.md` for the full research and image-quality checklist.
 
 For each added species, create a right-facing transparent PNG using the existing cheetah artwork as the style reference, save it under `assets/animals/originals/<id>.png`, then run:
 
 ```bash
 npm run roster:sync
+npm run roster:check
 npm run assets:build
 npm run assets:check
 npm run assets:review
-npm run typecheck && npm run lint && npm test && npm run build
+npm run typecheck && npm run lint && npm test && npm run test:e2e && npm run build
 ```
 
 The asset validator and contact-sheet generator now derive roster counts and page counts from the catalog instead of assuming exactly 36 species. Existing asset IDs and original art are retained.

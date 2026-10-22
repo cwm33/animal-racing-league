@@ -178,5 +178,325 @@
     "id": "camel",
     "name": "Dromedary camel",
     "scientific": "Camelus dromedarius"
+  },
+  {
+    "id": "quokka",
+    "name": "Quokka",
+    "scientific": "Setonix brachyurus"
+  },
+  {
+    "id": "wombat",
+    "name": "Common wombat",
+    "scientific": "Vombatus ursinus"
+  },
+  {
+    "id": "pangolin",
+    "name": "Temminck's pangolin",
+    "scientific": "Smutsia temminckii"
+  },
+  {
+    "id": "aardvark",
+    "name": "Aardvark",
+    "scientific": "Orycteropus afer"
+  },
+  {
+    "id": "echidna",
+    "name": "Short-beaked echidna",
+    "scientific": "Tachyglossus aculeatus"
+  },
+  {
+    "id": "armadillo",
+    "name": "Nine-banded armadillo",
+    "scientific": "Dasypus novemcinctus"
+  },
+  {
+    "id": "giant-anteater",
+    "name": "Giant anteater",
+    "scientific": "Myrmecophaga tridactyla"
+  },
+  {
+    "id": "meerkat",
+    "name": "Meerkat",
+    "scientific": "Suricata suricatta"
+  },
+  {
+    "id": "badger",
+    "name": "European badger",
+    "scientific": "Meles meles"
+  },
+  {
+    "id": "wolverine",
+    "name": "Wolverine",
+    "scientific": "Gulo gulo"
+  },
+  {
+    "id": "raccoon",
+    "name": "Raccoon",
+    "scientific": "Procyon lotor"
+  },
+  {
+    "id": "red-panda",
+    "name": "Red panda",
+    "scientific": "Ailurus fulgens"
+  },
+  {
+    "id": "fossa",
+    "name": "Fossa",
+    "scientific": "Cryptoprocta ferox"
+  },
+  {
+    "id": "ring-tailed-lemur",
+    "name": "Ring-tailed lemur",
+    "scientific": "Lemur catta"
+  },
+  {
+    "id": "olive-baboon",
+    "name": "Olive baboon",
+    "scientific": "Papio anubis"
+  },
+  {
+    "id": "crested-porcupine",
+    "name": "Crested porcupine",
+    "scientific": "Hystrix cristata"
+  },
+  {
+    "id": "hedgehog",
+    "name": "European hedgehog",
+    "scientific": "Erinaceus europaeus"
+  },
+  {
+    "id": "tenrec",
+    "name": "Tailless tenrec",
+    "scientific": "Tenrec ecaudatus"
+  },
+  {
+    "id": "shrew",
+    "name": "Common shrew",
+    "scientific": "Sorex araneus"
+  },
+  {
+    "id": "elephant-shrew",
+    "name": "Black and rufous sengi",
+    "scientific": "Rhynchocyon petersi"
+  },
+  {
+    "id": "springhare",
+    "name": "South African springhare",
+    "scientific": "Pedetes capensis"
+  },
+  {
+    "id": "okapi",
+    "name": "Okapi",
+    "scientific": "Okapia johnstoni"
+  },
+  {
+    "id": "cassowary",
+    "name": "Southern cassowary",
+    "scientific": "Casuarius casuarius"
+  },
+  {
+    "id": "emu",
+    "name": "Emu",
+    "scientific": "Dromaius novaehollandiae"
+  },
+  {
+    "id": "secretary-bird",
+    "name": "Secretary bird",
+    "scientific": "Sagittarius serpentarius"
+  },
+  {
+    "id": "roadrunner",
+    "name": "Greater roadrunner",
+    "scientific": "Geococcyx californianus"
+  },
+  {
+    "id": "kiwi",
+    "name": "North Island brown kiwi",
+    "scientific": "Apteryx mantelli"
+  },
+  {
+    "id": "wild-turkey",
+    "name": "Wild turkey",
+    "scientific": "Meleagris gallopavo"
+  },
+  {
+    "id": "guineafowl",
+    "name": "Helmeted guineafowl",
+    "scientific": "Numida meleagris"
+  },
+  {
+    "id": "peafowl",
+    "name": "Indian peafowl",
+    "scientific": "Pavo cristatus"
+  },
+  {
+    "id": "seriema",
+    "name": "Red-legged seriema",
+    "scientific": "Cariama cristata"
+  },
+  {
+    "id": "kori-bustard",
+    "name": "Kori bustard",
+    "scientific": "Ardeotis kori"
+  },
+  {
+    "id": "tinamou",
+    "name": "Great tinamou",
+    "scientific": "Tinamus major"
+  },
+  {
+    "id": "lyrebird",
+    "name": "Superb lyrebird",
+    "scientific": "Menura novaehollandiae"
+  },
+  {
+    "id": "komodo-dragon",
+    "name": "Komodo dragon",
+    "scientific": "Varanus komodoensis"
+  },
+  {
+    "id": "gila-monster",
+    "name": "Gila monster",
+    "scientific": "Heloderma suspectum"
+  },
+  {
+    "id": "bearded-dragon",
+    "name": "Central bearded dragon",
+    "scientific": "Pogona vitticeps"
+  },
+  {
+    "id": "frilled-lizard",
+    "name": "Frilled lizard",
+    "scientific": "Chlamydosaurus kingii"
+  },
+  {
+    "id": "horned-lizard",
+    "name": "Texas horned lizard",
+    "scientific": "Phrynosoma cornutum"
+  },
+  {
+    "id": "thorny-devil",
+    "name": "Thorny devil",
+    "scientific": "Moloch horridus"
+  },
+  {
+    "id": "blue-tongued-skink",
+    "name": "Eastern blue-tongued skink",
+    "scientific": "Tiliqua scincoides"
+  },
+  {
+    "id": "leopard-gecko",
+    "name": "Leopard gecko",
+    "scientific": "Eublepharis macularius"
+  },
+  {
+    "id": "tuatara",
+    "name": "Tuatara",
+    "scientific": "Sphenodon punctatus"
+  },
+  {
+    "id": "rosy-boa",
+    "name": "Rosy boa",
+    "scientific": "Lichanura trivirgata"
+  },
+  {
+    "id": "common-toad",
+    "name": "Common toad",
+    "scientific": "Bufo bufo"
+  },
+  {
+    "id": "fire-salamander",
+    "name": "Fire salamander",
+    "scientific": "Salamandra salamandra"
+  },
+  {
+    "id": "tiger-salamander",
+    "name": "Tiger salamander",
+    "scientific": "Ambystoma tigrinum"
+  },
+  {
+    "id": "tomato-frog",
+    "name": "Tomato frog",
+    "scientific": "Dyscophus antongilii"
+  },
+  {
+    "id": "ornate-horned-frog",
+    "name": "Ornate horned frog",
+    "scientific": "Ceratophrys ornata"
+  },
+  {
+    "id": "golden-mantella",
+    "name": "Golden mantella",
+    "scientific": "Mantella aurantiaca"
+  },
+  {
+    "id": "tarantula",
+    "name": "Chilean rose tarantula",
+    "scientific": "Grammostola rosea"
+  },
+  {
+    "id": "scorpion",
+    "name": "Emperor scorpion",
+    "scientific": "Pandinus imperator"
+  },
+  {
+    "id": "coconut-crab",
+    "name": "Coconut crab",
+    "scientific": "Birgus latro"
+  },
+  {
+    "id": "tiger-beetle",
+    "name": "Six-spotted tiger beetle",
+    "scientific": "Cicindela sexguttata"
+  },
+  {
+    "id": "silver-ant",
+    "name": "Saharan silver ant",
+    "scientific": "Cataglyphis bombycina"
+  },
+  {
+    "id": "cockroach",
+    "name": "Madagascar hissing cockroach",
+    "scientific": "Gromphadorhina portentosa"
+  },
+  {
+    "id": "mantis",
+    "name": "European mantis",
+    "scientific": "Mantis religiosa"
+  },
+  {
+    "id": "stick-insect",
+    "name": "Indian stick insect",
+    "scientific": "Carausius morosus"
+  },
+  {
+    "id": "giant-millipede",
+    "name": "Giant African millipede",
+    "scientific": "Archispirostreptus gigas"
+  },
+  {
+    "id": "centipede",
+    "name": "Giant desert centipede",
+    "scientific": "Scolopendra heros"
+  },
+  {
+    "id": "earthworm",
+    "name": "Common earthworm",
+    "scientific": "Lumbricus terrestris"
+  },
+  {
+    "id": "slug",
+    "name": "Black slug",
+    "scientific": "Arion ater"
+  },
+  {
+    "id": "velvet-worm",
+    "name": "Solórzano's velvet worm",
+    "scientific": "Mongeperipatus solorzanoi"
+  },
+  {
+    "id": "woodlouse",
+    "name": "Common rough woodlouse",
+    "scientific": "Porcellio scaber"
   }
 ]

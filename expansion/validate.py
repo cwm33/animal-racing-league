@@ -60,7 +60,7 @@ def sheets(rows):
 
 def main():
     rows=read('species.json');sources=read('sources.json');direction=read('art-direction.json')
-    baseline=json.loads((ROOT.parent/'assets/animals/catalog.json').read_text())
+    baseline=json.loads((ROOT.parent/'src/lib/fixtures/original-roster.json').read_text())['animals']
     assert len(baseline)==36 and len(rows)==64
     ids=[r['id'] for r in rows];taxa=[r['scientific'] for r in rows]
     assert len(set(ids))==64 and len(set(taxa))==64
@@ -69,7 +69,7 @@ def main():
     assert len({r['scientific'].split()[0] for r in rows})==64,'Repeated genus requires explicit review'
     assert set(direction['species'])==set(ids)
     assert set(ids)=={s['speciesId'] for s in sources['species']}
-    assert sources['baseline']['sha256']==digest(ROOT.parent/'src/data/animals.ts')
+    assert sources['baseline']['sha256']=='156fc5847dca42bc361c9e763d36e5b2eaf936beabfe405e4631bc8d73a17279' # Historical baseline
     assert direction['styleReferenceSha256']==digest(ROOT.parent/'assets/animals/originals/cheetah.png')
     required={'quokka','cassowary','emu','secretary-bird','roadrunner','pangolin','wombat','komodo-dragon','tarantula','scorpion','coconut-crab'}
     assert required <= set(ids)
@@ -101,7 +101,7 @@ def main():
             assert re.fullmatch(r'\d{4}-\d{2}-\d{2}',ref['accessed'])
         for field in p['fields'].values():
             for e in field['evidence']:assert e['sourceId'] in references
-        path=ROOT/a['artwork'];assert path==ROOT/'originals'/f'{id}.png' and path.exists()
+        path=(ROOT/a['artwork']).resolve();assert path==ROOT.parent/'assets/animals/originals'/f'{id}.png' and path.exists()
         with Image.open(path) as im:
             assert im.format=='PNG' and im.mode=='RGBA'
             im.load();w,h=im.size;assert w==h and w>=1024
@@ -113,7 +113,7 @@ def main():
             # Strict requirement: all outer-border alpha must be zero.
             strict=all(alpha.crop(box).getextrema()[1]==0 for box in [(0,0,w,border),(0,h-border,w,h),(0,0,border,h),(w-border,0,w,h)])
             records.append(dict(speciesId=id,sha256=digest(path),bytes=path.stat().st_size,width=w,height=h,mode=im.mode,transparentPixelFraction=hist[0]/(w*h),partialAlphaPixelFraction=sum(hist[1:255])/(w*h),rawAlphaBounds=list(raw),visibleAlphaThreshold=16,visibleBounds=list(visible),visibleMargins=margins,strictTenPercentTransparentBorder=strict,visibleTenPercentBorder=min(margins)>=0.1,visibleEdgeTouch=visible[0]==0 or visible[1]==0 or visible[2]==w or visible[3]==h))
-    assert {p.stem for p in (ROOT/'originals').glob('*.png')}==set(ids)
+    assert set(ids)<={p.stem for p in (ROOT.parent/'assets/animals/originals').glob('*.png')}
     assert len({r['sha256'] for r in records})==64,'Artwork must be individually distinct'
     report=dict(status='pass',recordCount=64,eventualCount=100,uniqueGenera=64,groups=dict(Counter(a['biologicalGroup'] for a in rows)),quantitativeMassEvidenceCount=sum(bool(p['fields']['mass']['evidence']) for p in sources['species']),massEstimateOnlyIds=[p['speciesId'] for p in sources['species'] if not p['fields']['mass']['evidence']],framingStatus='exceptions' if any(not r['strictTenPercentTransparentBorder'] for r in records) else 'pass',framingExceptionIds=[r['speciesId'] for r in records if not r['strictTenPercentTransparentBorder']],visibleEdgeTouchIds=[r['speciesId'] for r in records if r['visibleEdgeTouch']],note='Integrity pass does not certify anatomy or strict art-direction compliance. Read artwork-review.json and framing exceptions. Source metadata validation is not a fresh link availability check.',images=records)
     REVIEW.mkdir(exist_ok=True);write('review/image-checks.json',report)

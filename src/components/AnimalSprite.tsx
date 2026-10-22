@@ -46,7 +46,7 @@ export function AnimalSprite({
       <span className="animal-sprite-motion">
         {failed ? (
           <span className="animal-sprite-fallback" aria-hidden="true">
-            {animal.emoji}
+            {animal.emoji || '?'}
           </span>
         ) : (
           <img

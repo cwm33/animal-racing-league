@@ -20,19 +20,20 @@ const additions = JSON.parse(await read('species.json'))
 const { LOCOMOTION } = await import(types)
 const ids = new Set(current.ANIMALS.map((a) => a.id))
 const taxa = new Set(current.ANIMALS.map((a) => a.scientific))
-assert.equal(current.ANIMALS.length, 36)
+assert.equal(current.ANIMALS.length, 100)
 assert.equal(additions.length, 64)
 for (const a of additions) {
-  assert(!ids.has(a.id), `Duplicate ID ${a.id}`)
-  assert(!taxa.has(a.scientific), `Duplicate taxon ${a.scientific}`)
-  ids.add(a.id)
-  taxa.add(a.scientific)
-  assert(LOCOMOTION[a.locomotion], `Unknown gait ${a.id}`)
+  const integrated = current.ANIMALS.find((item) => item.id === a.id)
+  assert(integrated, `Missing ID ${a.id}`)
+  assert.equal(integrated.scientific, a.scientific)
+  assert.deepEqual(integrated.stats, a.stats)
+  assert(LOCOMOTION[integrated.locomotion], `Unknown gait ${a.id}`)
   assert.equal(engine.validateStats(a.stats, 'plausible'), null, a.id)
 }
+assert.equal(taxa.size, 100)
 assert.equal(ids.size, 100)
 const distances = [25, 100, 400, 1000, 5000, 10000]
-const entrants = [...current.ANIMALS, ...additions].map(current.toEntrant)
+const entrants = current.ANIMALS.map(current.toEntrant)
 const results = []
 for (const a of entrants) {
   let last = 0
@@ -46,7 +47,7 @@ for (const a of entrants) {
     last = result.finish
     finishes[distance] = result.finish
   }
-  results.push({ id: a.id, new: !current.ANIMALS.some((x) => x.id === a.id), finishSeconds: finishes })
+  results.push({ id: a.id, new: additions.some((x) => x.id === a.id), finishSeconds: finishes })
 }
 const report = {
   engine: 'Unmodified src/lib/simulation.ts, stripped in memory with node:module',

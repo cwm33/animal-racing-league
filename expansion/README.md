@@ -1,15 +1,25 @@
+> Integration status: all 64 records are now in `src/data/animals.ts`, with taxonomy in
+> `src/data/expansion-metadata.json` and canonical provenance in `src/data/provenance.json`.
+> The PNGs moved unchanged to `assets/animals/originals/`; `species.json` and the viewer
+> now point there. The source-border and fine-anatomy exceptions below remain open.
+> See [integration audit](../docs/integration-audit.md). The following describes the
+> preparation commit; its baseline hashes and validation reports are historical.
+> `validate.py` and `validate-simulation.mjs` now validate the integrated layout.
+> `generate.py` rebuilds the preparation data only; changes must be deliberately
+> reconciled into canonical data and reviewed before shipping.
+
 # Menagerie expansion: 36 → 100
 
-This is a separate integration pack on `feature/menagerie-assets`. It adds **exactly 64 living species**, including **quokka (*Setonix brachyurus*)**, with no ID or taxon collision against the original 36. All changed repository files are under `expansion/`. The application roster, catalogs, 36 original illustrations, production assets, scripts, and tests are unchanged.
+This is a separate integration pack on `feature/menagerie-assets`. It adds **exactly 64 living species**, including **quokka (_Setonix brachyurus_)**, with no ID or taxon collision against the original 36. All changed repository files are under `expansion/`. The application roster, catalogs, 36 original illustrations, production assets, scripts, and tests are unchanged.
 
-| Biological group | New competitors |
-| --- | ---: |
-| Mammals | 22 |
-| Birds | 12 |
-| Reptiles | 10 |
-| Amphibians | 6 |
-| Terrestrial invertebrates | 14 |
-| **Total** | **64** |
+| Biological group          | New competitors |
+| ------------------------- | --------------: |
+| Mammals                   |              22 |
+| Birds                     |              12 |
+| Reptiles                  |              10 |
+| Amphibians                |               6 |
+| Terrestrial invertebrates |              14 |
+| **Total**                 |          **64** |
 
 The additions also represent 64 different genera. Cassowary, emu, secretary bird, greater roadrunner, pangolin, wombat, Komodo dragon, tarantula, emperor scorpion, and coconut crab are included. No new domestic breeds, extinct taxa, or primarily aquatic adults are included. Birds race on foot; amphibians represent terrestrial adults; coconut-crab marine larvae are excluded. Arboreal species represent only their terrestrial movement.
 
@@ -26,33 +36,33 @@ This pack is complete in record and PNG coverage. **Strict art-direction accepta
 
 ## Contents
 
-| File | Purpose |
-| --- | --- |
-| [species.json](species.json) | Flat array of 64 `Animal`-compatible records plus integration metadata |
-| [sources.json](sources.json) | Per-species, per-field SI values, evidence types, source URLs, access dates, model rules, and limitations |
-| [art-direction.json](art-direction.json) | Existing shared style, unchanged cheetah-reference hash, species anatomical briefs, generation notes |
-| `originals/{id}.png` | 64 source PNG illustrations, excluded from the current application |
-| [review/index.html](review/index.html) | Local, dependency-free artwork viewer with checker, white, and dark backgrounds |
-| `review/full-size-{01..08}.webp` | Eight contact sheets retaining original pixel dimensions at 1:1 scale; contact-sheet compression is lossy, source PNGs are unchanged |
-| [review/contact-64px.png](review/contact-64px.png), [review/contact-32px.png](review/contact-32px.png) | Exact-size sprite review sheets, scaled directly from original canvases |
-| [review/image-checks.json](review/image-checks.json) | Original SHA-256, bytes, dimensions, alpha statistics, visible bounds, strict framing exceptions |
-| [review/simulation-checks.json](review/simulation-checks.json) | 600 races through the actual unchanged simulation engine |
-| [research.json](research.json) | Initial ADW retrieval audit, including failed routes and classification-only pages; these are not all supporting citations |
-| `prepare.py`, `generate.py`, `validate.py`, `validate-simulation.mjs`, `typecheck.ts` | Pack-local research seed, deterministic compilation, validation, review, and schema checks |
+| File                                                                                                   | Purpose                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [species.json](species.json)                                                                           | Flat array of 64 `Animal`-compatible records plus integration metadata                                                               |
+| [sources.json](sources.json)                                                                           | Per-species, per-field SI values, evidence types, source URLs, access dates, model rules, and limitations                            |
+| [art-direction.json](art-direction.json)                                                               | Existing shared style, unchanged cheetah-reference hash, species anatomical briefs, generation notes                                 |
+| `../assets/animals/originals/{id}.png`                                                                 | 64 source PNG illustrations, excluded from the current application                                                                   |
+| [review/index.html](review/index.html)                                                                 | Local, dependency-free artwork viewer with checker, white, and dark backgrounds                                                      |
+| `review/full-size-{01..08}.webp`                                                                       | Eight contact sheets retaining original pixel dimensions at 1:1 scale; contact-sheet compression is lossy, source PNGs are unchanged |
+| [review/contact-64px.png](review/contact-64px.png), [review/contact-32px.png](review/contact-32px.png) | Exact-size sprite review sheets, scaled directly from original canvases                                                              |
+| [review/image-checks.json](review/image-checks.json)                                                   | Original SHA-256, bytes, dimensions, alpha statistics, visible bounds, strict framing exceptions                                     |
+| [review/simulation-checks.json](review/simulation-checks.json)                                         | 600 races through the actual unchanged simulation engine                                                                             |
+| [research.json](research.json)                                                                         | Initial ADW retrieval audit, including failed routes and classification-only pages; these are not all supporting citations           |
+| `prepare.py`, `generate.py`, `validate.py`, `validate-simulation.mjs`, `typecheck.ts`                  | Pack-local research seed, deterministic compilation, validation, review, and schema checks                                           |
 
 ## Evidence and modelling
 
 `stats` uses the exact `RacingStats` keys from `src/lib/types.ts`:
 
-| Key | SI unit | Interpretation |
-| --- | --- | --- |
-| `mass` | kg | Rounded representative adult model mass |
-| `topSpeed` | m/s | Effective straight-land sprint preset |
-| `acceleration` | m/s² | Constant nominal launch acceleration, before gait coefficient |
-| `sprint` | s | Reserve **after attaining top speed**, not total burst duration |
-| `sustainable` | m/s | Low mathematical tail, not demonstrated indefinite endurance |
-| `fatigue` | 1/s | Exponential decay coefficient, before gait coefficient |
-| `delay` | s | Zero standing-start convention |
+| Key            | SI unit | Interpretation                                                  |
+| -------------- | ------- | --------------------------------------------------------------- |
+| `mass`         | kg      | Rounded representative adult model mass                         |
+| `topSpeed`     | m/s     | Effective straight-land sprint preset                           |
+| `acceleration` | m/s²    | Constant nominal launch acceleration, before gait coefficient   |
+| `sprint`       | s       | Reserve **after attaining top speed**, not total burst duration |
+| `sustainable`  | m/s     | Low mathematical tail, not demonstrated indefinite endurance    |
+| `fatigue`      | 1/s     | Exponential decay coefficient, before gait coefficient          |
+| `delay`        | s       | Zero standing-start convention                                  |
 
 Every numerical `stats` value remains a simulation preset. In `sources.json`, `primary_measurement` identifies a study observation, `reported_summary` identifies a species account or zoo summary, and `model_estimate` identifies unsupported model parameters. Source evidence retains its own value and scope, separately from the chosen preset. A range, sample mean, sex-specific example, and maximum are not interchangeable. Older or questionable claims are annotated, including the unsupported 40 km/h wombat story, conflicting wolverine speeds, historical armadillo/red-panda species limits, and rosy-boa complex mass context.
 

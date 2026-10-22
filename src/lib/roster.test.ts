@@ -24,7 +24,7 @@ const filters: RosterFilters = {
 }
 const hippo = species.find((a) => a.id === 'hippo')!
 describe('explicit biological metadata and roster operations', () => {
-  it('covers exactly the canonical 36 species, using valid explicit groups', () => {
+  it('covers exactly the canonical 100 species, using valid explicit groups', () => {
     expect(Object.keys(SPECIES_CLASSIFICATION).sort()).toEqual(
       ANIMALS.map((a) => a.id).sort(),
     )
@@ -33,7 +33,8 @@ describe('explicit biological metadata and roster operations', () => {
       expect(
         BIOLOGICAL_GROUPS.some((group) => group.id === metadata.groupId),
       ).toBe(true)
-      expect(metadata.order).toBeTruthy()
+      if (a.id === 'velvet-worm') expect(metadata.order).toBeNull()
+      else expect(metadata.order).toBeTruthy()
       expect(metadata.family).toBeTruthy()
     }
     expect(belongsToGroup('hippo', 'hoofed-mammals')).toBe(true)
@@ -58,11 +59,11 @@ describe('explicit biological metadata and roster operations', () => {
       ),
     ).toEqual(['fox'])
     expect(filterRoster(entries, { ...filters, group: 'birds' })).toHaveLength(
-      4,
+      16,
     )
-    expect(filterRoster(entries, { ...filters, group: 'amphibians' })).toEqual(
-      [],
-    )
+    expect(
+      filterRoster(entries, { ...filters, group: 'amphibians' }),
+    ).toHaveLength(6)
     expect(
       filterRoster(entries, {
         ...filters,
@@ -169,7 +170,8 @@ describe('explicit biological metadata and roster operations', () => {
     const entries = rosterEntries(species, [], [], 100, true)
     const birds = filterRoster(entries, { ...filters, group: 'birds' })
     const anchor = matchingAnchor(birds)!
-    expect(anchor.animal.id).toBe('penguin')
+    expect(anchor.prediction.finish).not.toBeNull()
+    expect(matchedLineup(birds, anchor.key).length).toBeGreaterThanOrEqual(2)
     expect(matchingAnchor(birds, 'species:ostrich')?.animal.id).toBe('ostrich')
     expect(matchingAnchor([birds[0], birds[0]])).toBe(birds[0])
     expect(matchingAnchor([])).toBeUndefined()

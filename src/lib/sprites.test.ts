@@ -22,6 +22,7 @@ describe('illustration presentation', () => {
     expect(spriteMotion('penguin', 'waddle', 1).gait).toBe('waddle')
     expect(spriteMotion('tortoise', 'crawl', 0.1).gait).toBe('crawl')
     expect(spriteMotion('seal', 'crawl', 1).gait).toBe('undulate')
+    expect(spriteMotion('rosy-boa', 'slither', 1).gait).toBe('undulate')
   })
   it('responds to simulated speed while keeping a stable visual cadence for extreme monsters', () => {
     for (const animal of ANIMALS) {

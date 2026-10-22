@@ -4233,3 +4233,20 @@ td strong {
   border-radius: 0 0 9px 9px;
   margin: 0;
 }
+
+.species-evidence {
+  overflow-wrap: anywhere;
+}
+.species-evidence dl > div {
+  margin-block: 12px;
+}
+.species-evidence dt {
+  font-weight: 700;
+}
+.species-evidence dd {
+  margin: 4px 0;
+  line-height: 1.6;
+}
+.species-evidence ul {
+  padding-left: 20px;
+}

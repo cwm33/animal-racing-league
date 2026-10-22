@@ -33,7 +33,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "quokka",
-    "artwork": "originals/quokka.png"
+    "artwork": "../assets/animals/originals/quokka.png"
   },
   {
     "id": "wombat",
@@ -69,7 +69,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "wombat",
-    "artwork": "originals/wombat.png"
+    "artwork": "../assets/animals/originals/wombat.png"
   },
   {
     "id": "pangolin",
@@ -105,7 +105,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "pangolin",
-    "artwork": "originals/pangolin.png"
+    "artwork": "../assets/animals/originals/pangolin.png"
   },
   {
     "id": "aardvark",
@@ -141,7 +141,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "aardvark",
-    "artwork": "originals/aardvark.png"
+    "artwork": "../assets/animals/originals/aardvark.png"
   },
   {
     "id": "echidna",
@@ -177,7 +177,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "echidna",
-    "artwork": "originals/echidna.png"
+    "artwork": "../assets/animals/originals/echidna.png"
   },
   {
     "id": "armadillo",
@@ -213,7 +213,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "armadillo",
-    "artwork": "originals/armadillo.png"
+    "artwork": "../assets/animals/originals/armadillo.png"
   },
   {
     "id": "giant-anteater",
@@ -249,7 +249,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "giant-anteater",
-    "artwork": "originals/giant-anteater.png"
+    "artwork": "../assets/animals/originals/giant-anteater.png"
   },
   {
     "id": "meerkat",
@@ -285,7 +285,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "meerkat",
-    "artwork": "originals/meerkat.png"
+    "artwork": "../assets/animals/originals/meerkat.png"
   },
   {
     "id": "badger",
@@ -321,7 +321,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "badger",
-    "artwork": "originals/badger.png"
+    "artwork": "../assets/animals/originals/badger.png"
   },
   {
     "id": "wolverine",
@@ -357,7 +357,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "wolverine",
-    "artwork": "originals/wolverine.png"
+    "artwork": "../assets/animals/originals/wolverine.png"
   },
   {
     "id": "raccoon",
@@ -393,7 +393,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "raccoon",
-    "artwork": "originals/raccoon.png"
+    "artwork": "../assets/animals/originals/raccoon.png"
   },
   {
     "id": "red-panda",
@@ -429,7 +429,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "red-panda",
-    "artwork": "originals/red-panda.png"
+    "artwork": "../assets/animals/originals/red-panda.png"
   },
   {
     "id": "fossa",
@@ -465,7 +465,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "fossa",
-    "artwork": "originals/fossa.png"
+    "artwork": "../assets/animals/originals/fossa.png"
   },
   {
     "id": "ring-tailed-lemur",
@@ -501,7 +501,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "ring-tailed-lemur",
-    "artwork": "originals/ring-tailed-lemur.png"
+    "artwork": "../assets/animals/originals/ring-tailed-lemur.png"
   },
   {
     "id": "olive-baboon",
@@ -537,7 +537,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "olive-baboon",
-    "artwork": "originals/olive-baboon.png"
+    "artwork": "../assets/animals/originals/olive-baboon.png"
   },
   {
     "id": "crested-porcupine",
@@ -573,7 +573,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "crested-porcupine",
-    "artwork": "originals/crested-porcupine.png"
+    "artwork": "../assets/animals/originals/crested-porcupine.png"
   },
   {
     "id": "hedgehog",
@@ -609,7 +609,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "hedgehog",
-    "artwork": "originals/hedgehog.png"
+    "artwork": "../assets/animals/originals/hedgehog.png"
   },
   {
     "id": "tenrec",
@@ -645,7 +645,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "tenrec",
-    "artwork": "originals/tenrec.png"
+    "artwork": "../assets/animals/originals/tenrec.png"
   },
   {
     "id": "shrew",
@@ -681,7 +681,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "shrew",
-    "artwork": "originals/shrew.png"
+    "artwork": "../assets/animals/originals/shrew.png"
   },
   {
     "id": "elephant-shrew",
@@ -717,7 +717,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "elephant-shrew",
-    "artwork": "originals/elephant-shrew.png"
+    "artwork": "../assets/animals/originals/elephant-shrew.png"
   },
   {
     "id": "springhare",
@@ -753,7 +753,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "springhare",
-    "artwork": "originals/springhare.png"
+    "artwork": "../assets/animals/originals/springhare.png"
   },
   {
     "id": "okapi",
@@ -789,7 +789,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "okapi",
-    "artwork": "originals/okapi.png"
+    "artwork": "../assets/animals/originals/okapi.png"
   },
   {
     "id": "cassowary",
@@ -825,7 +825,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "cassowary",
-    "artwork": "originals/cassowary.png"
+    "artwork": "../assets/animals/originals/cassowary.png"
   },
   {
     "id": "emu",
@@ -861,7 +861,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "emu",
-    "artwork": "originals/emu.png"
+    "artwork": "../assets/animals/originals/emu.png"
   },
   {
     "id": "secretary-bird",
@@ -897,7 +897,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "secretary-bird",
-    "artwork": "originals/secretary-bird.png"
+    "artwork": "../assets/animals/originals/secretary-bird.png"
   },
   {
     "id": "roadrunner",
@@ -933,7 +933,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "roadrunner",
-    "artwork": "originals/roadrunner.png"
+    "artwork": "../assets/animals/originals/roadrunner.png"
   },
   {
     "id": "kiwi",
@@ -969,7 +969,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "kiwi",
-    "artwork": "originals/kiwi.png"
+    "artwork": "../assets/animals/originals/kiwi.png"
   },
   {
     "id": "wild-turkey",
@@ -1005,7 +1005,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "wild-turkey",
-    "artwork": "originals/wild-turkey.png"
+    "artwork": "../assets/animals/originals/wild-turkey.png"
   },
   {
     "id": "guineafowl",
@@ -1041,7 +1041,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "guineafowl",
-    "artwork": "originals/guineafowl.png"
+    "artwork": "../assets/animals/originals/guineafowl.png"
   },
   {
     "id": "peafowl",
@@ -1077,7 +1077,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "peafowl",
-    "artwork": "originals/peafowl.png"
+    "artwork": "../assets/animals/originals/peafowl.png"
   },
   {
     "id": "seriema",
@@ -1113,7 +1113,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "seriema",
-    "artwork": "originals/seriema.png"
+    "artwork": "../assets/animals/originals/seriema.png"
   },
   {
     "id": "kori-bustard",
@@ -1149,7 +1149,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "kori-bustard",
-    "artwork": "originals/kori-bustard.png"
+    "artwork": "../assets/animals/originals/kori-bustard.png"
   },
   {
     "id": "tinamou",
@@ -1185,7 +1185,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "tinamou",
-    "artwork": "originals/tinamou.png"
+    "artwork": "../assets/animals/originals/tinamou.png"
   },
   {
     "id": "lyrebird",
@@ -1221,7 +1221,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "lyrebird",
-    "artwork": "originals/lyrebird.png"
+    "artwork": "../assets/animals/originals/lyrebird.png"
   },
   {
     "id": "komodo-dragon",
@@ -1257,7 +1257,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "komodo-dragon",
-    "artwork": "originals/komodo-dragon.png"
+    "artwork": "../assets/animals/originals/komodo-dragon.png"
   },
   {
     "id": "gila-monster",
@@ -1293,7 +1293,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "gila-monster",
-    "artwork": "originals/gila-monster.png"
+    "artwork": "../assets/animals/originals/gila-monster.png"
   },
   {
     "id": "bearded-dragon",
@@ -1329,7 +1329,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "bearded-dragon",
-    "artwork": "originals/bearded-dragon.png"
+    "artwork": "../assets/animals/originals/bearded-dragon.png"
   },
   {
     "id": "frilled-lizard",
@@ -1365,7 +1365,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "frilled-lizard",
-    "artwork": "originals/frilled-lizard.png"
+    "artwork": "../assets/animals/originals/frilled-lizard.png"
   },
   {
     "id": "horned-lizard",
@@ -1401,7 +1401,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "horned-lizard",
-    "artwork": "originals/horned-lizard.png"
+    "artwork": "../assets/animals/originals/horned-lizard.png"
   },
   {
     "id": "thorny-devil",
@@ -1437,7 +1437,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "thorny-devil",
-    "artwork": "originals/thorny-devil.png"
+    "artwork": "../assets/animals/originals/thorny-devil.png"
   },
   {
     "id": "blue-tongued-skink",
@@ -1473,7 +1473,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "blue-tongued-skink",
-    "artwork": "originals/blue-tongued-skink.png"
+    "artwork": "../assets/animals/originals/blue-tongued-skink.png"
   },
   {
     "id": "leopard-gecko",
@@ -1509,7 +1509,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "leopard-gecko",
-    "artwork": "originals/leopard-gecko.png"
+    "artwork": "../assets/animals/originals/leopard-gecko.png"
   },
   {
     "id": "tuatara",
@@ -1545,7 +1545,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "tuatara",
-    "artwork": "originals/tuatara.png"
+    "artwork": "../assets/animals/originals/tuatara.png"
   },
   {
     "id": "rosy-boa",
@@ -1581,7 +1581,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "rosy-boa",
-    "artwork": "originals/rosy-boa.png"
+    "artwork": "../assets/animals/originals/rosy-boa.png"
   },
   {
     "id": "common-toad",
@@ -1617,7 +1617,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "common-toad",
-    "artwork": "originals/common-toad.png"
+    "artwork": "../assets/animals/originals/common-toad.png"
   },
   {
     "id": "fire-salamander",
@@ -1653,7 +1653,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "fire-salamander",
-    "artwork": "originals/fire-salamander.png"
+    "artwork": "../assets/animals/originals/fire-salamander.png"
   },
   {
     "id": "tiger-salamander",
@@ -1689,7 +1689,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "tiger-salamander",
-    "artwork": "originals/tiger-salamander.png"
+    "artwork": "../assets/animals/originals/tiger-salamander.png"
   },
   {
     "id": "tomato-frog",
@@ -1725,7 +1725,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "tomato-frog",
-    "artwork": "originals/tomato-frog.png"
+    "artwork": "../assets/animals/originals/tomato-frog.png"
   },
   {
     "id": "ornate-horned-frog",
@@ -1761,7 +1761,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "ornate-horned-frog",
-    "artwork": "originals/ornate-horned-frog.png"
+    "artwork": "../assets/animals/originals/ornate-horned-frog.png"
   },
   {
     "id": "golden-mantella",
@@ -1797,7 +1797,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "golden-mantella",
-    "artwork": "originals/golden-mantella.png"
+    "artwork": "../assets/animals/originals/golden-mantella.png"
   },
   {
     "id": "tarantula",
@@ -1833,7 +1833,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "tarantula",
-    "artwork": "originals/tarantula.png"
+    "artwork": "../assets/animals/originals/tarantula.png"
   },
   {
     "id": "scorpion",
@@ -1869,7 +1869,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "scorpion",
-    "artwork": "originals/scorpion.png"
+    "artwork": "../assets/animals/originals/scorpion.png"
   },
   {
     "id": "coconut-crab",
@@ -1905,7 +1905,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "coconut-crab",
-    "artwork": "originals/coconut-crab.png"
+    "artwork": "../assets/animals/originals/coconut-crab.png"
   },
   {
     "id": "tiger-beetle",
@@ -1941,7 +1941,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "tiger-beetle",
-    "artwork": "originals/tiger-beetle.png"
+    "artwork": "../assets/animals/originals/tiger-beetle.png"
   },
   {
     "id": "silver-ant",
@@ -1977,7 +1977,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "silver-ant",
-    "artwork": "originals/silver-ant.png"
+    "artwork": "../assets/animals/originals/silver-ant.png"
   },
   {
     "id": "cockroach",
@@ -2013,7 +2013,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "cockroach",
-    "artwork": "originals/cockroach.png"
+    "artwork": "../assets/animals/originals/cockroach.png"
   },
   {
     "id": "mantis",
@@ -2049,7 +2049,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "mantis",
-    "artwork": "originals/mantis.png"
+    "artwork": "../assets/animals/originals/mantis.png"
   },
   {
     "id": "stick-insect",
@@ -2085,7 +2085,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "stick-insect",
-    "artwork": "originals/stick-insect.png"
+    "artwork": "../assets/animals/originals/stick-insect.png"
   },
   {
     "id": "giant-millipede",
@@ -2121,7 +2121,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "giant-millipede",
-    "artwork": "originals/giant-millipede.png"
+    "artwork": "../assets/animals/originals/giant-millipede.png"
   },
   {
     "id": "centipede",
@@ -2157,7 +2157,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "centipede",
-    "artwork": "originals/centipede.png"
+    "artwork": "../assets/animals/originals/centipede.png"
   },
   {
     "id": "earthworm",
@@ -2193,7 +2193,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "earthworm",
-    "artwork": "originals/earthworm.png"
+    "artwork": "../assets/animals/originals/earthworm.png"
   },
   {
     "id": "slug",
@@ -2229,7 +2229,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "slug",
-    "artwork": "originals/slug.png"
+    "artwork": "../assets/animals/originals/slug.png"
   },
   {
     "id": "velvet-worm",
@@ -2265,7 +2265,7 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "velvet-worm",
-    "artwork": "originals/velvet-worm.png"
+    "artwork": "../assets/animals/originals/velvet-worm.png"
   },
   {
     "id": "woodlouse",
@@ -2301,6 +2301,6 @@
     "lifeStage": "adult",
     "raceMedium": "land",
     "provenanceId": "woodlouse",
-    "artwork": "originals/woodlouse.png"
+    "artwork": "../assets/animals/originals/woodlouse.png"
   }
 ]

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { Check, Plus, Search, Trophy, X } from 'lucide-react'
 import { ANIMALS, toEntrant } from '../data/animals'
 import { BIOLOGICAL_GROUPS, groupLabel } from '../data/taxonomy'
@@ -45,6 +45,7 @@ export function Roster({
   onMatch: (entrants: Entrant[]) => void
 }) {
   const [filters, setFilters] = useState<RosterFilters>(INITIAL_FILTERS)
+  const resultsRef = useRef<HTMLDivElement>(null)
   const [page, setPage] = useState(0)
   const [anchorKey, setAnchorKey] = useState('')
   const entries = useMemo(
@@ -94,6 +95,14 @@ export function Roster({
     currentPage * ROSTER_PAGE_SIZE,
     (currentPage + 1) * ROSTER_PAGE_SIZE,
   )
+  function changePage(next: number) {
+    setPage(next)
+    // Bring the fresh page into view and give keyboard users a useful starting point.
+    requestAnimationFrame(() => {
+      resultsRef.current?.focus({ preventScroll: true })
+      resultsRef.current?.scrollIntoView({ block: 'start' })
+    })
+  }
   function changeFilters(patch: Partial<RosterFilters>) {
     setFilters((current) => ({ ...current, ...patch }))
     setPage(0)
@@ -313,6 +322,10 @@ export function Roster({
       </div>
       <div
         className="roster-grid"
+        ref={resultsRef}
+        tabIndex={-1}
+        role="group"
+        aria-label="Species results"
         key={`${currentPage}:${filters.group}:${filters.division}:${filters.source}:${filters.search}`}
       >
         {visible.map((entry) => {
@@ -365,7 +378,7 @@ export function Roster({
           <button
             className="button secondary"
             disabled={currentPage === 0}
-            onClick={() => setPage(currentPage - 1)}
+            onClick={() => changePage(currentPage - 1)}
           >
             Previous page
           </button>
@@ -375,7 +388,7 @@ export function Roster({
           <button
             className="button secondary"
             disabled={currentPage + 1 >= pages}
-            onClick={() => setPage(currentPage + 1)}
+            onClick={() => changePage(currentPage + 1)}
           >
             Next page
           </button>
